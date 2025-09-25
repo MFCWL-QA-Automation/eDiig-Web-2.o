@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - text: OTP Sent
+    - img [ref=e5] [cursor=pointer]
+  - alert [ref=e7]
+  - dialog:
+    - generic [ref=e9]:
+      - img [ref=e12]
+      - button "Close sidebar" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17] [cursor=pointer]: Close sidebar
+        - img [ref=e18] [cursor=pointer]
+  - navigation [ref=e20]:
+    - generic [ref=e21]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e22] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e23] [cursor=pointer]
+      - link "Home" [ref=e24] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e25] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e26] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e27] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e28] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e29] [cursor=pointer]
+      - link "Download App" [ref=e31] [cursor=pointer]:
+        - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+        - img [ref=e32] [cursor=pointer]
+        - generic [ref=e37] [cursor=pointer]: Download App
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - img [ref=e44]
+            - generic [ref=e47]: Register
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - generic [ref=e53]: KYC
+          - generic [ref=e55]:
+            - img [ref=e56]
+            - generic [ref=e65]: Preferences
+          - generic [ref=e67]:
+            - img [ref=e68]
+            - generic [ref=e77]: Bank & Profile Details
+          - generic [ref=e79]:
+            - img [ref=e80]
+            - generic [ref=e89]: payment
+        - generic [ref=e91]:
+          - img "Enter Your OTP" [ref=e92]
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - heading "Enter Your OTP" [level=1] [ref=e97]
+              - paragraph [ref=e98]: Enter the OTP sent to your Aadhaar - linked mobile number ending with ********65
+            - generic [ref=e100]:
+              - generic [ref=e101]: Enter OTP
+              - generic [ref=e102]:
+                - textbox [ref=e103]: "1"
+                - textbox [ref=e104]: "9"
+                - textbox [ref=e105]: "1"
+                - textbox [active] [ref=e106]
+              - generic [ref=e107]:
+                - generic [ref=e108]: If OTP Is Not Received In 15 Sec
+                - button "Resend" [disabled] [ref=e109]
+            - generic [ref=e110]:
+              - button "Submit" [ref=e111] [cursor=pointer]
+              - button "Go Back to Register" [ref=e112] [cursor=pointer]
+      - generic [ref=e113]:
+        - generic [ref=e114]: For Registration Support & Clarification
+        - link "Contact Us" [ref=e115] [cursor=pointer]:
+          - /url: /contact-us
+```

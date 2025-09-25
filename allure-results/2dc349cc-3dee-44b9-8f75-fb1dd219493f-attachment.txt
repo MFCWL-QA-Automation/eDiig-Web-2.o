@@ -1,0 +1,10 @@
+Login failed: locator.click: Test ended.
+Call log:
+  - waiting for locator('//button[@type=\'submit\']')
+    - locator resolved to <button type="submit" label="Login" class="cursor-pointer disabled:cursor-not-allowed relative flex items-center gap-3 justify-center bg-primary-900 text-white font-bold py-2 px-4 rounded-xs  active:bg-primary/90  hover:shadow-lg w-full">…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+

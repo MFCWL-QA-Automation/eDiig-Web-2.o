@@ -1,0 +1,12 @@
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Placing bid on Reg No: TN23CD2392
+Start Price: ₹62,000, Reserve Price: ₹2,05,124
+Current Bid: 62000, Placing New Bid: 67000
+Got outbid alert: Increasing bid and retrying...
+Current Bid: 67000, Placing New Bid: 72000
+Bid placed successfully!
+Updated status of Reg No TN23CD2392: Not Participated to Winning

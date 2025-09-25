@@ -1,0 +1,623 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - text: Login Success
+    - img [ref=e5] [cursor=pointer]
+  - dialog:
+    - generic [ref=e8]:
+      - img [ref=e11]
+      - button "Close sidebar" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16] [cursor=pointer]: Close sidebar
+        - img [ref=e17] [cursor=pointer]
+  - navigation [ref=e19]:
+    - generic [ref=e20]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e21] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e22] [cursor=pointer]
+      - link "Home" [ref=e23] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e24] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e25] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e26] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e27] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e28] [cursor=pointer]
+      - generic [ref=e29]:
+        - link "Download App" [ref=e30] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+          - img [ref=e31] [cursor=pointer]
+          - generic [ref=e36] [cursor=pointer]: Download App
+        - link "Wishlist" [ref=e38] [cursor=pointer]:
+          - /url: /watchlist
+          - img [ref=e39] [cursor=pointer]
+        - generic [ref=e44]:
+          - img [ref=e45]
+          - button "Logout" [ref=e47] [cursor=pointer]
+  - main [ref=e48]:
+    - generic [ref=e49]:
+      - generic [ref=e53]:
+        - generic [ref=e55]: Filters
+        - group [ref=e56]:
+          - generic "Make" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58] [cursor=pointer]: Make
+            - img [ref=e59] [cursor=pointer]
+        - group [ref=e61]:
+          - generic "Model" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63] [cursor=pointer]: Model
+            - img [ref=e64] [cursor=pointer]
+        - group [ref=e66]:
+          - generic "Year" [ref=e67] [cursor=pointer]:
+            - generic [ref=e68] [cursor=pointer]: Year
+            - img [ref=e69] [cursor=pointer]
+        - group [ref=e71]:
+          - generic "Yard" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73] [cursor=pointer]: Yard
+            - img [ref=e74] [cursor=pointer]
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - heading "Tamil Nadu - Consumer - Exchange Vehicles 4W" [level=1] [ref=e79]:
+              - generic [ref=e80]: Tamil Nadu
+              - generic [ref=e81]: "- Consumer - Exchange Vehicles 4W"
+            - generic [ref=e83]: 6 LIVE
+          - generic [ref=e88]:
+            - img [ref=e89]
+            - searchbox "Type here to search..." [ref=e91]
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - generic [ref=e94]:
+                - generic [ref=e95]:
+                  - img "MAHINDRA XUV 300 W6 AMT" [ref=e96]
+                  - button [ref=e98] [cursor=pointer]:
+                    - img [ref=e99] [cursor=pointer]
+                - generic [ref=e101]:
+                  - generic [ref=e103]: 26 Sept, 12:00 am
+                  - generic [ref=e104]:
+                    - img [ref=e105]
+                    - generic [ref=e115]: Winning
+              - generic [ref=e116]:
+                - generic [ref=e117]: MAHINDRA XUV 300 W6 AMT - 4W
+                - generic [ref=e118]:
+                  - img [ref=e119]
+                  - generic [ref=e121]: Tamil Nadu
+                - generic [ref=e122]:
+                  - generic [ref=e123]:
+                    - generic [ref=e124]: Year
+                    - generic [ref=e125]: "2023"
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: Reg No
+                    - generic [ref=e128]: PY01DB8393
+                  - generic [ref=e129]:
+                    - generic [ref=e130]: RC
+                    - generic [ref=e131]: "NO"
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: Repo Date
+                    - generic [ref=e134]: 21-03-2025
+                  - generic [ref=e135]:
+                    - generic [ref=e136]: Km Driven
+                    - generic [ref=e137]: "15"
+                  - generic [ref=e138]:
+                    - generic [ref=e139]: Chassis Number
+                    - generic [ref=e140]: MA1NM2EW4P2H68350
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: Seller Name
+                    - generic [ref=e143]: Consumer - Exchange Vehicles
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: Yard Name
+                    - generic [ref=e147]: AKAASH & CO
+                  - generic [ref=e149]:
+                    - generic [ref=e150]: Total Quotes
+                    - generic [ref=e151]: "1"
+                  - generic [ref=e152]:
+                    - generic [ref=e153]: Remark
+                    - generic [ref=e155]: NA
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - button "Wishlist" [ref=e159] [cursor=pointer]:
+                    - img [ref=e160] [cursor=pointer]
+                  - link "Inspection Report" [ref=e164] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/MzAwNzg3Mjc5/NFdSUE8zMDA3ODcyNzk=/ZWRpaWc=
+                    - img [ref=e165] [cursor=pointer]
+                    - generic [ref=e169] [cursor=pointer]: Inspection Report
+                - generic [ref=e170]:
+                  - generic [ref=e171]:
+                    - generic [ref=e172]: Start Price
+                    - generic [ref=e173]: ₹1,97,000
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: Reserve Price
+                    - generic [ref=e176]: ₹6,55,500
+                  - generic [ref=e177]:
+                    - generic [ref=e178]: Quotes Left
+                    - generic [ref=e179]: "19"
+                  - generic [ref=e180]:
+                    - generic [ref=e181]: Your Latest Quote
+                    - generic [ref=e182]: ₹2,02,000
+                - generic [ref=e183]:
+                  - generic [ref=e184]:
+                    - button "-1000" [ref=e185] [cursor=pointer]:
+                      - img [ref=e186] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e187]: ₹2,02,000
+                    - button "+1000" [ref=e188] [cursor=pointer]:
+                      - img [ref=e189] [cursor=pointer]
+                  - generic [ref=e191]:
+                    - button "₹2,000" [ref=e193] [cursor=pointer]:
+                      - img [ref=e194] [cursor=pointer]
+                      - generic [ref=e196] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e197] [cursor=pointer]:
+                      - img [ref=e198] [cursor=pointer]
+                      - generic [ref=e200] [cursor=pointer]: ₹3,000
+                    - button "₹5,000" [ref=e201] [cursor=pointer]:
+                      - img [ref=e202] [cursor=pointer]
+                      - generic [ref=e204] [cursor=pointer]: ₹5,000
+                  - button "Bid Now" [ref=e205] [cursor=pointer]
+            - listitem [ref=e206]:
+              - generic [ref=e207]:
+                - generic [ref=e208]:
+                  - img "DATSUN REDI GO T O" [ref=e209]
+                  - button [ref=e211] [cursor=pointer]:
+                    - img [ref=e212] [cursor=pointer]
+                - generic [ref=e214]:
+                  - generic [ref=e216]: 26 Sept, 12:00 am
+                  - generic [ref=e217]:
+                    - img [ref=e218]
+                    - generic [ref=e228]: Winning
+              - generic [ref=e229]:
+                - generic [ref=e230]: DATSUN REDI GO T O - 4W
+                - generic [ref=e231]:
+                  - img [ref=e232]
+                  - generic [ref=e234]: Tamil Nadu
+                - generic [ref=e235]:
+                  - generic [ref=e236]:
+                    - generic [ref=e237]: Year
+                    - generic [ref=e238]: "2016"
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: Reg No
+                    - generic [ref=e241]: PY05B7366
+                  - generic [ref=e242]:
+                    - generic [ref=e243]: RC
+                    - generic [ref=e244]: "NO"
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: Repo Date
+                    - generic [ref=e247]: 22-04-2025
+                  - generic [ref=e248]:
+                    - generic [ref=e249]: Km Driven
+                    - generic [ref=e250]: "15"
+                  - generic [ref=e251]:
+                    - generic [ref=e252]: Chassis Number
+                    - generic [ref=e253]: MDHFBACD0G8313973
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: Seller Name
+                    - generic [ref=e256]: Consumer - Exchange Vehicles
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: Yard Name
+                    - generic [ref=e260]: AKAASH & CO
+                  - generic [ref=e262]:
+                    - generic [ref=e263]: Total Quotes
+                    - generic [ref=e264]: "1"
+                  - generic [ref=e265]:
+                    - generic [ref=e266]: Remark
+                    - generic [ref=e268]: NA
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - button "Wishlist" [ref=e272] [cursor=pointer]:
+                    - img [ref=e273] [cursor=pointer]
+                  - link "Inspection Report" [ref=e277] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/MzAwOTc4NzYy/NFdSUE8zMDA5Nzg3NjI=/ZWRpaWc=
+                    - img [ref=e278] [cursor=pointer]
+                    - generic [ref=e282] [cursor=pointer]: Inspection Report
+                - generic [ref=e283]:
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: Start Price
+                    - generic [ref=e286]: ₹27,000
+                  - generic [ref=e287]:
+                    - generic [ref=e288]: Reserve Price
+                    - generic [ref=e289]: ₹87,037
+                  - generic [ref=e290]:
+                    - generic [ref=e291]: Quotes Left
+                    - generic [ref=e292]: "19"
+                  - generic [ref=e293]:
+                    - generic [ref=e294]: Your Latest Quote
+                    - generic [ref=e295]: ₹32,000
+                - generic [ref=e296]:
+                  - generic [ref=e297]:
+                    - button "-1000" [ref=e298] [cursor=pointer]:
+                      - img [ref=e299] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e300]: ₹32,000
+                    - button "+1000" [ref=e301] [cursor=pointer]:
+                      - img [ref=e302] [cursor=pointer]
+                  - generic [ref=e304]:
+                    - button "₹2,000" [ref=e306] [cursor=pointer]:
+                      - img [ref=e307] [cursor=pointer]
+                      - generic [ref=e309] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e310] [cursor=pointer]:
+                      - img [ref=e311] [cursor=pointer]
+                      - generic [ref=e313] [cursor=pointer]: ₹3,000
+                    - button "₹5,000" [ref=e314] [cursor=pointer]:
+                      - img [ref=e315] [cursor=pointer]
+                      - generic [ref=e317] [cursor=pointer]: ₹5,000
+                  - button "Bid Now" [ref=e318] [cursor=pointer]
+            - listitem [ref=e319]:
+              - generic [ref=e320]:
+                - generic [ref=e321]:
+                  - img "DATSUN REDI GO S" [ref=e322]
+                  - button [ref=e324] [cursor=pointer]:
+                    - img [ref=e325] [cursor=pointer]
+                - generic [ref=e327]:
+                  - generic [ref=e329]: 26 Sept, 12:00 am
+                  - generic [ref=e330]:
+                    - img [ref=e331]
+                    - generic [ref=e341]: Winning
+              - generic [ref=e342]:
+                - generic [ref=e343]: DATSUN REDI GO S - 4W
+                - generic [ref=e344]:
+                  - img [ref=e345]
+                  - generic [ref=e347]: Tamil Nadu
+                - generic [ref=e348]:
+                  - generic [ref=e349]:
+                    - generic [ref=e350]: Year
+                    - generic [ref=e351]: "2017"
+                  - generic [ref=e352]:
+                    - generic [ref=e353]: Reg No
+                    - generic [ref=e354]: TN25BY7689
+                  - generic [ref=e355]:
+                    - generic [ref=e356]: RC
+                    - generic [ref=e357]: "NO"
+                  - generic [ref=e358]:
+                    - generic [ref=e359]: Repo Date
+                    - generic [ref=e360]: 12-09-2024
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: Km Driven
+                    - generic [ref=e363]: "15"
+                  - generic [ref=e364]:
+                    - generic [ref=e365]: Chassis Number
+                    - generic [ref=e366]: MDHFBACD0H9808516
+                  - generic [ref=e367]:
+                    - generic [ref=e368]: Seller Name
+                    - generic [ref=e369]: Consumer - Exchange Vehicles
+                  - generic [ref=e370]:
+                    - generic [ref=e371]: Yard Name
+                    - generic [ref=e373]: C MADHAN
+                  - generic [ref=e375]:
+                    - generic [ref=e376]: Total Quotes
+                    - generic [ref=e377]: "1"
+                  - generic [ref=e378]:
+                    - generic [ref=e379]: Remark
+                    - generic [ref=e381]: NA
+              - generic [ref=e382]:
+                - generic [ref=e383]:
+                  - button "Wishlist" [ref=e385] [cursor=pointer]:
+                    - img [ref=e386] [cursor=pointer]
+                  - link "Inspection Report" [ref=e390] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/MzAwNjg0MDky/NFdSUE8zMDA2ODQwOTI=/ZWRpaWc=
+                    - img [ref=e391] [cursor=pointer]
+                    - generic [ref=e395] [cursor=pointer]: Inspection Report
+                - generic [ref=e396]:
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: Start Price
+                    - generic [ref=e399]: ₹22,000
+                  - generic [ref=e400]:
+                    - generic [ref=e401]: Reserve Price
+                    - generic [ref=e402]: ₹71,092
+                  - generic [ref=e403]:
+                    - generic [ref=e404]: Quotes Left
+                    - generic [ref=e405]: "19"
+                  - generic [ref=e406]:
+                    - generic [ref=e407]: Your Latest Quote
+                    - generic [ref=e408]: ₹27,000
+                - generic [ref=e409]:
+                  - generic [ref=e410]:
+                    - button "-1000" [ref=e411] [cursor=pointer]:
+                      - img [ref=e412] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e413]: ₹27,000
+                    - button "+1000" [ref=e414] [cursor=pointer]:
+                      - img [ref=e415] [cursor=pointer]
+                  - generic [ref=e417]:
+                    - button "₹2,000" [ref=e419] [cursor=pointer]:
+                      - img [ref=e420] [cursor=pointer]
+                      - generic [ref=e422] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e423] [cursor=pointer]:
+                      - img [ref=e424] [cursor=pointer]
+                      - generic [ref=e426] [cursor=pointer]: ₹3,000
+                    - button "₹5,000" [ref=e427] [cursor=pointer]:
+                      - img [ref=e428] [cursor=pointer]
+                      - generic [ref=e430] [cursor=pointer]: ₹5,000
+                  - button "Bid Now" [ref=e431] [cursor=pointer]
+            - listitem [ref=e432]:
+              - generic [ref=e433]:
+                - img "MARUTI WAGON R - TOUR H3" [ref=e435]
+                - generic [ref=e437]:
+                  - generic [ref=e439]: 26 Sept, 12:00 am
+                  - generic [ref=e440]:
+                    - img [ref=e441]
+                    - generic [ref=e451]: Winning
+              - generic [ref=e452]:
+                - generic [ref=e453]: MARUTI WAGON R - TOUR H3 - 4W
+                - generic [ref=e454]:
+                  - img [ref=e455]
+                  - generic [ref=e457]: Tamil Nadu
+                - generic [ref=e458]:
+                  - generic [ref=e459]:
+                    - generic [ref=e460]: Year
+                    - generic [ref=e461]: "2023"
+                  - generic [ref=e462]:
+                    - generic [ref=e463]: Reg No
+                    - generic [ref=e464]: TN29CT5130
+                  - generic [ref=e465]:
+                    - generic [ref=e466]: RC
+                    - generic [ref=e467]: "YES"
+                  - generic [ref=e468]:
+                    - generic [ref=e469]: Repo Date
+                    - generic [ref=e470]: 08-04-2025
+                  - generic [ref=e471]:
+                    - generic [ref=e472]: Km Driven
+                    - generic [ref=e473]: "15"
+                  - generic [ref=e474]:
+                    - generic [ref=e475]: Chassis Number
+                    - generic [ref=e476]: MA3JMTB1SPG942864
+                  - generic [ref=e477]:
+                    - generic [ref=e478]: Seller Name
+                    - generic [ref=e479]: Consumer - Exchange Vehicles
+                  - generic [ref=e480]:
+                    - generic [ref=e481]: Yard Name
+                    - generic [ref=e483]: C MADHAN
+                  - generic [ref=e485]:
+                    - generic [ref=e486]: Total Quotes
+                    - generic [ref=e487]: "1"
+                  - generic [ref=e488]:
+                    - generic [ref=e489]: Remark
+                    - generic [ref=e491]: NA
+              - generic [ref=e492]:
+                - generic [ref=e493]:
+                  - button "Wishlist" [ref=e495] [cursor=pointer]:
+                    - img [ref=e496] [cursor=pointer]
+                  - link "Inspection Report" [ref=e500] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/MzAwODYwMTEy/NFdSUE8zMDA4NjAxMTI=/ZWRpaWc=
+                    - img [ref=e501] [cursor=pointer]
+                    - generic [ref=e505] [cursor=pointer]: Inspection Report
+                - generic [ref=e506]:
+                  - generic [ref=e507]:
+                    - generic [ref=e508]: Start Price
+                    - generic [ref=e509]: ₹1,58,000
+                  - generic [ref=e510]:
+                    - generic [ref=e511]: Reserve Price
+                    - generic [ref=e512]: ₹5,23,817
+                  - generic [ref=e513]:
+                    - generic [ref=e514]: Quotes Left
+                    - generic [ref=e515]: "19"
+                  - generic [ref=e516]:
+                    - generic [ref=e517]: Your Latest Quote
+                    - generic [ref=e518]: ₹1,63,000
+                - generic [ref=e519]:
+                  - generic [ref=e520]:
+                    - button "-1000" [ref=e521] [cursor=pointer]:
+                      - img [ref=e522] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e523]: ₹1,63,000
+                    - button "+1000" [ref=e524] [cursor=pointer]:
+                      - img [ref=e525] [cursor=pointer]
+                  - generic [ref=e527]:
+                    - button "₹2,000" [ref=e529] [cursor=pointer]:
+                      - img [ref=e530] [cursor=pointer]
+                      - generic [ref=e532] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e533] [cursor=pointer]:
+                      - img [ref=e534] [cursor=pointer]
+                      - generic [ref=e536] [cursor=pointer]: ₹3,000
+                    - button "₹5,000" [ref=e537] [cursor=pointer]:
+                      - img [ref=e538] [cursor=pointer]
+                      - generic [ref=e540] [cursor=pointer]: ₹5,000
+                  - button "Bid Now" [ref=e541] [cursor=pointer]
+            - listitem [ref=e542]:
+              - generic [ref=e543]:
+                - generic [ref=e544]:
+                  - img "RENAULT KWID RXT" [ref=e545]
+                  - button [ref=e547] [cursor=pointer]:
+                    - img [ref=e548] [cursor=pointer]
+                - generic [ref=e550]:
+                  - generic [ref=e552]: 26 Sept, 12:00 am
+                  - generic [ref=e553]:
+                    - img [ref=e554]
+                    - generic [ref=e564]: Winning
+              - generic [ref=e565]:
+                - generic [ref=e566]: RENAULT KWID RXT - 4W
+                - generic [ref=e567]:
+                  - img [ref=e568]
+                  - generic [ref=e570]: Tamil Nadu
+                - generic [ref=e571]:
+                  - generic [ref=e572]:
+                    - generic [ref=e573]: Year
+                    - generic [ref=e574]: "2016"
+                  - generic [ref=e575]:
+                    - generic [ref=e576]: Reg No
+                    - generic [ref=e577]: TN23CD2392
+                  - generic [ref=e578]:
+                    - generic [ref=e579]: RC
+                    - generic [ref=e580]: "NO"
+                  - generic [ref=e581]:
+                    - generic [ref=e582]: Repo Date
+                    - generic [ref=e583]: 10-04-2025
+                  - generic [ref=e584]:
+                    - generic [ref=e585]: Km Driven
+                    - generic [ref=e586]: "15"
+                  - generic [ref=e587]:
+                    - generic [ref=e588]: Chassis Number
+                    - generic [ref=e589]: MEEBBA005G6377181
+                  - generic [ref=e590]:
+                    - generic [ref=e591]: Seller Name
+                    - generic [ref=e592]: Consumer - Exchange Vehicles
+                  - generic [ref=e593]:
+                    - generic [ref=e594]: Yard Name
+                    - generic [ref=e596]: C MADHAN
+                  - generic [ref=e598]:
+                    - generic [ref=e599]: Total Quotes
+                    - generic [ref=e600]: "1"
+                  - generic [ref=e601]:
+                    - generic [ref=e602]: Remark
+                    - generic [ref=e604]: NA
+              - generic [ref=e605]:
+                - generic [ref=e606]:
+                  - button "Wishlist" [ref=e608] [cursor=pointer]:
+                    - img [ref=e609] [cursor=pointer]
+                  - link "Inspection Report" [ref=e613] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/MzAwOTA2NTQw/NFdSUE8zMDA5MDY1NDA=/ZWRpaWc=
+                    - img [ref=e614] [cursor=pointer]
+                    - generic [ref=e618] [cursor=pointer]: Inspection Report
+                - generic [ref=e619]:
+                  - generic [ref=e620]:
+                    - generic [ref=e621]: Start Price
+                    - generic [ref=e622]: ₹62,000
+                  - generic [ref=e623]:
+                    - generic [ref=e624]: Reserve Price
+                    - generic [ref=e625]: ₹2,05,124
+                  - generic [ref=e626]:
+                    - generic [ref=e627]: Quotes Left
+                    - generic [ref=e628]: "19"
+                  - generic [ref=e629]:
+                    - generic [ref=e630]: Your Latest Quote
+                    - generic [ref=e631]: ₹67,000
+                - generic [ref=e632]:
+                  - generic [ref=e633]:
+                    - button "-1000" [ref=e634] [cursor=pointer]:
+                      - img [ref=e635] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e636]: ₹67,000
+                    - button "+1000" [ref=e637] [cursor=pointer]:
+                      - img [ref=e638] [cursor=pointer]
+                  - generic [ref=e640]:
+                    - button "₹2,000" [ref=e642] [cursor=pointer]:
+                      - img [ref=e643] [cursor=pointer]
+                      - generic [ref=e645] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e646] [cursor=pointer]:
+                      - img [ref=e647] [cursor=pointer]
+                      - generic [ref=e649] [cursor=pointer]: ₹3,000
+                    - button "₹5,000" [ref=e650] [cursor=pointer]:
+                      - img [ref=e651] [cursor=pointer]
+                      - generic [ref=e653] [cursor=pointer]: ₹5,000
+                  - button "Bid Now" [ref=e654] [cursor=pointer]
+            - listitem [ref=e655]:
+              - generic [ref=e656]:
+                - generic [ref=e657]:
+                  - img "RENAULT LODGY 85 PS RXE" [ref=e658]
+                  - button [ref=e660] [cursor=pointer]:
+                    - img [ref=e661] [cursor=pointer]
+                - generic [ref=e663]:
+                  - generic [ref=e665]: 26 Sept, 12:00 am
+                  - generic [ref=e666]:
+                    - img [ref=e667]
+                    - generic [ref=e677]: Winning
+              - generic [ref=e678]:
+                - generic [ref=e679]: RENAULT LODGY 85 PS RXE - 4W
+                - generic [ref=e680]:
+                  - img [ref=e681]
+                  - generic [ref=e683]: Tamil Nadu
+                - generic [ref=e684]:
+                  - generic [ref=e685]:
+                    - generic [ref=e686]: Year
+                    - generic [ref=e687]: "2016"
+                  - generic [ref=e688]:
+                    - generic [ref=e689]: Reg No
+                    - generic [ref=e690]: TN23CE0087
+                  - generic [ref=e691]:
+                    - generic [ref=e692]: RC
+                    - generic [ref=e693]: "NO"
+                  - generic [ref=e694]:
+                    - generic [ref=e695]: Repo Date
+                    - generic [ref=e696]: 28-02-2025
+                  - generic [ref=e697]:
+                    - generic [ref=e698]: Km Driven
+                    - generic [ref=e699]: "15"
+                  - generic [ref=e700]:
+                    - generic [ref=e701]: Chassis Number
+                    - generic [ref=e702]: MEEJSRGW4G5006549
+                  - generic [ref=e703]:
+                    - generic [ref=e704]: Seller Name
+                    - generic [ref=e705]: Consumer - Exchange Vehicles
+                  - generic [ref=e706]:
+                    - generic [ref=e707]: Yard Name
+                    - generic [ref=e709]: EMERALD PARKING YARD PVT LTD
+                  - generic [ref=e711]:
+                    - generic [ref=e712]: Total Quotes
+                    - generic [ref=e713]: "2"
+                  - generic [ref=e714]:
+                    - generic [ref=e715]: Remark
+                    - generic [ref=e717]: NA
+              - generic [ref=e718]:
+                - generic [ref=e719]:
+                  - button "Wishlist" [ref=e721] [cursor=pointer]:
+                    - img [ref=e722] [cursor=pointer]
+                  - link "Inspection Report" [ref=e726] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/MzAwNTQ4Njk0/NFdSUE8zMDA1NDg2OTQ=/ZWRpaWc=
+                    - img [ref=e727] [cursor=pointer]
+                    - generic [ref=e731] [cursor=pointer]: Inspection Report
+                - generic [ref=e732]:
+                  - generic [ref=e733]:
+                    - generic [ref=e734]: Start Price
+                    - generic [ref=e735]: ₹43,000
+                  - generic [ref=e736]:
+                    - generic [ref=e737]: Reserve Price
+                    - generic [ref=e738]: ₹1,42,800
+                  - generic [ref=e739]:
+                    - generic [ref=e740]: Quotes Left
+                    - generic [ref=e741]: "19"
+                  - generic [ref=e742]:
+                    - generic [ref=e743]: Your Latest Quote
+                    - generic [ref=e744]: ₹48,000
+                - generic [ref=e745]:
+                  - generic [ref=e746]:
+                    - button "-1000" [ref=e747] [cursor=pointer]:
+                      - img [ref=e748] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e749]: ₹48,000
+                    - button "+1000" [ref=e750] [cursor=pointer]:
+                      - img [ref=e751] [cursor=pointer]
+                  - generic [ref=e753]:
+                    - button "₹2,000" [ref=e755] [cursor=pointer]:
+                      - img [ref=e756] [cursor=pointer]
+                      - generic [ref=e758] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e759] [cursor=pointer]:
+                      - img [ref=e760] [cursor=pointer]
+                      - generic [ref=e762] [cursor=pointer]: ₹3,000
+                    - button "₹5,000" [ref=e763] [cursor=pointer]:
+                      - img [ref=e764] [cursor=pointer]
+                      - generic [ref=e766] [cursor=pointer]: ₹5,000
+                  - button "Bid Now" [ref=e767] [cursor=pointer]
+        - generic [ref=e768]:
+          - generic [ref=e769]:
+            - text: Showing
+            - generic [ref=e770]: "1"
+            - text: to
+            - generic [ref=e771]: "6"
+            - text: of
+            - generic [ref=e772]: "6"
+            - text: Vehicles
+          - generic [ref=e773]:
+            - button "Previous" [disabled] [ref=e774]
+            - button "1" [ref=e776] [cursor=pointer]
+            - button "Next" [disabled] [ref=e777]
+  - dialog:
+    - generic [ref=e779]:
+      - img [ref=e782]
+      - button "Close sidebar" [ref=e786] [cursor=pointer]:
+        - generic [ref=e787] [cursor=pointer]: Close sidebar
+        - img [ref=e788] [cursor=pointer]
+  - generic [ref=e790]:
+    - paragraph [ref=e791]:
+      - generic [ref=e792]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e793]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e794] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e795] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e796] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e798]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e799] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e800]: eDiig Auctions - India's leading Automobile Exchange Platform
+```

@@ -1,0 +1,429 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - img [ref=e5] [cursor=pointer]
+  - dialog:
+    - generic [ref=e8]:
+      - img [ref=e11]
+      - button "Close sidebar" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16] [cursor=pointer]: Close sidebar
+        - img [ref=e17] [cursor=pointer]
+  - navigation [ref=e19]:
+    - generic [ref=e20]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e21] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e22] [cursor=pointer]
+      - link "Home" [ref=e23] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e24] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e25] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e26] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e27] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e28] [cursor=pointer]
+      - link "Download App" [ref=e30] [cursor=pointer]:
+        - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+        - img [ref=e31] [cursor=pointer]
+        - generic [ref=e36] [cursor=pointer]: Download App
+  - main [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e40]:
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - generic [ref=e45]:
+              - link "Home Desktop":
+                - /url: /events
+          - listitem [ref=e46]:
+            - generic [ref=e47]:
+              - link "Home Desktop":
+                - /url: /events
+        - generic [ref=e53]:
+          - img [ref=e54]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - textbox "Enter User ID" [ref=e71]: testuser
+              - generic: Enter User ID
+            - generic [ref=e72]:
+              - textbox "Enter Password" [ref=e73]: Test@1234
+              - img [ref=e75] [cursor=pointer]
+              - generic: Enter Password
+            - button "Login" [disabled] [ref=e78]:
+              - generic [ref=e79]: Login
+          - link "Login with OTP" [ref=e80] [cursor=pointer]:
+            - /url: /signin-otp
+          - paragraph [ref=e81]:
+            - link "Forgot Password?" [ref=e82] [cursor=pointer]:
+              - /url: /forgot-password
+          - paragraph [ref=e83]:
+            - text: Don't have an account?
+            - link "Register" [ref=e84] [cursor=pointer]:
+              - /url: /signup
+      - generic [ref=e85]:
+        - heading "Value Propositions" [level=2] [ref=e86]
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - img "Expert Negotiations" [ref=e89]
+            - generic [ref=e90]:
+              - generic [ref=e91]: Expert Negotiations
+              - generic [ref=e92]: Our experienced team has a proven track record of facilitating transactions for happy buyers and sellers
+          - generic [ref=e93]:
+            - img "#1 in auction business" [ref=e94]
+            - generic [ref=e95]:
+              - generic [ref=e96]: "#1 in auction business"
+              - generic [ref=e97]: India’s first and leading vehicle auction platform since 2011
+          - generic [ref=e98]:
+            - img "Pan-India Reach" [ref=e99]
+            - generic [ref=e100]:
+              - generic [ref=e101]: Pan-India Reach
+              - generic [ref=e102]: Offline and online auctions conducted across the country
+          - generic [ref=e103]:
+            - img "Expert Easy Listing" [ref=e104]
+            - generic [ref=e105]:
+              - generic [ref=e106]: Expert Easy Listing
+              - generic [ref=e107]: A fast and easy listing process that can be customized and automated
+      - generic [ref=e108]:
+        - heading "eDiig Exclusive Auction is here!!!" [level=2] [ref=e109]
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: 20,000+ strong buyer base
+            - img "20,000+ strong buyer base" [ref=e113]
+          - generic [ref=e114]:
+            - generic [ref=e115]: "Ranked #1 in the Auctions business"
+            - 'img "Ranked #1 in the Auctions business" [ref=e116]'
+          - generic [ref=e117]:
+            - generic [ref=e118]: 10,00,000+ vehicles Sold
+            - img "10,00,000+ vehicles Sold" [ref=e119]
+          - generic [ref=e120]:
+            - generic [ref=e121]: 1st Auto auction portal launched in India
+            - img "1st Auto auction portal launched in India" [ref=e122]
+      - generic [ref=e123]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e124]
+        - generic [ref=e125]:
+          - group [ref=e126]:
+            - generic "What is a eDiig Online Marketplace?" [ref=e127] [cursor=pointer]:
+              - text: What is a eDiig Online Marketplace?
+              - img [ref=e128] [cursor=pointer]
+            - generic [ref=e130]: These are online vehicle sale facilitations conducted on the website of eDiig, where participation is only for registered sellers and pre-approved buyers. Our registered seller base consists of reputed banks and NBFCs who list their repossessed vehicles for sale in eDiig website and app. You can be a part of this pre-approved buyer group if you meet the eligibility criteria and receive confirmation of your registration from eDiig Team.
+          - group [ref=e131]:
+            - generic "Who is eligible to participate?" [ref=e132] [cursor=pointer]:
+              - text: Who is eligible to participate?
+              - img [ref=e133] [cursor=pointer]
+          - group [ref=e135]:
+            - generic "They include:" [ref=e136] [cursor=pointer]:
+              - text: "They include:"
+              - img [ref=e137] [cursor=pointer]
+      - generic [ref=e139]:
+        - heading "Live Events Data" [level=2] [ref=e140]
+        - list [ref=e143]:
+          - listitem [ref=e144]:
+            - table [ref=e146]:
+              - rowgroup [ref=e147]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e148]:
+                  - columnheader "Location" [ref=e149]
+                  - columnheader "Seller" [ref=e150]
+                  - columnheader "Category" [ref=e151]
+                  - columnheader "Auction Type" [ref=e152]
+                  - columnheader "Event Type" [ref=e153]
+                  - columnheader "No. Of Listings" [ref=e154]
+                  - columnheader "Event Start Time" [ref=e155]
+                  - columnheader "Event End Time" [ref=e156]
+              - rowgroup [ref=e157]:
+                - row "Manipur ALD Automotive 2W Open - 1 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e158] [cursor=pointer]:
+                  - cell "Manipur" [ref=e159] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e160] [cursor=pointer]
+                  - cell "2W" [ref=e161] [cursor=pointer]
+                  - cell "Open" [ref=e162] [cursor=pointer]
+                  - cell "-" [ref=e163] [cursor=pointer]
+                  - cell "1" [ref=e164] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e165] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e166] [cursor=pointer]
+                - row "Manipur ALD Automotive 2W Closed - 1 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e167] [cursor=pointer]:
+                  - cell "Manipur" [ref=e168] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e169] [cursor=pointer]
+                  - cell "2W" [ref=e170] [cursor=pointer]
+                  - cell "Closed" [ref=e171] [cursor=pointer]
+                  - cell "-" [ref=e172] [cursor=pointer]
+                  - cell "1" [ref=e173] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e174] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e175] [cursor=pointer]
+                - row "Manipur ALD Automotive 4W Closed - 3 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e176] [cursor=pointer]:
+                  - cell "Manipur" [ref=e177] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e178] [cursor=pointer]
+                  - cell "4W" [ref=e179] [cursor=pointer]
+                  - cell "Closed" [ref=e180] [cursor=pointer]
+                  - cell "-" [ref=e181] [cursor=pointer]
+                  - cell "3" [ref=e182] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e183] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e184] [cursor=pointer]
+                - row "Tamil Nadu CNHI Capital (New Holland) FE Closed - 3 28 Aug, 12:00 am 16 Sept, 12:06 am" [ref=e185] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e186] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e187] [cursor=pointer]
+                  - cell "FE" [ref=e188] [cursor=pointer]
+                  - cell "Closed" [ref=e189] [cursor=pointer]
+                  - cell "-" [ref=e190] [cursor=pointer]
+                  - cell "3" [ref=e191] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e192] [cursor=pointer]
+                  - cell "16 Sept, 12:06 am" [ref=e193] [cursor=pointer]
+                - row "Tamil Nadu CNHI Capital (New Holland) 4W Open - 1 28 Aug, 12:00 am 17 Sept, 12:00 am" [ref=e194] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e195] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e196] [cursor=pointer]
+                  - cell "4W" [ref=e197] [cursor=pointer]
+                  - cell "Open" [ref=e198] [cursor=pointer]
+                  - cell "-" [ref=e199] [cursor=pointer]
+                  - cell "1" [ref=e200] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e201] [cursor=pointer]
+                  - cell "17 Sept, 12:00 am" [ref=e202] [cursor=pointer]
+                - row "Jharkhand L&T Finance 2W Open - 10 05 Aug, 11:00 am 06 Aug, 07:59 pm" [ref=e203] [cursor=pointer]:
+                  - cell "Jharkhand" [ref=e204] [cursor=pointer]
+                  - cell "L&T Finance" [ref=e205] [cursor=pointer]
+                  - cell "2W" [ref=e206] [cursor=pointer]
+                  - cell "Open" [ref=e207] [cursor=pointer]
+                  - cell "-" [ref=e208] [cursor=pointer]
+                  - cell "10" [ref=e209] [cursor=pointer]
+                  - cell "05 Aug, 11:00 am" [ref=e210] [cursor=pointer]
+                  - cell "06 Aug, 07:59 pm" [ref=e211] [cursor=pointer]
+            - link "View All Live Events" [ref=e212] [cursor=pointer]:
+              - /url: /events
+              - button "View All Live Events" [ref=e213] [cursor=pointer]:
+                - generic [ref=e214] [cursor=pointer]: View All Live Events
+                - img [ref=e215] [cursor=pointer]
+      - generic [ref=e217]:
+        - heading "Banks & Insurance" [level=2] [ref=e218]
+        - generic [ref=e220]:
+          - list [ref=e221]:
+            - listitem [ref=e222] [cursor=pointer]: Bank Event
+            - listitem [ref=e223] [cursor=pointer]: Insurance Event
+          - list [ref=e224]:
+            - listitem [ref=e225]:
+              - table [ref=e227]:
+                - rowgroup [ref=e228]:
+                  - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e229]:
+                    - columnheader "Location" [ref=e230]
+                    - columnheader "Seller" [ref=e231]
+                    - columnheader "Category" [ref=e232]
+                    - columnheader "Auction Type" [ref=e233]
+                    - columnheader "Event Type" [ref=e234]
+                    - columnheader "No. Of Listings" [ref=e235]
+                    - columnheader "Event Start Time" [ref=e236]
+                    - columnheader "Event End Time" [ref=e237]
+                - rowgroup [ref=e238]:
+                  - row "Manipur ALD Automotive 4W Closed - 3 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e239] [cursor=pointer]:
+                    - cell "Manipur" [ref=e240] [cursor=pointer]
+                    - cell "ALD Automotive" [ref=e241] [cursor=pointer]
+                    - cell "4W" [ref=e242] [cursor=pointer]
+                    - cell "Closed" [ref=e243] [cursor=pointer]
+                    - cell "-" [ref=e244] [cursor=pointer]
+                    - cell "3" [ref=e245] [cursor=pointer]
+                    - cell "09 Sept, 12:00 am" [ref=e246] [cursor=pointer]
+                    - cell "09 Sept, 10:29 pm" [ref=e247] [cursor=pointer]
+                  - row "Tamil Nadu CNHI Capital (New Holland) 4W Open - 1 28 Aug, 12:00 am 17 Sept, 12:00 am" [ref=e248] [cursor=pointer]:
+                    - cell "Tamil Nadu" [ref=e249] [cursor=pointer]
+                    - cell "CNHI Capital (New Holland)" [ref=e250] [cursor=pointer]
+                    - cell "4W" [ref=e251] [cursor=pointer]
+                    - cell "Open" [ref=e252] [cursor=pointer]
+                    - cell "-" [ref=e253] [cursor=pointer]
+                    - cell "1" [ref=e254] [cursor=pointer]
+                    - cell "28 Aug, 12:00 am" [ref=e255] [cursor=pointer]
+                    - cell "17 Sept, 12:00 am" [ref=e256] [cursor=pointer]
+      - generic [ref=e257]:
+        - heading "Events Ending in 1 Month" [level=2] [ref=e258]
+        - list [ref=e261]:
+          - listitem [ref=e262]:
+            - table [ref=e264]:
+              - rowgroup [ref=e265]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e266]:
+                  - columnheader "Location" [ref=e267]
+                  - columnheader "Seller" [ref=e268]
+                  - columnheader "Category" [ref=e269]
+                  - columnheader "Auction Type" [ref=e270]
+                  - columnheader "Event Type" [ref=e271]
+                  - columnheader "No. Of Listings" [ref=e272]
+                  - columnheader "Event Start Time" [ref=e273]
+                  - columnheader "Event End Time" [ref=e274]
+              - rowgroup [ref=e275]:
+                - row "Tamil Nadu CNHI Capital (New Holland) 4W Open - 1 28 Aug, 12:00 am 17 Sept, 12:00 am" [ref=e276] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e277] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e278] [cursor=pointer]
+                  - cell "4W" [ref=e279] [cursor=pointer]
+                  - cell "Open" [ref=e280] [cursor=pointer]
+                  - cell "-" [ref=e281] [cursor=pointer]
+                  - cell "1" [ref=e282] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e283] [cursor=pointer]
+                  - cell "17 Sept, 12:00 am" [ref=e284] [cursor=pointer]
+                - row "Tamil Nadu CNHI Capital (New Holland) FE Closed - 3 28 Aug, 12:00 am 16 Sept, 12:06 am" [ref=e285] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e286] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e287] [cursor=pointer]
+                  - cell "FE" [ref=e288] [cursor=pointer]
+                  - cell "Closed" [ref=e289] [cursor=pointer]
+                  - cell "-" [ref=e290] [cursor=pointer]
+                  - cell "3" [ref=e291] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e292] [cursor=pointer]
+                  - cell "16 Sept, 12:06 am" [ref=e293] [cursor=pointer]
+                - row "Manipur ALD Automotive 2W Open - 1 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e294] [cursor=pointer]:
+                  - cell "Manipur" [ref=e295] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e296] [cursor=pointer]
+                  - cell "2W" [ref=e297] [cursor=pointer]
+                  - cell "Open" [ref=e298] [cursor=pointer]
+                  - cell "-" [ref=e299] [cursor=pointer]
+                  - cell "1" [ref=e300] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e301] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e302] [cursor=pointer]
+                - row "Manipur ALD Automotive 2W Closed - 1 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e303] [cursor=pointer]:
+                  - cell "Manipur" [ref=e304] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e305] [cursor=pointer]
+                  - cell "2W" [ref=e306] [cursor=pointer]
+                  - cell "Closed" [ref=e307] [cursor=pointer]
+                  - cell "-" [ref=e308] [cursor=pointer]
+                  - cell "1" [ref=e309] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e310] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e311] [cursor=pointer]
+                - row "Manipur ALD Automotive 4W Closed - 3 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e312] [cursor=pointer]:
+                  - cell "Manipur" [ref=e313] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e314] [cursor=pointer]
+                  - cell "4W" [ref=e315] [cursor=pointer]
+                  - cell "Closed" [ref=e316] [cursor=pointer]
+                  - cell "-" [ref=e317] [cursor=pointer]
+                  - cell "3" [ref=e318] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e319] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e320] [cursor=pointer]
+            - link "View All" [ref=e321] [cursor=pointer]:
+              - /url: /events
+              - button "View All" [ref=e322] [cursor=pointer]:
+                - generic [ref=e323] [cursor=pointer]: View All
+                - img [ref=e324] [cursor=pointer]
+      - generic [ref=e326]:
+        - heading "Events Ending in 3 Days" [level=2] [ref=e327]
+        - list [ref=e330]:
+          - listitem [ref=e331]:
+            - table [ref=e333]:
+              - rowgroup [ref=e334]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e335]:
+                  - columnheader "Location" [ref=e336]
+                  - columnheader "Seller" [ref=e337]
+                  - columnheader "Category" [ref=e338]
+                  - columnheader "Auction Type" [ref=e339]
+                  - columnheader "Event Type" [ref=e340]
+                  - columnheader "No. Of Listings" [ref=e341]
+                  - columnheader "Event Start Time" [ref=e342]
+                  - columnheader "Event End Time" [ref=e343]
+              - rowgroup [ref=e344]:
+                - row "Manipur ALD Automotive 2W Open - 1 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e345] [cursor=pointer]:
+                  - cell "Manipur" [ref=e346] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e347] [cursor=pointer]
+                  - cell "2W" [ref=e348] [cursor=pointer]
+                  - cell "Open" [ref=e349] [cursor=pointer]
+                  - cell "-" [ref=e350] [cursor=pointer]
+                  - cell "1" [ref=e351] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e352] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e353] [cursor=pointer]
+                - row "Manipur ALD Automotive 2W Closed - 1 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e354] [cursor=pointer]:
+                  - cell "Manipur" [ref=e355] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e356] [cursor=pointer]
+                  - cell "2W" [ref=e357] [cursor=pointer]
+                  - cell "Closed" [ref=e358] [cursor=pointer]
+                  - cell "-" [ref=e359] [cursor=pointer]
+                  - cell "1" [ref=e360] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e361] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e362] [cursor=pointer]
+                - row "Manipur ALD Automotive 4W Closed - 3 09 Sept, 12:00 am 09 Sept, 10:29 pm" [ref=e363] [cursor=pointer]:
+                  - cell "Manipur" [ref=e364] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e365] [cursor=pointer]
+                  - cell "4W" [ref=e366] [cursor=pointer]
+                  - cell "Closed" [ref=e367] [cursor=pointer]
+                  - cell "-" [ref=e368] [cursor=pointer]
+                  - cell "3" [ref=e369] [cursor=pointer]
+                  - cell "09 Sept, 12:00 am" [ref=e370] [cursor=pointer]
+                  - cell "09 Sept, 10:29 pm" [ref=e371] [cursor=pointer]
+            - link "View All" [ref=e372] [cursor=pointer]:
+              - /url: /events-listing
+              - button "View All" [ref=e373] [cursor=pointer]:
+                - generic [ref=e374] [cursor=pointer]: View All
+                - img [ref=e375] [cursor=pointer]
+      - generic [ref=e377]:
+        - heading "Top Clients" [level=2] [ref=e378]
+        - generic [ref=e379]:
+          - generic [ref=e380]:
+            - img "image_0" [ref=e381]
+            - img "image_1" [ref=e382]
+            - img "image_2" [ref=e383]
+            - img "image_3" [ref=e384]
+            - img "image_4" [ref=e385]
+          - button "View More" [ref=e386] [cursor=pointer]:
+            - text: View More
+            - img [ref=e387] [cursor=pointer]
+      - generic [ref=e389]:
+        - heading "About eDiig" [level=2] [ref=e390]
+        - generic [ref=e393]:
+          - paragraph [ref=e394]:
+            - strong [ref=e395]: www.ediig.com - India's leading automobile exchange platform, is a division of Mahindra First Choice Wheels Ltd.
+          - paragraph [ref=e396]: The marketplace of eDiig lays equal stress on quality, credibility & accuracy, eDiig has the country's best auction experts and specialists working for it.
+          - paragraph [ref=e397]:
+            - strong [ref=e398]: eDiig does the following types of Auction Services
+          - listitem [ref=e399]: Online sales events
+          - listitem [ref=e400]: Offline Sale Events
+          - listitem [ref=e401]: Bulk Deals / Negotiated Sales
+          - listitem [ref=e402]: Valuations
+          - listitem [ref=e403]: pecialty Sale Events / Premium Sale Events
+          - listitem [ref=e404]: Inventory Finance & Insurance
+      - generic [ref=e405]:
+        - heading "Top Seller Today" [level=2] [ref=e406]
+        - generic [ref=e407]:
+          - list [ref=e408]:
+            - listitem [ref=e409]:
+              - generic [ref=e410]:
+                - img "HDB Finance" [ref=e412]
+                - generic [ref=e413]:
+                  - generic [ref=e414]: HDB Finance
+                  - generic [ref=e415]: Listings
+            - listitem [ref=e416]:
+              - generic [ref=e417]:
+                - img "HDB Finance" [ref=e419]
+                - generic [ref=e420]:
+                  - generic [ref=e421]: HDB Finance
+                  - generic [ref=e422]: Listings
+            - listitem [ref=e423]:
+              - generic [ref=e424]:
+                - img "HDB Finance" [ref=e426]
+                - generic [ref=e427]:
+                  - generic [ref=e428]: HDB Finance
+                  - generic [ref=e429]: Listings
+            - listitem [ref=e430]:
+              - generic [ref=e431]:
+                - img "HDB Finance" [ref=e433]
+                - generic [ref=e434]:
+                  - generic [ref=e435]: HDB Finance
+                  - generic [ref=e436]: Listings
+          - button "Previous Button" [disabled] [ref=e437]:
+            - img [ref=e438]
+          - button "Next Button" [ref=e440]:
+            - img [ref=e441]
+  - dialog:
+    - generic [ref=e444]:
+      - img [ref=e447]
+      - button "Close sidebar" [ref=e451] [cursor=pointer]:
+        - generic [ref=e452] [cursor=pointer]: Close sidebar
+        - img [ref=e453] [cursor=pointer]
+  - generic [ref=e455]:
+    - paragraph [ref=e456]:
+      - generic [ref=e457]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e458]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e459] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e460] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e461] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e463]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e464] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e465]
+```

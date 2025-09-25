@@ -1,0 +1,14 @@
+Navigated to login page
+Username entered: testuser
+Password entered: *********
+ Login button clicked
+Login successful
+Placing bid on Reg No: TN09DB4667
+Start Price: ₹69,000, Reserve Price: ₹2,26,859
+Current Bid: 69000, Placing New Bid: 74000
+Placing bid on Reg No: TN09DB4667
+Start Price: ₹69,000, Reserve Price: ₹2,26,859
+Current Bid: 74000, Placing New Bid: 79000
+Bid placed successfully!
+Updated status of Reg No TN09DB4667: Not Participated to Winning
+Status validation completed for Reg No: TN09DB4667

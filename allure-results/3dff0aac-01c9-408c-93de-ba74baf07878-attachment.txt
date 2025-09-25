@@ -1,0 +1,9 @@
+Navigated to login page
+Username entered:${username}
+Password entered: *********
+ Login button clicked
+Login successful
+Placing bid on Reg No: TN06AE2079
+Start Price: ₹99,000, Reserve Price: ₹3,27,180
+Current Bid: 99000, Placing New Bid: 104000
+Bid placed successfully!

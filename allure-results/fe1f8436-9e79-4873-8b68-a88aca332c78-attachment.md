@@ -1,0 +1,237 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - text: Login Success
+    - img [ref=e5] [cursor=pointer]
+  - dialog:
+    - generic [ref=e8]:
+      - img [ref=e11]
+      - button "Close sidebar" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16] [cursor=pointer]: Close sidebar
+        - img [ref=e17] [cursor=pointer]
+  - navigation [ref=e19]:
+    - generic [ref=e20]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e21] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e22] [cursor=pointer]
+      - link "Home" [ref=e23] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e24] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e25] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e26] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e27] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e28] [cursor=pointer]
+      - generic [ref=e29]:
+        - link "Download App" [ref=e30] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+          - img [ref=e31] [cursor=pointer]
+          - generic [ref=e36] [cursor=pointer]: Download App
+        - link "Wishlist" [ref=e38] [cursor=pointer]:
+          - /url: /watchlist
+          - img [ref=e39] [cursor=pointer]
+        - generic [ref=e44]:
+          - img [ref=e45]
+          - button "Logout" [ref=e47] [cursor=pointer]
+  - main [ref=e48]:
+    - generic [ref=e49]:
+      - heading "Auctions for you" [level=2] [ref=e50]
+      - generic [ref=e52]:
+        - list [ref=e53]:
+          - listitem [ref=e54]:
+            - generic [ref=e55]:
+              - img [ref=e56]
+              - searchbox "Search by Seller/ Location/ Category" [ref=e58]
+          - listitem [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - button "Seller" [ref=e62] [cursor=pointer]:
+                  - text: Seller
+                  - img [ref=e63] [cursor=pointer]
+                - menu [ref=e66]:
+                  - group [ref=e67]:
+                    - generic [ref=e68]:
+                      - img [ref=e69]
+                      - searchbox "Search for Seller" [ref=e71]
+                    - menuitemcheckbox "CNHI Capital (New Holland)" [ref=e72]:
+                      - generic [ref=e73]:
+                        - checkbox "CNHI Capital (New Holland)" [ref=e74]
+                        - generic [ref=e75]: CNHI Capital (New Holland)
+                    - menuitemcheckbox "L&T Finance" [ref=e76]:
+                      - generic [ref=e77]:
+                        - checkbox "L&T Finance" [ref=e78]
+                        - generic [ref=e79]: L&T Finance
+              - generic [ref=e80]:
+                - button "Location" [ref=e81] [cursor=pointer]:
+                  - text: Location
+                  - img [ref=e82] [cursor=pointer]
+                - menu [ref=e85]:
+                  - group [ref=e86]:
+                    - generic [ref=e87]:
+                      - img [ref=e88]
+                      - searchbox "Search for Location" [ref=e90]
+                    - menuitemcheckbox "Tamil Nadu" [ref=e91]:
+                      - generic [ref=e92]:
+                        - checkbox "Tamil Nadu" [ref=e93]
+                        - generic [ref=e94]: Tamil Nadu
+                    - menuitemcheckbox "Jharkhand" [ref=e95]:
+                      - generic [ref=e96]:
+                        - checkbox "Jharkhand" [ref=e97]
+                        - generic [ref=e98]: Jharkhand
+        - list [ref=e99]:
+          - listitem [ref=e100]:
+            - table [ref=e102]:
+              - rowgroup [ref=e103]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e104]:
+                  - columnheader "Location" [ref=e105]
+                  - columnheader "Seller" [ref=e106]
+                  - columnheader "Category" [ref=e107]
+                  - columnheader "Auction Type" [ref=e108]
+                  - columnheader "Event Type" [ref=e109]
+                  - columnheader "No. Of Listings" [ref=e110]
+                  - columnheader "Event Start Time" [ref=e111]
+                  - columnheader "Event End Time" [ref=e112]
+              - rowgroup [ref=e113]:
+                - row "Tamil Nadu CNHI Capital (New Holland) FE Closed Repo 3 28 Aug, 12:00 am 16 Sept, 12:06 am" [ref=e114] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e115] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e116] [cursor=pointer]
+                  - cell "FE" [ref=e117] [cursor=pointer]
+                  - cell "Closed" [ref=e118] [cursor=pointer]
+                  - cell "Repo" [ref=e119] [cursor=pointer]
+                  - cell "3" [ref=e120] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e121] [cursor=pointer]
+                  - cell "16 Sept, 12:06 am" [ref=e122] [cursor=pointer]
+                - row "Tamil Nadu CNHI Capital (New Holland) 4W Open Repo 1 28 Aug, 12:00 am 17 Sept, 12:00 am" [ref=e123] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e124] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e125] [cursor=pointer]
+                  - cell "4W" [ref=e126] [cursor=pointer]
+                  - cell "Open" [ref=e127] [cursor=pointer]
+                  - cell "Repo" [ref=e128] [cursor=pointer]
+                  - cell "1" [ref=e129] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e130] [cursor=pointer]
+                  - cell "17 Sept, 12:00 am" [ref=e131] [cursor=pointer]
+                - row "Jharkhand L&T Finance 2W Open Repo 10 05 Aug, 11:00 am 06 Aug, 07:59 pm" [ref=e132] [cursor=pointer]:
+                  - cell "Jharkhand" [ref=e133] [cursor=pointer]
+                  - cell "L&T Finance" [ref=e134] [cursor=pointer]
+                  - cell "2W" [ref=e135] [cursor=pointer]
+                  - cell "Open" [ref=e136] [cursor=pointer]
+                  - cell "Repo" [ref=e137] [cursor=pointer]
+                  - cell "10" [ref=e138] [cursor=pointer]
+                  - cell "05 Aug, 11:00 am" [ref=e139] [cursor=pointer]
+                  - cell "06 Aug, 07:59 pm" [ref=e140] [cursor=pointer]
+    - generic [ref=e141]:
+      - heading "All Live Events" [level=2] [ref=e142]
+      - generic [ref=e144]:
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - generic [ref=e147]:
+              - img [ref=e148]
+              - searchbox "Search by Seller/ Location/ Category" [ref=e150]
+          - listitem [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - button "Seller" [ref=e154] [cursor=pointer]:
+                  - text: Seller
+                  - img [ref=e155] [cursor=pointer]
+                - menu [ref=e158]:
+                  - group [ref=e159]:
+                    - generic [ref=e160]:
+                      - img [ref=e161]
+                      - searchbox "Search for Seller" [ref=e163]
+                    - menuitemcheckbox "CNHI Capital (New Holland)" [ref=e164]:
+                      - generic [ref=e165]:
+                        - checkbox "CNHI Capital (New Holland)" [ref=e166]
+                        - generic [ref=e167]: CNHI Capital (New Holland)
+                    - menuitemcheckbox "L&T Finance" [ref=e168]:
+                      - generic [ref=e169]:
+                        - checkbox "L&T Finance" [ref=e170]
+                        - generic [ref=e171]: L&T Finance
+              - generic [ref=e172]:
+                - button "Location" [ref=e173] [cursor=pointer]:
+                  - text: Location
+                  - img [ref=e174] [cursor=pointer]
+                - menu [ref=e177]:
+                  - group [ref=e178]:
+                    - generic [ref=e179]:
+                      - img [ref=e180]
+                      - searchbox "Search for Location" [ref=e182]
+                    - menuitemcheckbox "Tamil Nadu" [ref=e183]:
+                      - generic [ref=e184]:
+                        - checkbox "Tamil Nadu" [ref=e185]
+                        - generic [ref=e186]: Tamil Nadu
+                    - menuitemcheckbox "Jharkhand" [ref=e187]:
+                      - generic [ref=e188]:
+                        - checkbox "Jharkhand" [ref=e189]
+                        - generic [ref=e190]: Jharkhand
+        - list [ref=e191]:
+          - listitem [ref=e192]:
+            - table [ref=e194]:
+              - rowgroup [ref=e195]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e196]:
+                  - columnheader "Location" [ref=e197]
+                  - columnheader "Seller" [ref=e198]
+                  - columnheader "Category" [ref=e199]
+                  - columnheader "Auction Type" [ref=e200]
+                  - columnheader "Event Type" [ref=e201]
+                  - columnheader "No. Of Listings" [ref=e202]
+                  - columnheader "Event Start Time" [ref=e203]
+                  - columnheader "Event End Time" [ref=e204]
+              - rowgroup [ref=e205]:
+                - row "Tamil Nadu CNHI Capital (New Holland) FE Closed Repo 3 28 Aug, 12:00 am 16 Sept, 12:06 am" [ref=e206] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e207] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e208] [cursor=pointer]
+                  - cell "FE" [ref=e209] [cursor=pointer]
+                  - cell "Closed" [ref=e210] [cursor=pointer]
+                  - cell "Repo" [ref=e211] [cursor=pointer]
+                  - cell "3" [ref=e212] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e213] [cursor=pointer]
+                  - cell "16 Sept, 12:06 am" [ref=e214] [cursor=pointer]
+                - row "Tamil Nadu CNHI Capital (New Holland) 4W Open Repo 1 28 Aug, 12:00 am 17 Sept, 12:00 am" [ref=e215] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e216] [cursor=pointer]
+                  - cell "CNHI Capital (New Holland)" [ref=e217] [cursor=pointer]
+                  - cell "4W" [ref=e218] [cursor=pointer]
+                  - cell "Open" [ref=e219] [cursor=pointer]
+                  - cell "Repo" [ref=e220] [cursor=pointer]
+                  - cell "1" [ref=e221] [cursor=pointer]
+                  - cell "28 Aug, 12:00 am" [ref=e222] [cursor=pointer]
+                  - cell "17 Sept, 12:00 am" [ref=e223] [cursor=pointer]
+                - row "Jharkhand L&T Finance 2W Open Repo 10 05 Aug, 11:00 am 06 Aug, 07:59 pm" [ref=e224] [cursor=pointer]:
+                  - cell "Jharkhand" [ref=e225] [cursor=pointer]
+                  - cell "L&T Finance" [ref=e226] [cursor=pointer]
+                  - cell "2W" [ref=e227] [cursor=pointer]
+                  - cell "Open" [ref=e228] [cursor=pointer]
+                  - cell "Repo" [ref=e229] [cursor=pointer]
+                  - cell "10" [ref=e230] [cursor=pointer]
+                  - cell "05 Aug, 11:00 am" [ref=e231] [cursor=pointer]
+                  - cell "06 Aug, 07:59 pm" [ref=e232] [cursor=pointer]
+  - dialog:
+    - generic [ref=e234]:
+      - img [ref=e237]
+      - button "Close sidebar" [ref=e241] [cursor=pointer]:
+        - generic [ref=e242] [cursor=pointer]: Close sidebar
+        - img [ref=e243] [cursor=pointer]
+  - generic [ref=e245]:
+    - paragraph [ref=e246]:
+      - generic [ref=e247]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e248]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e249] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e250] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e251] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e253]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e254] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e255]: Live Events
+```

@@ -1,0 +1,24 @@
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Placing bid on Reg No: 8822200
+Start Price: ₹1,61,000, Reserve Price: ₹5,34,890
+Current Bid: 161000, Placing New Bid: 166000
+Current Bid: 161000, Placing New Bid: 166000
+Current Bid: 161000, Placing New Bid: 166000
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...
+Current Bid: 161000, Placing New Bid: 166000
+Got error: Need higher bid, retrying...

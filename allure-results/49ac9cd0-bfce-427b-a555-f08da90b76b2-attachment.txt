@@ -1,0 +1,5 @@
+✅ Navigated to login page
+✅ Username entered
+✅ Password entered
+✅ Login button clicked
+✅ Login successful

@@ -1,0 +1,6 @@
+Navigated to login page
+Username entered:${username}
+Password entered: *********
+ Login button clicked
+Login successful
+Current Bid: 1000000, Placing New Bid: 1005000

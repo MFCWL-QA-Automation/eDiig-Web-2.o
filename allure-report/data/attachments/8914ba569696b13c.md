@@ -1,0 +1,83 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - text: Unable to process request
+    - img [ref=e5] [cursor=pointer]
+  - alert [ref=e7]
+  - dialog:
+    - generic [ref=e9]:
+      - img [ref=e12]
+      - button "Close sidebar" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17] [cursor=pointer]: Close sidebar
+        - img [ref=e18] [cursor=pointer]
+  - navigation [ref=e20]:
+    - generic [ref=e21]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e22] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e23] [cursor=pointer]
+      - link "Home" [ref=e24] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e25] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e26] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e27] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e28] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e29] [cursor=pointer]
+      - link "Download App" [ref=e31] [cursor=pointer]:
+        - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+        - img [ref=e32] [cursor=pointer]
+        - generic [ref=e37] [cursor=pointer]: Download App
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - img [ref=e44]
+            - generic [ref=e47]: Register
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - generic [ref=e59]: KYC
+          - generic [ref=e61]:
+            - img [ref=e62]
+            - generic [ref=e71]: Preferences
+          - generic [ref=e73]:
+            - img [ref=e74]
+            - generic [ref=e83]: Bank & Profile Details
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e95]: payment
+        - generic [ref=e97]:
+          - img "Register with eDiig" [ref=e98]
+          - generic [ref=e101]:
+            - heading "Register with eDiig" [level=1] [ref=e102]
+            - paragraph [ref=e103]: Complete your registration to enter India's biggest vehicle auction house!
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - textbox "Enter Name as per PAN card" [ref=e106]: personal
+                - generic: Enter Name as per PAN card
+              - generic [ref=e107]:
+                - textbox "Enter Mobile Number" [ref=e108]: "9678787865"
+                - generic: Enter Mobile Number
+              - generic [ref=e109]:
+                - textbox "Enter PAN Number" [ref=e110]: AJGPV5662A
+                - generic: Enter PAN Number
+              - generic [ref=e111]:
+                - generic [ref=e112]: Register as
+                - generic [ref=e113]:
+                  - generic [ref=e114]:
+                    - radio "Individual" [checked] [ref=e115]
+                    - generic [ref=e116]: Individual
+                  - generic [ref=e117]:
+                    - radio "Company" [ref=e118]
+                    - generic [ref=e119]: Company
+              - button "Proceed" [ref=e121] [cursor=pointer]
+      - generic [ref=e122]:
+        - generic [ref=e123]: For Registration Support & Clarification
+        - link "Contact Us" [ref=e124] [cursor=pointer]:
+          - /url: /contact-us
+```

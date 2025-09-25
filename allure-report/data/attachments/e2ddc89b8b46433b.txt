@@ -1,0 +1,8 @@
+Navigated to login page
+Username entered:${username}
+Password entered: *********
+ Login button clicked
+Login successful
+✅ First live auction opened
+⬆ Increased bid amount and retrying...
+⬆ Increased bid amount and retrying...

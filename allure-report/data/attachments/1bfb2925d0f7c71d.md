@@ -1,0 +1,287 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3] [cursor=pointer]:
+    - text: Login Success
+    - img [ref=e5] [cursor=pointer]
+  - dialog:
+    - generic [ref=e8] [cursor=pointer]:
+      - img [ref=e11] [cursor=pointer]
+      - button "Close sidebar" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16] [cursor=pointer]: Close sidebar
+        - img [ref=e17] [cursor=pointer]
+  - navigation [ref=e19] [cursor=pointer]:
+    - generic [ref=e20] [cursor=pointer]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e21] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e22] [cursor=pointer]
+      - link "Home" [ref=e23] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e24] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e25] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e26] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e27] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e28] [cursor=pointer]
+      - generic [ref=e29] [cursor=pointer]:
+        - link "Download App" [ref=e30] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+          - img [ref=e31] [cursor=pointer]
+          - generic [ref=e36] [cursor=pointer]: Download App
+        - link "Wishlist" [ref=e38] [cursor=pointer]:
+          - /url: /watchlist
+          - img [ref=e39] [cursor=pointer]
+        - generic [ref=e44] [cursor=pointer]:
+          - img [ref=e45] [cursor=pointer]
+          - button "Logout" [ref=e47] [cursor=pointer]
+  - main [ref=e48] [cursor=pointer]:
+    - generic [ref=e49] [cursor=pointer]:
+      - generic [ref=e53] [cursor=pointer]:
+        - generic [ref=e55] [cursor=pointer]: Filters
+        - group [ref=e56] [cursor=pointer]:
+          - generic "Make" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58] [cursor=pointer]: Make
+            - img [ref=e59] [cursor=pointer]
+        - group [ref=e61] [cursor=pointer]:
+          - generic "Model" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63] [cursor=pointer]: Model
+            - img [ref=e64] [cursor=pointer]
+        - group [ref=e66] [cursor=pointer]:
+          - generic "Year" [ref=e67] [cursor=pointer]:
+            - generic [ref=e68] [cursor=pointer]: Year
+            - img [ref=e69] [cursor=pointer]
+        - group [ref=e71] [cursor=pointer]:
+          - generic "Yard" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73] [cursor=pointer]: Yard
+            - img [ref=e74] [cursor=pointer]
+      - generic [ref=e76] [cursor=pointer]:
+        - generic [ref=e77] [cursor=pointer]:
+          - generic [ref=e78] [cursor=pointer]:
+            - heading "Goa - Family Credit Ltd. 2W" [level=1] [ref=e79] [cursor=pointer]:
+              - generic [ref=e80] [cursor=pointer]: Goa
+              - generic [ref=e81] [cursor=pointer]: "- Family Credit Ltd. 2W"
+            - generic [ref=e83] [cursor=pointer]: 2 LIVE
+          - generic [ref=e88] [cursor=pointer]:
+            - img [ref=e89] [cursor=pointer]
+            - searchbox "Type here to search..." [ref=e91] [cursor=pointer]
+          - list [ref=e92] [cursor=pointer]:
+            - listitem [ref=e93] [cursor=pointer]:
+              - generic [ref=e94] [cursor=pointer]:
+                - img "SWARAJ TRACTOR 742 XT PS" [ref=e96] [cursor=pointer]
+                - generic [ref=e98] [cursor=pointer]:
+                  - generic [ref=e100] [cursor=pointer]: 19 Sept, 09:00 pm
+                  - generic [ref=e101] [cursor=pointer]:
+                    - img [ref=e102] [cursor=pointer]
+                    - generic [ref=e111] [cursor=pointer]: Outbid
+              - generic [ref=e112] [cursor=pointer]:
+                - generic [ref=e113] [cursor=pointer]: SWARAJ TRACTOR 742 XT PS - 2W
+                - generic [ref=e114] [cursor=pointer]:
+                  - img [ref=e115] [cursor=pointer]
+                  - generic [ref=e117] [cursor=pointer]: Goa
+                - generic [ref=e118] [cursor=pointer]:
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: Year
+                    - generic [ref=e121] [cursor=pointer]: "2022"
+                  - generic [ref=e122] [cursor=pointer]:
+                    - generic [ref=e123] [cursor=pointer]: Reg No
+                    - generic [ref=e124] [cursor=pointer]: AP40UR0111
+                  - generic [ref=e125] [cursor=pointer]:
+                    - generic [ref=e126] [cursor=pointer]: RC
+                    - generic [ref=e127] [cursor=pointer]: "Yes"
+                  - generic [ref=e128] [cursor=pointer]:
+                    - generic [ref=e129] [cursor=pointer]: Repo Date
+                    - generic [ref=e130] [cursor=pointer]: "-"
+                  - generic [ref=e131] [cursor=pointer]:
+                    - generic [ref=e132] [cursor=pointer]: Km Driven
+                    - generic [ref=e133] [cursor=pointer]: "-"
+                  - generic [ref=e134] [cursor=pointer]:
+                    - generic [ref=e135] [cursor=pointer]: Chassis Number
+                    - generic [ref=e136] [cursor=pointer]: MA1TA2DREKJ123450
+                  - generic [ref=e137] [cursor=pointer]:
+                    - generic [ref=e138] [cursor=pointer]: Seller Name
+                    - generic [ref=e139] [cursor=pointer]: Family Credit Ltd.
+                  - generic [ref=e140] [cursor=pointer]:
+                    - generic [ref=e141] [cursor=pointer]: Yard Name
+                    - generic [ref=e142] [cursor=pointer]:
+                      - generic [ref=e143] [cursor=pointer]: dinesh hgshajkssak ftdgasijod,,,jfdskjlajdggggggggggggggg
+                      - generic [ref=e144] [cursor=pointer]:
+                        - button "info" [ref=e145] [cursor=pointer]:
+                          - img [ref=e146] [cursor=pointer]
+                        - generic [ref=e150] [cursor=pointer]: dinesh hgshajkssak ftdgasijod,,,jfdskjlajdggggggggggggggg
+                  - generic [ref=e152] [cursor=pointer]:
+                    - generic [ref=e153] [cursor=pointer]: Total Quotes
+                    - generic [ref=e154] [cursor=pointer]: "2"
+                  - generic [ref=e155] [cursor=pointer]:
+                    - generic [ref=e156] [cursor=pointer]: Remark
+                    - generic [ref=e158] [cursor=pointer]: tweuirieworhjdbfhudsildjwhyefjkdnchuilsdkj
+              - generic [ref=e159] [cursor=pointer]:
+                - generic [ref=e160] [cursor=pointer]:
+                  - button "Wishlist" [ref=e162] [cursor=pointer]:
+                    - img [ref=e163] [cursor=pointer]
+                  - link "Inspection Report" [ref=e167] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/Mjk5NDcxODg2/RkVSUE8yOTk0NzE4ODY=/ZWRpaWc=
+                    - img [ref=e168] [cursor=pointer]
+                    - generic [ref=e172] [cursor=pointer]: Inspection Report
+                - generic [ref=e173] [cursor=pointer]:
+                  - generic [ref=e174] [cursor=pointer]:
+                    - generic [ref=e175] [cursor=pointer]: Start Price
+                    - generic [ref=e176] [cursor=pointer]: ₹80,000
+                  - generic [ref=e177] [cursor=pointer]:
+                    - generic [ref=e178] [cursor=pointer]: Reserve Price
+                    - generic [ref=e179] [cursor=pointer]: ₹2,64,914
+                  - generic [ref=e180] [cursor=pointer]:
+                    - generic [ref=e181] [cursor=pointer]: Quotes Left
+                    - generic [ref=e182] [cursor=pointer]: "19"
+                  - generic [ref=e183] [cursor=pointer]:
+                    - generic [ref=e184] [cursor=pointer]: Your Latest Quote
+                    - generic [ref=e185] [cursor=pointer]: ₹83,000
+                - generic [ref=e186] [cursor=pointer]:
+                  - generic [ref=e187] [cursor=pointer]:
+                    - button "-500" [ref=e188] [cursor=pointer]:
+                      - img [ref=e189] [cursor=pointer]
+                    - searchbox "Enter your bid" [ref=e190] [cursor=pointer]: ₹83,000
+                    - button "+500" [ref=e191] [cursor=pointer]:
+                      - img [ref=e192] [cursor=pointer]
+                  - generic [ref=e194] [cursor=pointer]:
+                    - button "₹1,000" [ref=e196] [cursor=pointer]:
+                      - img [ref=e197] [cursor=pointer]
+                      - generic [ref=e199] [cursor=pointer]: ₹1,000
+                    - button "₹2,000" [ref=e200] [cursor=pointer]:
+                      - img [ref=e201] [cursor=pointer]
+                      - generic [ref=e203] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e204] [cursor=pointer]:
+                      - img [ref=e205] [cursor=pointer]
+                      - generic [ref=e207] [cursor=pointer]: ₹3,000
+                  - button "Bid Now" [ref=e208] [cursor=pointer]
+            - listitem [ref=e209] [cursor=pointer]:
+              - generic [ref=e210] [cursor=pointer]:
+                - img "MAHINDRA TRACTOR 585 BP-5" [ref=e212] [cursor=pointer]
+                - generic [ref=e214] [cursor=pointer]:
+                  - generic [ref=e216] [cursor=pointer]: 19 Sept, 09:00 pm
+                  - generic [ref=e217] [cursor=pointer]:
+                    - img [ref=e218] [cursor=pointer]
+                    - generic [ref=e224] [cursor=pointer]: Not Participated
+              - generic [ref=e225] [cursor=pointer]:
+                - generic [ref=e226] [cursor=pointer]: MAHINDRA TRACTOR 585 BP-5 - 2W
+                - generic [ref=e227] [cursor=pointer]:
+                  - img [ref=e228] [cursor=pointer]
+                  - generic [ref=e230] [cursor=pointer]: Goa
+                - generic [ref=e231] [cursor=pointer]:
+                  - generic [ref=e232] [cursor=pointer]:
+                    - generic [ref=e233] [cursor=pointer]: Year
+                    - generic [ref=e234] [cursor=pointer]: "2023"
+                  - generic [ref=e235] [cursor=pointer]:
+                    - generic [ref=e236] [cursor=pointer]: Reg No
+                    - generic [ref=e237] [cursor=pointer]: AP40UR0112
+                  - generic [ref=e238] [cursor=pointer]:
+                    - generic [ref=e239] [cursor=pointer]: RC
+                    - generic [ref=e240] [cursor=pointer]: "Yes"
+                  - generic [ref=e241] [cursor=pointer]:
+                    - generic [ref=e242] [cursor=pointer]: Repo Date
+                    - generic [ref=e243] [cursor=pointer]: "-"
+                  - generic [ref=e244] [cursor=pointer]:
+                    - generic [ref=e245] [cursor=pointer]: Km Driven
+                    - generic [ref=e246] [cursor=pointer]: "-"
+                  - generic [ref=e247] [cursor=pointer]:
+                    - generic [ref=e248] [cursor=pointer]: Chassis Number
+                    - generic [ref=e249] [cursor=pointer]: MA1TA2DREKJ123451
+                  - generic [ref=e250] [cursor=pointer]:
+                    - generic [ref=e251] [cursor=pointer]: Seller Name
+                    - generic [ref=e252] [cursor=pointer]: Family Credit Ltd.
+                  - generic [ref=e253] [cursor=pointer]:
+                    - generic [ref=e254] [cursor=pointer]: Yard Name
+                    - generic [ref=e255] [cursor=pointer]:
+                      - generic [ref=e256] [cursor=pointer]: adfqwijodgggggggggggggggggggggg,,,,ggggggggggggggggggggggggggggggggg
+                      - generic [ref=e257] [cursor=pointer]:
+                        - button "info" [ref=e258] [cursor=pointer]:
+                          - img [ref=e259] [cursor=pointer]
+                        - generic [ref=e263] [cursor=pointer]: adfqwijodgggggggggggggggggggggg,,,,ggggggggggggggggggggggggggggggggg
+                  - generic [ref=e265] [cursor=pointer]:
+                    - generic [ref=e266] [cursor=pointer]: Total Quotes
+                    - generic [ref=e267] [cursor=pointer]: "0"
+                  - generic [ref=e268] [cursor=pointer]:
+                    - generic [ref=e269] [cursor=pointer]: Remark
+                    - generic [ref=e271] [cursor=pointer]: nvdbhjefdvncdasjknbfshj
+              - generic [ref=e272] [cursor=pointer]:
+                - generic [ref=e273] [cursor=pointer]:
+                  - button "Wishlist" [ref=e275] [cursor=pointer]:
+                    - img [ref=e276] [cursor=pointer]
+                  - link "Inspection Report" [ref=e280] [cursor=pointer]:
+                    - /url: https://aiv3portal.autoinspekt.com/report/view/Mjk5NjEzMTEw/RkVSUE8yOTk2MTMxMTA=/ZWRpaWc=
+                    - img [ref=e281] [cursor=pointer]
+                    - generic [ref=e285] [cursor=pointer]: Inspection Report
+                - generic [ref=e286] [cursor=pointer]:
+                  - generic [ref=e287] [cursor=pointer]:
+                    - generic [ref=e288] [cursor=pointer]: Start Price
+                    - generic [ref=e289] [cursor=pointer]: ₹70,000
+                  - generic [ref=e290] [cursor=pointer]:
+                    - generic [ref=e291] [cursor=pointer]: Reserve Price
+                    - generic [ref=e292] [cursor=pointer]: ₹2,32,281
+                  - generic [ref=e293] [cursor=pointer]:
+                    - generic [ref=e294] [cursor=pointer]: Quotes Left
+                    - generic [ref=e295] [cursor=pointer]: "20"
+                  - generic [ref=e296] [cursor=pointer]:
+                    - generic [ref=e297] [cursor=pointer]: Your Latest Quote
+                    - generic [ref=e298] [cursor=pointer]: ₹0
+                - generic [ref=e299] [cursor=pointer]:
+                  - generic [ref=e300] [cursor=pointer]:
+                    - button "-500" [ref=e301] [cursor=pointer]:
+                      - img [ref=e302] [cursor=pointer]
+                    - searchbox "Enter your bid" [active] [ref=e303] [cursor=pointer]: ₹75,000
+                    - button "+500" [ref=e304] [cursor=pointer]:
+                      - img [ref=e305] [cursor=pointer]
+                  - generic [ref=e307] [cursor=pointer]:
+                    - generic [ref=e308] [cursor=pointer]: ₹75.00 K
+                    - button "₹1,000" [ref=e309] [cursor=pointer]:
+                      - img [ref=e310] [cursor=pointer]
+                      - generic [ref=e312] [cursor=pointer]: ₹1,000
+                    - button "₹2,000" [ref=e313] [cursor=pointer]:
+                      - img [ref=e314] [cursor=pointer]
+                      - generic [ref=e316] [cursor=pointer]: ₹2,000
+                    - button "₹3,000" [ref=e317] [cursor=pointer]:
+                      - img [ref=e318] [cursor=pointer]
+                      - generic [ref=e320] [cursor=pointer]: ₹3,000
+                  - button "Bid Now" [ref=e321] [cursor=pointer]
+        - generic [ref=e322] [cursor=pointer]:
+          - generic [ref=e323] [cursor=pointer]:
+            - text: Showing
+            - generic [ref=e324] [cursor=pointer]: "1"
+            - text: to
+            - generic [ref=e325] [cursor=pointer]: "2"
+            - text: of
+            - generic [ref=e326] [cursor=pointer]: "2"
+            - text: Vehicles
+          - generic [ref=e327] [cursor=pointer]:
+            - button "Previous" [disabled] [ref=e328] [cursor=pointer]
+            - button "1" [ref=e330] [cursor=pointer]
+            - button "Next" [disabled] [ref=e331] [cursor=pointer]
+  - dialog:
+    - generic [ref=e333] [cursor=pointer]:
+      - img [ref=e336] [cursor=pointer]
+      - button "Close sidebar" [ref=e340] [cursor=pointer]:
+        - generic [ref=e341] [cursor=pointer]: Close sidebar
+        - img [ref=e342] [cursor=pointer]
+  - generic [ref=e344] [cursor=pointer]:
+    - paragraph [ref=e345] [cursor=pointer]:
+      - generic [ref=e346] [cursor=pointer]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e347] [cursor=pointer]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e348] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e349] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e350] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e352] [cursor=pointer]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e353] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e354] [cursor=pointer]: eDiig Auctions - India's leading Automobile Exchange Platform
+```

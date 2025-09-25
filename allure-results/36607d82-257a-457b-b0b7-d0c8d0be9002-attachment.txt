@@ -1,0 +1,10 @@
+Login failed: expect(locator).toBeVisible() failed
+
+Locator:  getByText('Login Success')
+Expected: visible
+Received: <element(s) not found>
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText('Login Success')
+

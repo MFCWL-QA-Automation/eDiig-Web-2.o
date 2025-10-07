@@ -1,0 +1,261 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "Skip to content" [ref=e5] [cursor=pointer]:
+      - /url: "#main-content"
+    - generic [ref=e6]:
+      - navigation [ref=e7]:
+        - link "Ediig 2.0 Workplace" [ref=e8] [cursor=pointer]:
+          - /url: /admin/
+          - generic [ref=e10] [cursor=pointer]:
+            - img [ref=e12] [cursor=pointer]
+            - generic [ref=e13] [cursor=pointer]:
+              - generic [ref=e14] [cursor=pointer]:
+                - text: Ediig 2.0
+                - generic [ref=e15] [cursor=pointer]: Workplace
+              - paragraph [ref=e16] [cursor=pointer]: Workplace
+        - separator [ref=e17]
+        - list [ref=e19]:
+          - listitem [ref=e20]:
+            - link "Content Manager" [ref=e21] [cursor=pointer]:
+              - /url: /admin/content-manager
+              - generic [ref=e23] [cursor=pointer]:
+                - img [ref=e25] [cursor=pointer]
+                - generic [ref=e27] [cursor=pointer]: Content Manager
+          - listitem [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e31]: Plugins
+              - list [ref=e32]:
+                - listitem [ref=e33]:
+                  - link "Content-Type Builder" [ref=e35] [cursor=pointer]:
+                    - /url: /admin/plugins/content-type-builder
+                    - generic [ref=e37] [cursor=pointer]:
+                      - img [ref=e39] [cursor=pointer]
+                      - generic [ref=e41] [cursor=pointer]: Content-Type Builder
+                - listitem [ref=e42]:
+                  - link "Media Library" [ref=e44] [cursor=pointer]:
+                    - /url: /admin/plugins/upload
+                    - generic [ref=e46] [cursor=pointer]:
+                      - img [ref=e48] [cursor=pointer]
+                      - generic [ref=e50] [cursor=pointer]: Media Library
+                - listitem [ref=e51]:
+                  - link "Releases" [ref=e53] [cursor=pointer]:
+                    - /url: /admin/plugins/purchase-content-releases
+                    - generic [ref=e54] [cursor=pointer]:
+                      - generic [ref=e55] [cursor=pointer]:
+                        - img [ref=e57] [cursor=pointer]
+                        - generic [ref=e59] [cursor=pointer]: Releases
+                      - img [ref=e62] [cursor=pointer]
+                - listitem [ref=e64]:
+                  - link "Upload Auction List" [ref=e66] [cursor=pointer]:
+                    - /url: /admin/plugins/bulk-insert-listing
+                    - generic [ref=e68] [cursor=pointer]:
+                      - generic [ref=e69] [cursor=pointer]: 📁
+                      - generic [ref=e70] [cursor=pointer]: Upload Auction List
+                - listitem [ref=e71]:
+                  - link "elasticsearch" [ref=e73] [cursor=pointer]:
+                    - /url: /admin/plugins/elasticsearch
+                    - generic [ref=e75] [cursor=pointer]:
+                      - img [ref=e77] [cursor=pointer]
+                      - generic [ref=e79] [cursor=pointer]: elasticsearch
+                - listitem [ref=e80]:
+                  - link "widget-api" [ref=e82] [cursor=pointer]:
+                    - /url: /admin/plugins/widget-api
+                    - generic [ref=e84] [cursor=pointer]:
+                      - img [ref=e86] [cursor=pointer]
+                      - generic [ref=e91] [cursor=pointer]: widget-api
+                - listitem [ref=e92]:
+                  - link "Bulk Update Event Timeline" [ref=e94] [cursor=pointer]:
+                    - /url: /admin/plugins/update-event-timeline
+                    - generic [ref=e96] [cursor=pointer]:
+                      - generic [ref=e97] [cursor=pointer]: 🕐
+                      - generic [ref=e98] [cursor=pointer]: Bulk Update Event Timeline
+                - listitem [ref=e99]:
+                  - link "Download Auction List" [ref=e101] [cursor=pointer]:
+                    - /url: /admin/plugins/export-data
+                    - generic [ref=e103] [cursor=pointer]:
+                      - img [ref=e105] [cursor=pointer]
+                      - generic [ref=e107] [cursor=pointer]: Download Auction List
+                - listitem [ref=e108]:
+                  - link "Block/Un Block Buyers" [ref=e110] [cursor=pointer]:
+                    - /url: /admin/plugins/block-buyers
+                    - generic [ref=e112] [cursor=pointer]:
+                      - generic [ref=e113] [cursor=pointer]: ❌
+                      - generic [ref=e114] [cursor=pointer]: Block/Un Block Buyers
+                - listitem [ref=e115]:
+                  - link "Bulk Image Upload" [ref=e117] [cursor=pointer]:
+                    - /url: /admin/plugins/bulk-image-upload
+                    - generic [ref=e119] [cursor=pointer]:
+                      - img [ref=e121] [cursor=pointer]
+                      - generic [ref=e123] [cursor=pointer]: Bulk Image Upload
+                - listitem [ref=e124]:
+                  - link "Admin Operation" [ref=e126] [cursor=pointer]:
+                    - /url: /admin/plugins/admin-operation
+                    - generic [ref=e128] [cursor=pointer]:
+                      - generic [ref=e129] [cursor=pointer]: ⚙️
+                      - generic [ref=e130] [cursor=pointer]: Admin Operation
+                - listitem [ref=e131]:
+                  - link "Account Operation" [ref=e133] [cursor=pointer]:
+                    - /url: /admin/plugins/account-operation
+                    - generic [ref=e135] [cursor=pointer]:
+                      - generic [ref=e136] [cursor=pointer]: 💵
+                      - generic [ref=e137] [cursor=pointer]: Account Operation
+                - listitem [ref=e138]:
+                  - link "Buyer Passbook" [ref=e140] [cursor=pointer]:
+                    - /url: /admin/plugins/buyer-passbook
+                    - generic [ref=e142] [cursor=pointer]:
+                      - generic [ref=e143] [cursor=pointer]: 🧾
+                      - generic [ref=e144] [cursor=pointer]: Buyer Passbook
+                - listitem [ref=e145]:
+                  - link "Buyer Limit" [ref=e147] [cursor=pointer]:
+                    - /url: /admin/plugins/buyer-limit
+                    - generic [ref=e149] [cursor=pointer]:
+                      - generic [ref=e150] [cursor=pointer]: 🧾
+                      - generic [ref=e151] [cursor=pointer]: Buyer Limit
+                - listitem [ref=e152]:
+                  - link "Sync Listing" [ref=e154] [cursor=pointer]:
+                    - /url: /admin/plugins/sync-listing
+                    - generic [ref=e156] [cursor=pointer]:
+                      - img [ref=e158] [cursor=pointer]
+                      - generic [ref=e160] [cursor=pointer]: Sync Listing
+                - listitem [ref=e161]:
+                  - link "Push Notification" [ref=e163] [cursor=pointer]:
+                    - /url: /admin/plugins/push-notification
+                    - generic [ref=e165] [cursor=pointer]:
+                      - generic [ref=e166] [cursor=pointer]: 🪧
+                      - generic [ref=e167] [cursor=pointer]: Push Notification
+                - listitem [ref=e168]:
+                  - link "Sync Images" [ref=e170] [cursor=pointer]:
+                    - /url: /admin/plugins/sync-images
+                    - generic [ref=e172] [cursor=pointer]:
+                      - generic [ref=e173] [cursor=pointer]: 📥
+                      - generic [ref=e174] [cursor=pointer]: Sync Images
+          - listitem [ref=e175]:
+            - generic [ref=e176]:
+              - generic [ref=e178]: General
+              - list [ref=e179]:
+                - listitem [ref=e180]:
+                  - link "Plugins" [ref=e181] [cursor=pointer]:
+                    - /url: /admin/list-plugins
+                    - generic [ref=e183] [cursor=pointer]:
+                      - img [ref=e185] [cursor=pointer]
+                      - generic [ref=e187] [cursor=pointer]: Plugins
+                - listitem [ref=e188]:
+                  - link "Marketplace" [ref=e189] [cursor=pointer]:
+                    - /url: /admin/marketplace
+                    - generic [ref=e191] [cursor=pointer]:
+                      - img [ref=e193] [cursor=pointer]
+                      - generic [ref=e195] [cursor=pointer]: Marketplace
+                - listitem [ref=e196]:
+                  - link "Settings 1" [ref=e197] [cursor=pointer]:
+                    - /url: /admin/settings
+                    - generic [ref=e198] [cursor=pointer]:
+                      - generic [ref=e199] [cursor=pointer]:
+                        - img [ref=e201] [cursor=pointer]
+                        - generic [ref=e203] [cursor=pointer]: Settings
+                      - generic [ref=e204] [cursor=pointer]:
+                        - generic: "1"
+        - generic [ref=e205]:
+          - button "SK Santha Kumar" [ref=e207] [cursor=pointer]:
+            - generic [ref=e208] [cursor=pointer]:
+              - generic: SK
+            - generic [ref=e210] [cursor=pointer]: Santha Kumar
+          - button "Collapse the navbar" [ref=e211] [cursor=pointer]:
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e214] [cursor=pointer]: Collapse the navbar
+      - generic [ref=e215]:
+        - generic [ref=e217]:
+          - heading "Bulk Insert Auction List" [level=1] [ref=e218]
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - generic [ref=e222]: "Type:"
+                - generic [ref=e225]:
+                  - combobox "Select an option" [ref=e227]: Seller
+                  - generic [ref=e228]:
+                    - button "clear" [ref=e229] [cursor=pointer]:
+                      - img [ref=e230] [cursor=pointer]
+                    - button [ref=e232] [cursor=pointer]:
+                      - img [ref=e233] [cursor=pointer]
+              - generic [ref=e235]:
+                - generic [ref=e236]: "Seller:"
+                - generic [ref=e239]:
+                  - combobox "Select an option" [ref=e241]: Adani Capital Private Limited
+                  - generic [ref=e242]:
+                    - button "clear" [ref=e243] [cursor=pointer]:
+                      - img [ref=e244] [cursor=pointer]
+                    - button [ref=e246] [cursor=pointer]:
+                      - img [ref=e247] [cursor=pointer]
+              - generic [ref=e249]:
+                - generic [ref=e250]: "Action:"
+                - generic [ref=e253]:
+                  - combobox "Select an option" [ref=e255]: Bulk Create
+                  - generic [ref=e256]:
+                    - button "clear" [ref=e257] [cursor=pointer]:
+                      - img [ref=e258] [cursor=pointer]
+                    - button [ref=e260] [cursor=pointer]:
+                      - img [ref=e261] [cursor=pointer]
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - generic [ref=e265]: "Interval: (in mins)"
+                - generic [ref=e268]:
+                  - combobox "Select an option" [ref=e270]
+                  - button [ref=e272] [cursor=pointer]:
+                    - img [ref=e273] [cursor=pointer]
+              - generic [ref=e278]:
+                - generic [ref=e279]: Listing GroupBy
+                - spinbutton "Listing GroupBy" [ref=e281]: "1"
+            - generic [ref=e282]:
+              - generic [ref=e283]: "Upload File:"
+              - button "Choose File" [ref=e285]
+              - generic [ref=e286]:
+                - generic [ref=e287]: "Sample File:"
+                - link "Click Here" [ref=e288] [cursor=pointer]:
+                  - /url: https://qa-images.ediig.com/strapi/media/bulk_create_7adfc2dd23.xls
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - generic [ref=e291]: "Start Date:"
+                - group [ref=e292]:
+                  - generic [ref=e294]:
+                    - generic [ref=e295]: Choose date
+                    - generic [ref=e296]:
+                      - img [ref=e297]
+                      - combobox "Choose date" [active] [ref=e299]: 10/07/2025
+                    - generic [ref=e300]: Choose time
+                    - generic [ref=e301]:
+                      - generic [ref=e302]:
+                        - img [ref=e304]
+                        - combobox "Choose time" [ref=e306]: 00:00
+                      - button [ref=e308] [cursor=pointer]:
+                        - img [ref=e309] [cursor=pointer]
+              - generic [ref=e311]:
+                - generic [ref=e312]: "End Date:"
+                - group [ref=e313]:
+                  - generic [ref=e315]:
+                    - generic [ref=e316]: Choose date
+                    - generic [ref=e317]:
+                      - img [ref=e318]
+                      - combobox "Choose date" [ref=e320]
+                    - generic [ref=e321]: Choose time
+                    - generic [ref=e322]:
+                      - generic [ref=e323]:
+                        - img [ref=e325]
+                        - combobox "Choose time" [ref=e327]
+                      - button [ref=e329] [cursor=pointer]:
+                        - img [ref=e330] [cursor=pointer]
+            - generic [ref=e335]:
+              - generic [ref=e336]: "Email:"
+              - textbox "Email:" [ref=e338]: kandasamy.gowtham@carandbike.com
+            - generic [ref=e341]: Submit
+        - complementary [ref=e342]:
+          - button "Help button" [ref=e343] [cursor=pointer]:
+            - img [ref=e345] [cursor=pointer]
+  - generic [ref=e347]:
+    - log
+    - status
+    - alert
+```

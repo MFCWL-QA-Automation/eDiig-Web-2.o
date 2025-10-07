@@ -1,9 +1,0 @@
-Navigated to login page
-Username entered:${username}
-Password entered: *********
- Login button clicked
-Login successful
-Current Bid: 43000, Placing New Bid: 48000
-Current Bid: 48000, Placing New Bid: 53000
-Bid placed successfully!
-Tile is not in Winning status

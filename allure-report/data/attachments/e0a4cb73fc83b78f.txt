@@ -1,5 +1,0 @@
-Navigated to login page
-Username entered:${username}
-Password entered: *********
- Login button clicked
-Login successful

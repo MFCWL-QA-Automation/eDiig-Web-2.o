@@ -1,8 +1,0 @@
-Navigated to login page
-Username entered: autotest1
-Password entered: ********
- Login button clicked
-Login successful
-Placing bid on Reg No: TN25BY7689
-Start Price: ₹22,000, Reserve Price: ₹71,092
-Current Bid: 22000, Placing New Bid: 27000

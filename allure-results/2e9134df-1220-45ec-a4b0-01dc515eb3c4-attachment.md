@@ -1,0 +1,434 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - dialog "cookieconsent" [ref=e2]:
+    - generic [ref=e4]: This website uses cookies to ensure you get the best experience on our website.
+    - generic [ref=e5]:
+      - button "Accept All" [ref=e6] [cursor=pointer]
+      - button "Reject Optional" [ref=e7] [cursor=pointer]
+      - button "Cookie Preferences" [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+        - generic [ref=e20] [cursor=pointer]: Cookie Preferences
+  - img [ref=e24] [cursor=pointer]
+  - dialog:
+    - generic [ref=e27]:
+      - img [ref=e30]
+      - button "Close sidebar" [ref=e34] [cursor=pointer]:
+        - generic [ref=e35] [cursor=pointer]: Close sidebar
+        - img [ref=e36] [cursor=pointer]
+  - navigation [ref=e38]:
+    - generic [ref=e39]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e40] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e41] [cursor=pointer]
+      - link "Home" [ref=e42] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e43] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e44] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e45] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e46] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e47] [cursor=pointer]
+      - generic [ref=e48]:
+        - link "Download App" [ref=e49] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+          - img [ref=e50] [cursor=pointer]
+          - generic [ref=e55] [cursor=pointer]: Download App
+        - link "Wishlist" [ref=e57] [cursor=pointer]:
+          - /url: /watchlist
+          - img [ref=e58] [cursor=pointer]
+        - generic [ref=e63]:
+          - img [ref=e64]
+          - button "Logout" [ref=e66] [cursor=pointer]
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - generic [ref=e70]:
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - generic [ref=e75]:
+              - link "Home Desktop":
+                - /url: /events
+          - listitem [ref=e76]:
+            - generic [ref=e77]:
+              - link "Home Desktop":
+                - /url: /events
+        - generic [ref=e83]:
+          - img [ref=e84]
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - heading "Hi autotest1" [level=2] [ref=e101]
+              - paragraph [ref=e102]: Welcome to Ediig
+            - generic [ref=e103]:
+              - paragraph [ref=e104]:
+                - generic [ref=e105]: "Customer ID:"
+                - generic [ref=e106]: "9876890870"
+              - list [ref=e107]:
+                - listitem [ref=e108]:
+                  - link "Individual Registration" [ref=e109] [cursor=pointer]:
+                    - /url: /my-profile
+                    - generic [ref=e110] [cursor=pointer]: Individual Registration
+                    - img [ref=e111] [cursor=pointer]
+                - listitem [ref=e113]:
+                  - link "Live Auctions" [ref=e114] [cursor=pointer]:
+                    - /url: /events
+                    - generic [ref=e115] [cursor=pointer]: Live Auctions
+                    - img [ref=e116] [cursor=pointer]
+                - listitem [ref=e118]:
+                  - link "Pending Payments" [ref=e119] [cursor=pointer]:
+                    - /url: /my-pending-payment
+                    - generic [ref=e120] [cursor=pointer]: Pending Payments
+                    - img [ref=e121] [cursor=pointer]
+                - listitem [ref=e123]:
+                  - 'link "Subscriptions Renew EMD: ₹1,00,000" [ref=e124] [cursor=pointer]':
+                    - /url: /my-subscriptions
+                    - generic [ref=e125] [cursor=pointer]: Subscriptions
+                    - generic [ref=e126] [cursor=pointer]: "Renew EMD:"
+                    - generic [ref=e127] [cursor=pointer]: ₹1,00,000
+                    - img [ref=e128] [cursor=pointer]
+                - listitem [ref=e130]:
+                  - link "My Preferences" [ref=e131] [cursor=pointer]:
+                    - /url: /my-preferences
+                    - generic [ref=e132] [cursor=pointer]: My Preferences
+                    - img [ref=e133] [cursor=pointer]
+      - generic [ref=e135]:
+        - heading "Value Propositions" [level=2] [ref=e136]
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - img "Expert Negotiations" [ref=e139]
+            - generic [ref=e140]:
+              - generic [ref=e141]: Expert Negotiations
+              - generic [ref=e142]: Our experienced team has a proven track record of facilitating transactions for happy buyers and sellers
+          - generic [ref=e143]:
+            - img "#1 in auction business" [ref=e144]
+            - generic [ref=e145]:
+              - generic [ref=e146]: "#1 in auction business"
+              - generic [ref=e147]: India’s first and leading vehicle auction platform since 2011
+          - generic [ref=e148]:
+            - img "Pan-India Reach" [ref=e149]
+            - generic [ref=e150]:
+              - generic [ref=e151]: Pan-India Reach
+              - generic [ref=e152]: Offline and online auctions conducted across the country
+          - generic [ref=e153]:
+            - img "Expert Easy Listing" [ref=e154]
+            - generic [ref=e155]:
+              - generic [ref=e156]: Expert Easy Listing
+              - generic [ref=e157]: A fast and easy listing process that can be customized and automated
+      - generic [ref=e158]:
+        - heading "eDiig Exclusive Auction is here!!!" [level=2] [ref=e159]
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]: 20,000+ strong buyer base
+            - img "20,000+ strong buyer base" [ref=e163]
+          - generic [ref=e164]:
+            - generic [ref=e165]: "Ranked #1 in the Auctions business"
+            - 'img "Ranked #1 in the Auctions business" [ref=e166]'
+          - generic [ref=e167]:
+            - generic [ref=e168]: 10,00,000+ vehicles Sold
+            - img "10,00,000+ vehicles Sold" [ref=e169]
+          - generic [ref=e170]:
+            - generic [ref=e171]: 1st Auto auction portal launched in India
+            - img "1st Auto auction portal launched in India" [ref=e172]
+      - generic [ref=e173]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e174]
+        - generic [ref=e175]:
+          - group [ref=e176]:
+            - generic "What is a eDiig Online Marketplace?" [ref=e177] [cursor=pointer]:
+              - text: What is a eDiig Online Marketplace?
+              - img [ref=e178] [cursor=pointer]
+            - generic [ref=e180]: These are online vehicle sale facilitations conducted on the website of eDiig, where participation is only for registered sellers and pre-approved buyers. Our registered seller base consists of reputed banks and NBFCs who list their repossessed vehicles for sale in eDiig website and app. You can be a part of this pre-approved buyer group if you meet the eligibility criteria and receive confirmation of your registration from eDiig Team.
+          - group [ref=e181]:
+            - generic "Who is eligible to participate?" [ref=e182] [cursor=pointer]:
+              - text: Who is eligible to participate?
+              - img [ref=e183] [cursor=pointer]
+          - group [ref=e185]:
+            - generic "They include:" [ref=e186] [cursor=pointer]:
+              - text: "They include:"
+              - img [ref=e187] [cursor=pointer]
+      - generic [ref=e189]:
+        - heading "Live Events Data" [level=2] [ref=e190]
+        - list [ref=e193]:
+          - listitem [ref=e194]:
+            - table [ref=e196]:
+              - rowgroup [ref=e197]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e198]:
+                  - columnheader "Location" [ref=e199]
+                  - columnheader "Seller" [ref=e200]
+                  - columnheader "Category" [ref=e201]
+                  - columnheader "Auction Type" [ref=e202]
+                  - columnheader "Event Type" [ref=e203]
+                  - columnheader "No. Of Listings" [ref=e204]
+                  - columnheader "Event Start Time" [ref=e205]
+                  - columnheader "Event End Time" [ref=e206]
+              - rowgroup [ref=e207]:
+                - row "Kerala AEON Credit 2W Open - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e208] [cursor=pointer]:
+                  - cell "Kerala" [ref=e209] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e210] [cursor=pointer]
+                  - cell "2W" [ref=e211] [cursor=pointer]
+                  - cell "Open" [ref=e212] [cursor=pointer]
+                  - cell "-" [ref=e213] [cursor=pointer]
+                  - cell "1" [ref=e214] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e215] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e216] [cursor=pointer]
+                - row "Kerala AEON Credit 2W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e217] [cursor=pointer]:
+                  - cell "Kerala" [ref=e218] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e219] [cursor=pointer]
+                  - cell "2W" [ref=e220] [cursor=pointer]
+                  - cell "Closed" [ref=e221] [cursor=pointer]
+                  - cell "-" [ref=e222] [cursor=pointer]
+                  - cell "1" [ref=e223] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e224] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e225] [cursor=pointer]
+                - row "Kerala AEON Credit 4W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e226] [cursor=pointer]:
+                  - cell "Kerala" [ref=e227] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e228] [cursor=pointer]
+                  - cell "4W" [ref=e229] [cursor=pointer]
+                  - cell "Closed" [ref=e230] [cursor=pointer]
+                  - cell "-" [ref=e231] [cursor=pointer]
+                  - cell "1" [ref=e232] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e233] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e234] [cursor=pointer]
+                - row "Kerala AEON Credit 3W Closed - 2 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e235] [cursor=pointer]:
+                  - cell "Kerala" [ref=e236] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e237] [cursor=pointer]
+                  - cell "3W" [ref=e238] [cursor=pointer]
+                  - cell "Closed" [ref=e239] [cursor=pointer]
+                  - cell "-" [ref=e240] [cursor=pointer]
+                  - cell "2" [ref=e241] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e242] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e243] [cursor=pointer]
+            - link "View All Live Events" [ref=e244] [cursor=pointer]:
+              - /url: /events
+              - button "View All Live Events" [ref=e245] [cursor=pointer]:
+                - generic [ref=e246] [cursor=pointer]: View All Live Events
+                - img [ref=e247] [cursor=pointer]
+      - generic [ref=e249]:
+        - heading "Banks & Insurance" [level=2] [ref=e250]
+        - generic [ref=e252]:
+          - list [ref=e253]:
+            - listitem [ref=e254] [cursor=pointer]: Bank Event
+            - listitem [ref=e255] [cursor=pointer]: Insurance Event
+          - list [ref=e256]:
+            - listitem [ref=e257]:
+              - table [ref=e259]:
+                - rowgroup [ref=e260]:
+                  - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e261]:
+                    - columnheader "Location" [ref=e262]
+                    - columnheader "Seller" [ref=e263]
+                    - columnheader "Category" [ref=e264]
+                    - columnheader "Auction Type" [ref=e265]
+                    - columnheader "Event Type" [ref=e266]
+                    - columnheader "No. Of Listings" [ref=e267]
+                    - columnheader "Event Start Time" [ref=e268]
+                    - columnheader "Event End Time" [ref=e269]
+                - rowgroup [ref=e270]:
+                  - row "Kerala AEON Credit 4W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e271] [cursor=pointer]:
+                    - cell "Kerala" [ref=e272] [cursor=pointer]
+                    - cell "AEON Credit" [ref=e273] [cursor=pointer]
+                    - cell "4W" [ref=e274] [cursor=pointer]
+                    - cell "Closed" [ref=e275] [cursor=pointer]
+                    - cell "-" [ref=e276] [cursor=pointer]
+                    - cell "1" [ref=e277] [cursor=pointer]
+                    - cell "7 Oct, 01:00 pm" [ref=e278] [cursor=pointer]
+                    - cell "08 Oct, 01:00 pm" [ref=e279] [cursor=pointer]
+      - generic [ref=e280]:
+        - heading "Events Ending in 1 Month" [level=2] [ref=e281]
+        - list [ref=e284]:
+          - listitem [ref=e285]:
+            - table [ref=e287]:
+              - rowgroup [ref=e288]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e289]:
+                  - columnheader "Location" [ref=e290]
+                  - columnheader "Seller" [ref=e291]
+                  - columnheader "Category" [ref=e292]
+                  - columnheader "Auction Type" [ref=e293]
+                  - columnheader "Event Type" [ref=e294]
+                  - columnheader "No. Of Listings" [ref=e295]
+                  - columnheader "Event Start Time" [ref=e296]
+                  - columnheader "Event End Time" [ref=e297]
+              - rowgroup [ref=e298]:
+                - row "Kerala AEON Credit 2W Open - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e299] [cursor=pointer]:
+                  - cell "Kerala" [ref=e300] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e301] [cursor=pointer]
+                  - cell "2W" [ref=e302] [cursor=pointer]
+                  - cell "Open" [ref=e303] [cursor=pointer]
+                  - cell "-" [ref=e304] [cursor=pointer]
+                  - cell "1" [ref=e305] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e306] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e307] [cursor=pointer]
+                - row "Kerala AEON Credit 2W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e308] [cursor=pointer]:
+                  - cell "Kerala" [ref=e309] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e310] [cursor=pointer]
+                  - cell "2W" [ref=e311] [cursor=pointer]
+                  - cell "Closed" [ref=e312] [cursor=pointer]
+                  - cell "-" [ref=e313] [cursor=pointer]
+                  - cell "1" [ref=e314] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e315] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e316] [cursor=pointer]
+                - row "Kerala AEON Credit 4W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e317] [cursor=pointer]:
+                  - cell "Kerala" [ref=e318] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e319] [cursor=pointer]
+                  - cell "4W" [ref=e320] [cursor=pointer]
+                  - cell "Closed" [ref=e321] [cursor=pointer]
+                  - cell "-" [ref=e322] [cursor=pointer]
+                  - cell "1" [ref=e323] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e324] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e325] [cursor=pointer]
+                - row "Kerala AEON Credit 3W Closed - 2 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e326] [cursor=pointer]:
+                  - cell "Kerala" [ref=e327] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e328] [cursor=pointer]
+                  - cell "3W" [ref=e329] [cursor=pointer]
+                  - cell "Closed" [ref=e330] [cursor=pointer]
+                  - cell "-" [ref=e331] [cursor=pointer]
+                  - cell "2" [ref=e332] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e333] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e334] [cursor=pointer]
+            - link "View All" [ref=e335] [cursor=pointer]:
+              - /url: /events
+              - button "View All" [ref=e336] [cursor=pointer]:
+                - generic [ref=e337] [cursor=pointer]: View All
+                - img [ref=e338] [cursor=pointer]
+      - generic [ref=e340]:
+        - heading "Events Ending in 3 Days" [level=2] [ref=e341]
+        - list [ref=e344]:
+          - listitem [ref=e345]:
+            - table [ref=e347]:
+              - rowgroup [ref=e348]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e349]:
+                  - columnheader "Location" [ref=e350]
+                  - columnheader "Seller" [ref=e351]
+                  - columnheader "Category" [ref=e352]
+                  - columnheader "Auction Type" [ref=e353]
+                  - columnheader "Event Type" [ref=e354]
+                  - columnheader "No. Of Listings" [ref=e355]
+                  - columnheader "Event Start Time" [ref=e356]
+                  - columnheader "Event End Time" [ref=e357]
+              - rowgroup [ref=e358]:
+                - row "Kerala AEON Credit 2W Open - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e359] [cursor=pointer]:
+                  - cell "Kerala" [ref=e360] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e361] [cursor=pointer]
+                  - cell "2W" [ref=e362] [cursor=pointer]
+                  - cell "Open" [ref=e363] [cursor=pointer]
+                  - cell "-" [ref=e364] [cursor=pointer]
+                  - cell "1" [ref=e365] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e366] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e367] [cursor=pointer]
+                - row "Kerala AEON Credit 2W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e368] [cursor=pointer]:
+                  - cell "Kerala" [ref=e369] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e370] [cursor=pointer]
+                  - cell "2W" [ref=e371] [cursor=pointer]
+                  - cell "Closed" [ref=e372] [cursor=pointer]
+                  - cell "-" [ref=e373] [cursor=pointer]
+                  - cell "1" [ref=e374] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e375] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e376] [cursor=pointer]
+                - row "Kerala AEON Credit 4W Closed - 1 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e377] [cursor=pointer]:
+                  - cell "Kerala" [ref=e378] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e379] [cursor=pointer]
+                  - cell "4W" [ref=e380] [cursor=pointer]
+                  - cell "Closed" [ref=e381] [cursor=pointer]
+                  - cell "-" [ref=e382] [cursor=pointer]
+                  - cell "1" [ref=e383] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e384] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e385] [cursor=pointer]
+                - row "Kerala AEON Credit 3W Closed - 2 7 Oct, 01:00 pm 08 Oct, 01:00 pm" [ref=e386] [cursor=pointer]:
+                  - cell "Kerala" [ref=e387] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e388] [cursor=pointer]
+                  - cell "3W" [ref=e389] [cursor=pointer]
+                  - cell "Closed" [ref=e390] [cursor=pointer]
+                  - cell "-" [ref=e391] [cursor=pointer]
+                  - cell "2" [ref=e392] [cursor=pointer]
+                  - cell "7 Oct, 01:00 pm" [ref=e393] [cursor=pointer]
+                  - cell "08 Oct, 01:00 pm" [ref=e394] [cursor=pointer]
+            - link "View All" [ref=e395] [cursor=pointer]:
+              - /url: /events-listing
+              - button "View All" [ref=e396] [cursor=pointer]:
+                - generic [ref=e397] [cursor=pointer]: View All
+                - img [ref=e398] [cursor=pointer]
+      - generic [ref=e400]:
+        - heading "Top Clients" [level=2] [ref=e401]
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - img "image_0" [ref=e404]
+            - img "image_1" [ref=e405]
+            - img "image_2" [ref=e406]
+            - img "image_3" [ref=e407]
+            - img "image_4" [ref=e408]
+          - button "View More" [ref=e409] [cursor=pointer]:
+            - text: View More
+            - img [ref=e410] [cursor=pointer]
+      - generic [ref=e412]:
+        - heading "About eDiig" [level=2] [ref=e413]
+        - generic [ref=e416]:
+          - paragraph [ref=e417]:
+            - strong [ref=e418]: www.ediig.com - India's leading automobile exchange platform, is a division of Mahindra First Choice Wheels Ltd.
+          - paragraph [ref=e419]: The marketplace of eDiig lays equal stress on quality, credibility & accuracy, eDiig has the country's best auction experts and specialists working for it.
+          - paragraph [ref=e420]:
+            - strong [ref=e421]: eDiig does the following types of Auction Services
+          - listitem [ref=e422]: Online sales events
+          - listitem [ref=e423]: Offline Sale Events
+          - listitem [ref=e424]: Bulk Deals / Negotiated Sales
+          - listitem [ref=e425]: Valuations
+          - listitem [ref=e426]: pecialty Sale Events / Premium Sale Events
+          - listitem [ref=e427]: Inventory Finance & Insurance
+      - generic [ref=e428]:
+        - heading "Top Seller Today" [level=2] [ref=e429]
+        - generic [ref=e430]:
+          - list [ref=e431]:
+            - listitem [ref=e432]:
+              - generic [ref=e433]:
+                - img "HDB Finance" [ref=e435]
+                - generic [ref=e436]:
+                  - generic [ref=e437]: HDB Finance
+                  - generic [ref=e438]: Listings
+            - listitem [ref=e439]:
+              - generic [ref=e440]:
+                - img "HDB Finance" [ref=e442]
+                - generic [ref=e443]:
+                  - generic [ref=e444]: HDB Finance
+                  - generic [ref=e445]: Listings
+            - listitem [ref=e446]:
+              - generic [ref=e447]:
+                - img "HDB Finance" [ref=e449]
+                - generic [ref=e450]:
+                  - generic [ref=e451]: HDB Finance
+                  - generic [ref=e452]: Listings
+            - listitem [ref=e453]:
+              - generic [ref=e454]:
+                - img "HDB Finance" [ref=e456]
+                - generic [ref=e457]:
+                  - generic [ref=e458]: HDB Finance
+                  - generic [ref=e459]: Listings
+          - button "Previous Button" [disabled] [ref=e460]:
+            - img [ref=e461]
+          - button "Next Button" [ref=e463]:
+            - img [ref=e464]
+  - dialog:
+    - generic [ref=e467]:
+      - img [ref=e470]
+      - button "Close sidebar" [ref=e474] [cursor=pointer]:
+        - generic [ref=e475] [cursor=pointer]: Close sidebar
+        - img [ref=e476] [cursor=pointer]
+  - generic [ref=e478]:
+    - paragraph [ref=e479]:
+      - generic [ref=e480]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e481]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e482] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e483] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e484] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e486]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e487] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e488]
+```

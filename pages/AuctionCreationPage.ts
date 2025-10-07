@@ -117,7 +117,7 @@ export class AuctionCreationPage {
     await this.endDateInput.press("Enter");
 
     await this.endTimeInput.click();
-    await this.page.getByText("15:00").click();
+    await this.page.getByText("18:00").click();
   }
 
   async submitAuction() {

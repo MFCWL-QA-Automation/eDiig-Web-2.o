@@ -1,0 +1,18 @@
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Opened existing auction
+Placing bid on Reg No: PY01BH5445
+Start Price: ₹39,000, Reserve Price: ₹1,27,500
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000
+Current Bid: 39000, Placing New Bid: 44000

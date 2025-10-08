@@ -1,0 +1,7 @@
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+No existing auction found, redirecting to create auction...
+Navigated to login page

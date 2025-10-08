@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","11046","User should login and place a bid successfully","chromium","Thu Sep 25 15:24:35 IST 2025","failed","Thu Sep 25 15:24:46 IST 2025","","bid.spec.ts","",""
+"","34617","User should login and place a bid successfully","chromium","Wed Oct 08 11:38:50 IST 2025","failed","Wed Oct 08 11:39:24 IST 2025","","bid.spec.ts","",""

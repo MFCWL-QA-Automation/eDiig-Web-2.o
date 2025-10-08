@@ -1,4 +1,5 @@
 import { Page, Locator, expect } from "@playwright/test";
+import { LoginPage } from "../pages/LoginPage";
 
 /**
  * AuctionPage class implements actions on the Auction page
@@ -17,12 +18,14 @@ export class AuctionPage {
   private readonly regNo: Locator;
   private readonly startPrice: Locator;
   private readonly reservePrive: Locator;
+  private readonly auction:Locator;
 
   constructor(page: Page) {
     this.page = page;
 
+    this.auction=page.locator("//a[contains(text(),'Auctions')]");
     // First auction event row
-    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[2]");
+    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[1]");
 
     // Locators for bidding on first "Not Participated" tiles
     this.tileLocator = page.locator("//li[.//div[@data-status='Not Participated']][1]");
@@ -64,12 +67,53 @@ export class AuctionPage {
   }
 
   /**
-   * Open the first auction event
+   * Open the first auction event or create one if none exists
+   * @returns Promise<void>
    */
   async openFirstAuction(): Promise<void> {
-    await this.page.waitForLoadState('networkidle');
-    await this.firstEvent.scrollIntoViewIfNeeded();
-    await this.firstEvent.click();
+    try {
+      await this.page.waitForLoadState('networkidle');
+      
+      // Check if any auction exists
+      const hasAuction = await this.firstEvent.isVisible({ timeout: 5000 })
+        .catch(() => false);
+
+      if (hasAuction) {
+        await this.firstEvent.scrollIntoViewIfNeeded();
+        await this.firstEvent.click();
+        console.log("Opened existing auction");
+      } else {
+        console.log("No existing auction found, redirecting to create auction...");
+        // Import AuctionCreationPage at the top of the file or require it here
+        const { AuctionCreationPage } = require('./AuctionCreationPage');
+        // Navigate to auction creation page
+        const auctionPage = new AuctionCreationPage(this.page);
+
+        await auctionPage.login("Kumar.B.Santha@mahindra.com", "Test@123");
+        await auctionPage.createAuctionFlow("test-data/Vdata.xlsx");
+
+        // Navigate back to auction list and open first auction
+        const loginPage = new LoginPage(this.page);
+       await loginPage.goto();
+       await this.auction.click();
+       await this.page.pause() ;
+       await this.page.reload();
+       await this.page.waitForLoadState('networkidle');
+        
+        // Now try to open the newly created auction
+        await this.firstEvent.waitFor({ state: 'visible', timeout: 10000 });
+        await this.firstEvent.scrollIntoViewIfNeeded();
+        await this.firstEvent.click();
+        console.log("Created and opened new auction");
+      }
+    } catch (error) {
+      console.error("Failed to open/create auction:", error.message);
+      await this.page.screenshot({ 
+        path: 'Screenshots/auction-open-error.png',
+        fullPage: true 
+      });
+      throw new Error(`Failed to open/create auction: ${error.message}`);
+    }
   }
 
   /**

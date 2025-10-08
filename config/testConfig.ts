@@ -6,5 +6,6 @@ export const testConfig = {
         username2: "testuser2",
         password2: "Test@1234"
     },
+    
     timeout: 60000
 };

@@ -1,6 +1,5 @@
 import { Page, Locator, expect } from "@playwright/test";
 import { LoginPage } from "../pages/LoginPage";
-import { testConfig } from "../config/testConfig";
 
 /**
  * AuctionPage class implements actions on the Auction page
@@ -26,7 +25,7 @@ export class AuctionPage {
 
     this.auction=page.locator("//a[contains(text(),'Auctions')]");
     // First auction event row
-    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[10]");
+    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[1]");
 
     // Locators for bidding on first "Not Participated" tiles
     this.tileLocator = page.locator("//li[.//div[@data-status='Not Participated']][1]");
@@ -97,6 +96,8 @@ export class AuctionPage {
         const loginPage = new LoginPage(this.page);
        await loginPage.goto();
        await this.auction.click();
+       await this.page.pause() ;
+       await this.page.reload();
        await this.page.waitForLoadState('networkidle');
         
         // Now try to open the newly created auction

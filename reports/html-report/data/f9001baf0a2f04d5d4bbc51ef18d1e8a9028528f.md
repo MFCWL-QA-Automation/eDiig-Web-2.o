@@ -1,0 +1,225 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - dialog "cookieconsent" [ref=e2]:
+    - generic [ref=e4]: This website uses cookies to ensure you get the best experience on our website.
+    - generic [ref=e5]:
+      - button "Accept All" [ref=e6] [cursor=pointer]
+      - button "Reject Optional" [ref=e7] [cursor=pointer]
+      - button "Cookie Preferences" [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+        - generic [ref=e20] [cursor=pointer]: Cookie Preferences
+  - img [ref=e24] [cursor=pointer]
+  - dialog:
+    - generic [ref=e27]:
+      - img [ref=e30]
+      - button "Close sidebar" [ref=e34] [cursor=pointer]:
+        - generic [ref=e35] [cursor=pointer]: Close sidebar
+        - img [ref=e36] [cursor=pointer]
+  - navigation [ref=e38]:
+    - generic [ref=e39]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e40] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e41] [cursor=pointer]
+      - link "Home" [ref=e42] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e43] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e44] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e45] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e46] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e47] [cursor=pointer]
+      - generic [ref=e48]:
+        - link "Download App" [ref=e49] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+          - img [ref=e50] [cursor=pointer]
+          - generic [ref=e55] [cursor=pointer]: Download App
+        - link "Wishlist" [ref=e57] [cursor=pointer]:
+          - /url: /watchlist
+          - img [ref=e58] [cursor=pointer]
+        - generic [ref=e63]:
+          - img [ref=e64]
+          - button "Logout" [ref=e66] [cursor=pointer]
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - heading "Auctions for you" [level=2] [ref=e69]
+      - generic [ref=e71]:
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - generic [ref=e74]:
+              - img [ref=e75]
+              - searchbox "Search by Seller/ Location/ Category" [ref=e77]
+          - listitem [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - button "Seller" [ref=e81] [cursor=pointer]:
+                  - text: Seller
+                  - img [ref=e82] [cursor=pointer]
+                - menu [ref=e85]:
+                  - group [ref=e86]:
+                    - generic [ref=e87]:
+                      - img [ref=e88]
+                      - searchbox "Search for Seller" [ref=e90]
+                    - menuitemcheckbox "Adani Capital Private Limited" [ref=e91]:
+                      - generic [ref=e92]:
+                        - checkbox "Adani Capital Private Limited" [ref=e93]
+                        - generic [ref=e94]: Adani Capital Private Limited
+                    - menuitemcheckbox "Bajaj Finserv" [ref=e95]:
+                      - generic [ref=e96]:
+                        - checkbox "Bajaj Finserv" [ref=e97]
+                        - generic [ref=e98]: Bajaj Finserv
+              - generic [ref=e99]:
+                - button "Location" [ref=e100] [cursor=pointer]:
+                  - text: Location
+                  - img [ref=e101] [cursor=pointer]
+                - menu [ref=e104]:
+                  - group [ref=e105]:
+                    - generic [ref=e106]:
+                      - img [ref=e107]
+                      - searchbox "Search for Location" [ref=e109]
+                    - menuitemcheckbox "Punjab" [ref=e110]:
+                      - generic [ref=e111]:
+                        - checkbox "Punjab" [ref=e112]
+                        - generic [ref=e113]: Punjab
+                    - menuitemcheckbox "Tamil Nadu" [ref=e114]:
+                      - generic [ref=e115]:
+                        - checkbox "Tamil Nadu" [ref=e116]
+                        - generic [ref=e117]: Tamil Nadu
+        - list [ref=e118]:
+          - listitem [ref=e119]:
+            - table [ref=e121]:
+              - rowgroup [ref=e122]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e123]:
+                  - columnheader "Location" [ref=e124]
+                  - columnheader "Seller" [ref=e125]
+                  - columnheader "Category" [ref=e126]
+                  - columnheader "Auction Type" [ref=e127]
+                  - columnheader "Event Type" [ref=e128]
+                  - columnheader "No. Of Listings" [ref=e129]
+                  - columnheader "Event Start Time" [ref=e130]
+                  - columnheader "Event End Time" [ref=e131]
+              - rowgroup [ref=e132]:
+                - row "Tamil Nadu Bajaj Finserv 4W Closed Repo 4 8 Oct, 12:00 am 08 Oct, 05:10 pm" [ref=e133] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e134] [cursor=pointer]
+                  - cell "Bajaj Finserv" [ref=e135] [cursor=pointer]
+                  - cell "4W" [ref=e136] [cursor=pointer]
+                  - cell "Closed" [ref=e137] [cursor=pointer]
+                  - cell "Repo" [ref=e138] [cursor=pointer]
+                  - cell "4" [ref=e139] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e140] [cursor=pointer]
+                  - cell "08 Oct, 05:10 pm" [ref=e141] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Closed Repo 120 8 Oct, 12:00 am 08 Oct, 06:00 pm" [ref=e142] [cursor=pointer]:
+                  - cell "Punjab" [ref=e143] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e144] [cursor=pointer]
+                  - cell "FE" [ref=e145] [cursor=pointer]
+                  - cell "Closed" [ref=e146] [cursor=pointer]
+                  - cell "Repo" [ref=e147] [cursor=pointer]
+                  - cell "120" [ref=e148] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e149] [cursor=pointer]
+                  - cell "08 Oct, 06:00 pm" [ref=e150] [cursor=pointer]
+    - generic [ref=e151]:
+      - heading "All Live Events" [level=2] [ref=e152]
+      - generic [ref=e154]:
+        - list [ref=e155]:
+          - listitem [ref=e156]:
+            - generic [ref=e157]:
+              - img [ref=e158]
+              - searchbox "Search by Seller/ Location/ Category" [ref=e160]
+          - listitem [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - button "Seller" [ref=e164] [cursor=pointer]:
+                  - text: Seller
+                  - img [ref=e165] [cursor=pointer]
+                - menu [ref=e168]:
+                  - group [ref=e169]:
+                    - generic [ref=e170]:
+                      - img [ref=e171]
+                      - searchbox "Search for Seller" [ref=e173]
+                    - menuitemcheckbox "Adani Capital Private Limited" [ref=e174]:
+                      - generic [ref=e175]:
+                        - checkbox "Adani Capital Private Limited" [ref=e176]
+                        - generic [ref=e177]: Adani Capital Private Limited
+                    - menuitemcheckbox "Bajaj Finserv" [ref=e178]:
+                      - generic [ref=e179]:
+                        - checkbox "Bajaj Finserv" [ref=e180]
+                        - generic [ref=e181]: Bajaj Finserv
+              - generic [ref=e182]:
+                - button "Location" [ref=e183] [cursor=pointer]:
+                  - text: Location
+                  - img [ref=e184] [cursor=pointer]
+                - menu [ref=e187]:
+                  - group [ref=e188]:
+                    - generic [ref=e189]:
+                      - img [ref=e190]
+                      - searchbox "Search for Location" [ref=e192]
+                    - menuitemcheckbox "Punjab" [ref=e193]:
+                      - generic [ref=e194]:
+                        - checkbox "Punjab" [ref=e195]
+                        - generic [ref=e196]: Punjab
+                    - menuitemcheckbox "Tamil Nadu" [ref=e197]:
+                      - generic [ref=e198]:
+                        - checkbox "Tamil Nadu" [ref=e199]
+                        - generic [ref=e200]: Tamil Nadu
+        - list [ref=e201]:
+          - listitem [ref=e202]:
+            - table [ref=e204]:
+              - rowgroup [ref=e205]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e206]:
+                  - columnheader "Location" [ref=e207]
+                  - columnheader "Seller" [ref=e208]
+                  - columnheader "Category" [ref=e209]
+                  - columnheader "Auction Type" [ref=e210]
+                  - columnheader "Event Type" [ref=e211]
+                  - columnheader "No. Of Listings" [ref=e212]
+                  - columnheader "Event Start Time" [ref=e213]
+                  - columnheader "Event End Time" [ref=e214]
+              - rowgroup [ref=e215]:
+                - row "Tamil Nadu Bajaj Finserv 4W Closed Repo 4 8 Oct, 12:00 am 08 Oct, 05:10 pm" [ref=e216] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e217] [cursor=pointer]
+                  - cell "Bajaj Finserv" [ref=e218] [cursor=pointer]
+                  - cell "4W" [ref=e219] [cursor=pointer]
+                  - cell "Closed" [ref=e220] [cursor=pointer]
+                  - cell "Repo" [ref=e221] [cursor=pointer]
+                  - cell "4" [ref=e222] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e223] [cursor=pointer]
+                  - cell "08 Oct, 05:10 pm" [ref=e224] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Closed Repo 120 8 Oct, 12:00 am 08 Oct, 06:00 pm" [ref=e225] [cursor=pointer]:
+                  - cell "Punjab" [ref=e226] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e227] [cursor=pointer]
+                  - cell "FE" [ref=e228] [cursor=pointer]
+                  - cell "Closed" [ref=e229] [cursor=pointer]
+                  - cell "Repo" [ref=e230] [cursor=pointer]
+                  - cell "120" [ref=e231] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e232] [cursor=pointer]
+                  - cell "08 Oct, 06:00 pm" [ref=e233] [cursor=pointer]
+  - dialog:
+    - generic [ref=e235]:
+      - img [ref=e238]
+      - button "Close sidebar" [ref=e242] [cursor=pointer]:
+        - generic [ref=e243] [cursor=pointer]: Close sidebar
+        - img [ref=e244] [cursor=pointer]
+  - generic [ref=e246]:
+    - paragraph [ref=e247]:
+      - generic [ref=e248]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e249]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e250] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e251] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e252] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e254]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e255] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e256]
+```

@@ -1,0 +1,12 @@
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Opened existing Closed auction
+Placing bid on Reg No: AP39DN5031
+Start Price: ₹1,12,000, Reserve Price: ₹3,70,746
+Current Bid: 112000, Placing New Bid: 117000
+Congratulations! Your bid of ₹117000 is currently the highest.
+Bid placed successfully!
+Updated status of Reg No AP39DN5031: Not Participated to Winning

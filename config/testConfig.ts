@@ -3,8 +3,8 @@ export const testConfig = {
     credentials: {
         username1: "autotest1",
         password1: "Test@123",
-        username2: "testuser2",
-        password2: "Test@1234"
+        username2: "autotest2",
+        password2: "Test@123"
     },
     
     timeout: 60000

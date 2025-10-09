@@ -33,20 +33,55 @@ ediig-test/
 - **Type Safety**: Full TypeScript implementation
 
 ## Test Scenarios
+
 1. **Login Tests**
    - Successful login with valid credentials
-   - Parallel login for two users
+   - Parallel user context handling:
+     - Multiple users logging in simultaneously
+     - Maintaining separate contexts for each user session
+     - Cross-context interaction validation
 
 2. **Registration Tests**
-   - Complete registration process
-   - Form validation
-   - Error handling
+   - registration flow:
+     - Basic details submission with unique name and mobile number
+     - PAN card validation
+     - Aadhaar verification with OTP
+     - State and vehicle type selection
+     - Bank account details verification
+   - Form validation for each step
 
-3. **Auction/Bidding Tests**
-   - Place bids on vehicles
-   - Validate bid status updates
-   - Handle bid amount calculations
-   - Verify winning status
+
+3. **CMS Portal - Auction Creation**
+   - Login to CMS admin portal
+   - Create new auction event:
+     - Basic auction details
+     - Vehicle information upload
+     - Auction timing configuration
+     - Excel handling
+   - Publish auction event
+   - Verify auction visibility in main portal
+
+4. **Auction/Bidding Tests**
+   - Smart auction navigation:
+     - Check for existing auctions
+     - Auto-create new auction if none exists
+     - Handle multiple auction events
+   - Bidding process automation:
+     - Find "Not Participated" tiles
+     - Intelligent tile selection:
+       - Primary tile search in first event
+       - Secondary tile search in subsequent events
+     - Dynamic bid amount calculation
+     - Bid placement and verification
+   - Status validation:
+     - Bid acceptance confirmation
+     - Winning status verification
+     - Outbid handling and automatic rebid
+   - Error scenarios:
+     - Handle missing auction events
+     - Navigate between events for available tiles
+     - Retry mechanisms for failed bids
+   - Real-time status updates tracking
 
 ## Setup and Installation
 
@@ -111,10 +146,27 @@ export const testConfig = {
 - Manages navigation after login
 
 ### AuctionPage
-- Manages auction item selection
-- Handles bidding process
-- Validates bid status updates
-- Tracks vehicle registration numbers
+- Manages auction item selection and creation:
+  - Checks for existing auctions
+  - Automatic redirection to CMS for auction creation
+  - Smart navigation between auction events
+- Handles advanced bidding process:
+  - Dynamic tile selection strategy
+  - Primary and secondary event navigation
+  - Intelligent bid amount calculations
+  - Automatic outbid handling
+- Validates bid status updates:
+  - Real-time status monitoring
+  - Multiple status state handling
+  - Cross-event status verification
+- Tracks vehicle details:
+  - Registration number management
+  - Bid history tracking
+  - Status change logging
+- Error handling and recovery:
+  - Auction availability checks
+  - Automatic event switching
+  - Bid placement retries
 
 ### RegistrationPage
 - Handles user registration flow

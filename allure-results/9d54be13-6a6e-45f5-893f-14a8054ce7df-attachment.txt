@@ -1,0 +1,13 @@
+Starting Open Auction Bid Test
+Navigated to login page
+Username entered: autotest2
+Password entered: ********
+ Login button clicked
+Login successful
+Opened existing Open auction
+Placing bid on Reg No: AP39DN5001
+Start Price: ₹2,34,000, Reserve Price: ₹7,79,000
+Current Bid: 234000, Placing New Bid: 239000
+Bid Placed Successfully
+Bid placed successfully!
+Updated status of Reg No AP39DN5001: Not Participated to Winning

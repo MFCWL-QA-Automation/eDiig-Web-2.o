@@ -19,13 +19,21 @@ export class AuctionPage {
   private readonly startPrice: Locator;
   private readonly reservePrive: Locator;
   private readonly auction:Locator;
+  private readonly secondEvent:Locator;
+  private readonly closedEvent:Locator;
+  private readonly openEvent:Locator;
 
   constructor(page: Page) {
     this.page = page;
 
     this.auction=page.locator("//a[contains(text(),'Auctions')]");
     // First auction event row
-    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[1]");
+    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[3]");
+    //this.secondEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[2]");
+
+    // closed and open event locators
+    this.closedEvent=page.locator("//section[@id='event-widget2']//table/tbody/tr[td[2][contains(normalize-space(),'Adani')] and td[4][normalize-space()='Closed']][1]");
+    this.openEvent=page.locator("//section[@id='event-widget2']//table/tbody/tr[td[2][contains(normalize-space(),'Adani')] and td[4][normalize-space()='Open']][1]");
 
     // Locators for bidding on first "Not Participated" tiles
     this.tileLocator = page.locator("//li[.//div[@data-status='Not Participated']][1]");
@@ -41,10 +49,10 @@ export class AuctionPage {
     );
 
     // Success / Error messages
-    this.successMessage = page.locator("//div[contains(text(),'Congratulations! Your bid of')]");
+    this.successMessage = page.locator("//div[contains(text(),'Congratulations! Your bid of') or contains(text(), 'Bid Placed Successfully')]");
     this.errorAlert = page.locator("//div[contains(text(),'Bid Amount Should be greater than Start Price.')]");
     this.outBidAlert = page.locator(
-      "//div[contains(text(),'Bid accepted, but you are not winning yet. Try increasing your bid to improve your chances')]"
+      "//div[contains(text(),'Bid accepted, but you are not winning yet. Try increasing your bid to improve your chances') or contains(text(),'Another buyer has placed a higher bid')]"
     );
   }
 
@@ -116,13 +124,114 @@ export class AuctionPage {
     }
   }
 
+  async closedAuction(): Promise<void> {
+    try {
+      await this.page.waitForLoadState('networkidle');
+      
+      // Check if any auction exists
+      const hasAuction = await this.closedEvent.isVisible({ timeout: 5000 })
+        .catch(() => false);
+
+      if (hasAuction) {
+        await this.closedEvent.scrollIntoViewIfNeeded();
+        await this.closedEvent.click();
+        console.log("Opened existing Closed auction");
+      } else {
+        console.log("No existing closed auction found, redirecting to create auction...");
+        // Import AuctionCreationPage at the top of the file or require it here
+        const { AuctionCreationPage } = require('./AuctionCreationPage');
+        // Navigate to auction creation page
+        const auctionPage = new AuctionCreationPage(this.page);
+
+        await auctionPage.login("Kumar.B.Santha@mahindra.com", "Test@123");
+        await auctionPage.createAuctionFlow("test-data/Vdata.xlsx");
+
+        // Navigate back to auction list and open first auction
+        const loginPage = new LoginPage(this.page);
+       await loginPage.goto();
+       await this.auction.click();
+       await this.page.pause() ;
+       await this.page.reload();
+       await this.page.waitForLoadState('networkidle');
+        
+        // Now try to open the newly created auction
+        await this.closedEvent.waitFor({ state: 'visible', timeout: 10000 });
+        await this.closedEvent.scrollIntoViewIfNeeded();
+        await this.closedEvent.click();
+        console.log("Created and opened new closed auction");
+      }
+    } catch (error) {
+      console.error("Failed to open/create auction:", error.message);
+      await this.page.screenshot({ 
+        path: 'Screenshots/auction-open-error.png',
+        fullPage: true 
+      });
+      throw new Error(`Failed to open/create auction: ${error.message}`);
+    }
+  }
+  async openAuction(): Promise<void> {
+    try {
+      await this.page.waitForLoadState('networkidle');
+      
+      // Check if any auction exists
+      const hasAuction = await this.openEvent.isVisible({ timeout: 5000 })
+        .catch(() => false);
+
+      if (hasAuction) {
+        await this.openEvent.scrollIntoViewIfNeeded();
+        await this.openEvent.click();
+        console.log("Opened existing Open auction");
+      } else {
+        console.log("No existing open auction found, redirecting to create auction...");
+        // Import AuctionCreationPage at the top of the file or require it here
+        const { AuctionCreationPage } = require('./AuctionCreationPage');
+        // Navigate to auction creation page
+        const auctionPage = new AuctionCreationPage(this.page);
+
+        await auctionPage.login("Kumar.B.Santha@mahindra.com", "Test@123");
+        await auctionPage.createAuctionFlow("test-data/Vdata.xlsx");
+
+        // Navigate back to auction list and open first auction
+        const loginPage = new LoginPage(this.page);
+       await loginPage.goto();
+       await this.auction.click();
+       await this.page.pause() ;
+       await this.page.reload();
+       await this.page.waitForLoadState('networkidle');
+        
+        // Now try to open the newly created auction
+        await this.openEvent.waitFor({ state: 'visible', timeout: 10000 });
+        await this.openEvent.scrollIntoViewIfNeeded();
+        await this.openEvent.click();
+        console.log("Created and opened new closed auction");
+      }
+    } catch (error) {
+      console.error("Failed to open/create auction:", error.message);
+      await this.page.screenshot({ 
+        path: 'Screenshots/auction-open-error.png',
+        fullPage: true 
+      });
+      throw new Error(`Failed to open/create auction: ${error.message}`);
+    }
+  }
   /**
    * Place a bid on the first "Not Participated" auction tile.
    */
-  async placeBidOnFirstNotParticipated(): Promise<void> {
+  async placeBidOnFirstNotParticipated(): Promise<string> {
+    // Check if tile is visible
+   /* const isTileVisible = await this.tileLocator.isVisible().catch(() => false);
+    if (!isTileVisible) {
+      console.log("NO Not Participated Auction, Navigating back and selecting second main tile...");
+    await this.page.goBack({ waitUntil: 'networkidle' }); // Go back to auction page
+    const secondEvent = this.page.locator("//section[@id='event-widget2']//table/tbody/tr[2]");
+    await secondEvent.waitFor({ state: 'visible', timeout: 5000 });
+    await secondEvent.click();
+    }
+    */
+     // Reinitialize tile locator after navigating
     await this.tileLocator.waitFor({ state: 'visible', timeout: 5000 });
     await this.tileLocator.scrollIntoViewIfNeeded();
-
+    
     // Extract Reg No, Start Price, Reserve Price
     await this.regNo.waitFor({ state: 'visible', timeout: 5000 });
     const regNumber = await this.regNo.innerText();
@@ -160,18 +269,24 @@ export class AuctionPage {
       await this.page.waitForTimeout(2000); // wait a bit for response
 
       if (await this.successMessage.isVisible({ timeout: 3000 }).catch(() => false)) {
+        console.log(await this.successMessage.innerText());
         console.log("Bid placed successfully!");
         break;
       }
       if (await this.outBidAlert.isVisible({ timeout: 2000 }).catch(() => false)) {
+        console.log(await this.outBidAlert.innerText());
         console.log("Got outbid alert: Increasing bid and retrying...");
         continue; // loop again, increase amount further
       }
       if (await this.errorAlert.isVisible({ timeout: 2000 }).catch(() => false)) {
+        console.log(await this.errorAlert.innerText());
         console.log("Got error: Need higher bid, retrying...");
         continue; // loop again, increase amount further
       }
     }
+    
+    return regNumber;
+    
   }
 
   /**
@@ -189,4 +304,26 @@ export class AuctionPage {
       `Updated status of Reg No ${this.lastBidRegNumber}: Not Participated to ${statusText?.trim()}`
     );
   }
+
+  async validateStatusUpdateForRegNo(regNo: string, expectedStatus: string = "Outbid"): Promise<void> {
+  console.log(`Checking status for Reg No: ${regNo}`);
+
+  const statusLocator = this.page.locator(
+    `//li[.//div[normalize-space()='${regNo}']]//div[@data-status]`
+  );
+
+  const currentStatus = await statusLocator.getAttribute("data-status");
+  console.log(`Current status for ${regNo}: ${currentStatus}`);
+
+  if (!currentStatus) {
+    throw new Error(`Status for Reg No ${regNo} not found`);
+  }
+
+  // Assert the status matches expected
+  expect(currentStatus).toBe(expectedStatus);
+  console.log(`Verified that ${regNo} status is "${expectedStatus}"`);
+}
+
+
+
 }

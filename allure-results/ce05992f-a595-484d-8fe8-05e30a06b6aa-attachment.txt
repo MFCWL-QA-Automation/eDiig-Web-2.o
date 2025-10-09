@@ -1,0 +1,5 @@
+Starting Open Auction Bid Test
+Navigated to login page
+Username entered: testuser2
+Password entered: *********
+ Login button clicked

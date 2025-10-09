@@ -1,0 +1,521 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - dialog "cookieconsent" [ref=e2]:
+    - generic [ref=e4]: This website uses cookies to ensure you get the best experience on our website.
+    - generic [ref=e5]:
+      - button "Accept All" [ref=e6] [cursor=pointer]
+      - button "Reject Optional" [ref=e7] [cursor=pointer]
+      - button "Cookie Preferences" [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+        - generic [ref=e20] [cursor=pointer]: Cookie Preferences
+  - generic [ref=e22]:
+    - text: Invalid username
+    - img [ref=e24] [cursor=pointer]
+  - dialog:
+    - generic [ref=e27]:
+      - img [ref=e30]
+      - button "Close sidebar" [ref=e34] [cursor=pointer]:
+        - generic [ref=e35] [cursor=pointer]: Close sidebar
+        - img [ref=e36] [cursor=pointer]
+  - navigation [ref=e38]:
+    - generic [ref=e39]:
+      - link "eDiig Powerd By Mahindra First Choice" [ref=e40] [cursor=pointer]:
+        - /url: /
+        - img "eDiig Powerd By Mahindra First Choice" [ref=e41] [cursor=pointer]
+      - link "Home" [ref=e42] [cursor=pointer]:
+        - /url: /
+      - link "Auctions" [ref=e43] [cursor=pointer]:
+        - /url: /events
+      - link "Bids" [ref=e44] [cursor=pointer]:
+        - /url: /my-bids
+      - link "Calendar" [ref=e45] [cursor=pointer]:
+        - /url: /sale-calendar
+      - link "Contact Us" [ref=e46] [cursor=pointer]:
+        - /url: /contact-us
+      - button "Profile" [ref=e47] [cursor=pointer]
+      - link "Download App" [ref=e49] [cursor=pointer]:
+        - /url: https://play.google.com/store/apps/details?id=com.mahindra.ediignowslide.ediignow&hl=en-US
+        - img [ref=e50] [cursor=pointer]
+        - generic [ref=e55] [cursor=pointer]: Download App
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e59]:
+        - list [ref=e62]:
+          - listitem [ref=e63]:
+            - generic [ref=e64]:
+              - link "Home Desktop":
+                - /url: /events
+          - listitem [ref=e65]:
+            - generic [ref=e66]:
+              - link "Home Desktop":
+                - /url: /events
+        - generic [ref=e72]:
+          - img [ref=e73]
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - textbox "Enter User ID" [ref=e90]: testuser2
+              - generic: Enter User ID
+            - generic [ref=e91]:
+              - textbox "Enter Password" [ref=e92]: Test@1234
+              - img [ref=e94] [cursor=pointer]
+              - generic: Enter Password
+            - generic [ref=e97]: Invalid username
+            - button "Login" [ref=e98] [cursor=pointer]:
+              - generic [ref=e99] [cursor=pointer]: Login
+          - link "Login with OTP" [ref=e100] [cursor=pointer]:
+            - /url: /signin-otp
+          - paragraph [ref=e101]:
+            - link "Forgot Password?" [ref=e102] [cursor=pointer]:
+              - /url: /forgot-password
+          - paragraph [ref=e103]:
+            - text: Don't have an account?
+            - link "Register" [ref=e104] [cursor=pointer]:
+              - /url: /signup
+      - generic [ref=e105]:
+        - heading "Value Propositions" [level=2] [ref=e106]
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - img "Expert Negotiations" [ref=e109]
+            - generic [ref=e110]:
+              - generic [ref=e111]: Expert Negotiations
+              - generic [ref=e112]: Our experienced team has a proven track record of facilitating transactions for happy buyers and sellers
+          - generic [ref=e113]:
+            - img "#1 in auction business" [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]: "#1 in auction business"
+              - generic [ref=e117]: India’s first and leading vehicle auction platform since 2011
+          - generic [ref=e118]:
+            - img "Pan-India Reach" [ref=e119]
+            - generic [ref=e120]:
+              - generic [ref=e121]: Pan-India Reach
+              - generic [ref=e122]: Offline and online auctions conducted across the country
+          - generic [ref=e123]:
+            - img "Expert Easy Listing" [ref=e124]
+            - generic [ref=e125]:
+              - generic [ref=e126]: Expert Easy Listing
+              - generic [ref=e127]: A fast and easy listing process that can be customized and automated
+      - generic [ref=e128]:
+        - heading "eDiig Exclusive Auction is here!!!" [level=2] [ref=e129]
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]: 20,000+ strong buyer base
+            - img "20,000+ strong buyer base" [ref=e133]
+          - generic [ref=e134]:
+            - generic [ref=e135]: "Ranked #1 in the Auctions business"
+            - 'img "Ranked #1 in the Auctions business" [ref=e136]'
+          - generic [ref=e137]:
+            - generic [ref=e138]: 10,00,000+ vehicles Sold
+            - img "10,00,000+ vehicles Sold" [ref=e139]
+          - generic [ref=e140]:
+            - generic [ref=e141]: 1st Auto auction portal launched in India
+            - img "1st Auto auction portal launched in India" [ref=e142]
+      - generic [ref=e143]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e144]
+        - generic [ref=e145]:
+          - group [ref=e146]:
+            - generic "What is a eDiig Online Marketplace?" [ref=e147] [cursor=pointer]:
+              - text: What is a eDiig Online Marketplace?
+              - img [ref=e148] [cursor=pointer]
+            - generic [ref=e150]: These are online vehicle sale facilitations conducted on the website of eDiig, where participation is only for registered sellers and pre-approved buyers. Our registered seller base consists of reputed banks and NBFCs who list their repossessed vehicles for sale in eDiig website and app. You can be a part of this pre-approved buyer group if you meet the eligibility criteria and receive confirmation of your registration from eDiig Team.
+          - group [ref=e151]:
+            - generic "Who is eligible to participate?" [ref=e152] [cursor=pointer]:
+              - text: Who is eligible to participate?
+              - img [ref=e153] [cursor=pointer]
+          - group [ref=e155]:
+            - generic "They include:" [ref=e156] [cursor=pointer]:
+              - text: "They include:"
+              - img [ref=e157] [cursor=pointer]
+      - generic [ref=e159]:
+        - heading "Live Events Data" [level=2] [ref=e160]
+        - list [ref=e163]:
+          - listitem [ref=e164]:
+            - table [ref=e166]:
+              - rowgroup [ref=e167]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e168]:
+                  - columnheader "Location" [ref=e169]
+                  - columnheader "Seller" [ref=e170]
+                  - columnheader "Category" [ref=e171]
+                  - columnheader "Auction Type" [ref=e172]
+                  - columnheader "Event Type" [ref=e173]
+                  - columnheader "No. Of Listings" [ref=e174]
+                  - columnheader "Event Start Time" [ref=e175]
+                  - columnheader "Event End Time" [ref=e176]
+              - rowgroup [ref=e177]:
+                - row "Kerala Akasa Finance Ltd 2W Closed - 2 9 Oct, 12:00 am 09 Oct, 09:00 pm" [ref=e178] [cursor=pointer]:
+                  - cell "Kerala" [ref=e179] [cursor=pointer]
+                  - cell "Akasa Finance Ltd" [ref=e180] [cursor=pointer]
+                  - cell "2W" [ref=e181] [cursor=pointer]
+                  - cell "Closed" [ref=e182] [cursor=pointer]
+                  - cell "-" [ref=e183] [cursor=pointer]
+                  - cell "2" [ref=e184] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e185] [cursor=pointer]
+                  - cell "09 Oct, 09:00 pm" [ref=e186] [cursor=pointer]
+                - row "Kerala Akasa Finance Ltd 4W Closed - 3 9 Oct, 12:00 am 09 Oct, 09:00 pm" [ref=e187] [cursor=pointer]:
+                  - cell "Kerala" [ref=e188] [cursor=pointer]
+                  - cell "Akasa Finance Ltd" [ref=e189] [cursor=pointer]
+                  - cell "4W" [ref=e190] [cursor=pointer]
+                  - cell "Closed" [ref=e191] [cursor=pointer]
+                  - cell "-" [ref=e192] [cursor=pointer]
+                  - cell "3" [ref=e193] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e194] [cursor=pointer]
+                  - cell "09 Oct, 09:00 pm" [ref=e195] [cursor=pointer]
+                - row "West Bengal CORPORATE 4W Closed - 4 9 Oct, 12:00 am 09 Oct, 11:58 pm" [ref=e196] [cursor=pointer]:
+                  - cell "West Bengal" [ref=e197] [cursor=pointer]
+                  - cell "CORPORATE" [ref=e198] [cursor=pointer]
+                  - cell "4W" [ref=e199] [cursor=pointer]
+                  - cell "Closed" [ref=e200] [cursor=pointer]
+                  - cell "-" [ref=e201] [cursor=pointer]
+                  - cell "4" [ref=e202] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e203] [cursor=pointer]
+                  - cell "09 Oct, 11:58 pm" [ref=e204] [cursor=pointer]
+                - row "Kerala ALD Automotive 2W Closed - 1 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e205] [cursor=pointer]:
+                  - cell "Kerala" [ref=e206] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e207] [cursor=pointer]
+                  - cell "2W" [ref=e208] [cursor=pointer]
+                  - cell "Closed" [ref=e209] [cursor=pointer]
+                  - cell "-" [ref=e210] [cursor=pointer]
+                  - cell "1" [ref=e211] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e212] [cursor=pointer]
+                  - cell "10 Oct, 12:00 am" [ref=e213] [cursor=pointer]
+                - row "Kerala ALD Automotive 4W Closed - 1 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e214] [cursor=pointer]:
+                  - cell "Kerala" [ref=e215] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e216] [cursor=pointer]
+                  - cell "4W" [ref=e217] [cursor=pointer]
+                  - cell "Closed" [ref=e218] [cursor=pointer]
+                  - cell "-" [ref=e219] [cursor=pointer]
+                  - cell "1" [ref=e220] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e221] [cursor=pointer]
+                  - cell "10 Oct, 12:00 am" [ref=e222] [cursor=pointer]
+                - row "Kerala ALD Automotive 3W Closed - 2 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e223] [cursor=pointer]:
+                  - cell "Kerala" [ref=e224] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e225] [cursor=pointer]
+                  - cell "3W" [ref=e226] [cursor=pointer]
+                  - cell "Closed" [ref=e227] [cursor=pointer]
+                  - cell "-" [ref=e228] [cursor=pointer]
+                  - cell "2" [ref=e229] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e230] [cursor=pointer]
+                  - cell "10 Oct, 12:00 am" [ref=e231] [cursor=pointer]
+                - row "Kerala ALD Automotive 2W Open - 1 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e232] [cursor=pointer]:
+                  - cell "Kerala" [ref=e233] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e234] [cursor=pointer]
+                  - cell "2W" [ref=e235] [cursor=pointer]
+                  - cell "Open" [ref=e236] [cursor=pointer]
+                  - cell "-" [ref=e237] [cursor=pointer]
+                  - cell "1" [ref=e238] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e239] [cursor=pointer]
+                  - cell "10 Oct, 12:00 am" [ref=e240] [cursor=pointer]
+                - row "Manipur AEON Credit 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 12:01 am" [ref=e241] [cursor=pointer]:
+                  - cell "Manipur" [ref=e242] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e243] [cursor=pointer]
+                  - cell "4W" [ref=e244] [cursor=pointer]
+                  - cell "Closed" [ref=e245] [cursor=pointer]
+                  - cell "-" [ref=e246] [cursor=pointer]
+                  - cell "4" [ref=e247] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e248] [cursor=pointer]
+                  - cell "10 Oct, 12:01 am" [ref=e249] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Open - 28 9 Oct, 12:00 am 10 Oct, 10:45 am" [ref=e250] [cursor=pointer]:
+                  - cell "Punjab" [ref=e251] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e252] [cursor=pointer]
+                  - cell "FE" [ref=e253] [cursor=pointer]
+                  - cell "Open" [ref=e254] [cursor=pointer]
+                  - cell "-" [ref=e255] [cursor=pointer]
+                  - cell "28" [ref=e256] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e257] [cursor=pointer]
+                  - cell "10 Oct, 10:45 am" [ref=e258] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Closed - 92 9 Oct, 12:00 am 10 Oct, 10:45 am" [ref=e259] [cursor=pointer]:
+                  - cell "Punjab" [ref=e260] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e261] [cursor=pointer]
+                  - cell "FE" [ref=e262] [cursor=pointer]
+                  - cell "Closed" [ref=e263] [cursor=pointer]
+                  - cell "-" [ref=e264] [cursor=pointer]
+                  - cell "92" [ref=e265] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e266] [cursor=pointer]
+                  - cell "10 Oct, 10:45 am" [ref=e267] [cursor=pointer]
+            - link "View All Live Events" [ref=e268] [cursor=pointer]:
+              - /url: /events
+              - button "View All Live Events" [ref=e269] [cursor=pointer]:
+                - generic [ref=e270] [cursor=pointer]: View All Live Events
+                - img [ref=e271] [cursor=pointer]
+      - generic [ref=e273]:
+        - heading "Banks & Insurance" [level=2] [ref=e274]
+        - generic [ref=e276]:
+          - list [ref=e277]:
+            - listitem [ref=e278] [cursor=pointer]: Bank Event
+            - listitem [ref=e279] [cursor=pointer]: Insurance Event
+          - list [ref=e280]:
+            - listitem [ref=e281]:
+              - table [ref=e283]:
+                - rowgroup [ref=e284]:
+                  - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e285]:
+                    - columnheader "Location" [ref=e286]
+                    - columnheader "Seller" [ref=e287]
+                    - columnheader "Category" [ref=e288]
+                    - columnheader "Auction Type" [ref=e289]
+                    - columnheader "Event Type" [ref=e290]
+                    - columnheader "No. Of Listings" [ref=e291]
+                    - columnheader "Event Start Time" [ref=e292]
+                    - columnheader "Event End Time" [ref=e293]
+                - rowgroup [ref=e294]:
+                  - row "Kerala Akasa Finance Ltd 4W Closed - 3 9 Oct, 12:00 am 09 Oct, 09:00 pm" [ref=e295] [cursor=pointer]:
+                    - cell "Kerala" [ref=e296] [cursor=pointer]
+                    - cell "Akasa Finance Ltd" [ref=e297] [cursor=pointer]
+                    - cell "4W" [ref=e298] [cursor=pointer]
+                    - cell "Closed" [ref=e299] [cursor=pointer]
+                    - cell "-" [ref=e300] [cursor=pointer]
+                    - cell "3" [ref=e301] [cursor=pointer]
+                    - cell "9 Oct, 12:00 am" [ref=e302] [cursor=pointer]
+                    - cell "09 Oct, 09:00 pm" [ref=e303] [cursor=pointer]
+                  - row "West Bengal CORPORATE 4W Closed - 4 9 Oct, 12:00 am 09 Oct, 11:58 pm" [ref=e304] [cursor=pointer]:
+                    - cell "West Bengal" [ref=e305] [cursor=pointer]
+                    - cell "CORPORATE" [ref=e306] [cursor=pointer]
+                    - cell "4W" [ref=e307] [cursor=pointer]
+                    - cell "Closed" [ref=e308] [cursor=pointer]
+                    - cell "-" [ref=e309] [cursor=pointer]
+                    - cell "4" [ref=e310] [cursor=pointer]
+                    - cell "9 Oct, 12:00 am" [ref=e311] [cursor=pointer]
+                    - cell "09 Oct, 11:58 pm" [ref=e312] [cursor=pointer]
+                  - row "Kerala ALD Automotive 4W Closed - 1 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e313] [cursor=pointer]:
+                    - cell "Kerala" [ref=e314] [cursor=pointer]
+                    - cell "ALD Automotive" [ref=e315] [cursor=pointer]
+                    - cell "4W" [ref=e316] [cursor=pointer]
+                    - cell "Closed" [ref=e317] [cursor=pointer]
+                    - cell "-" [ref=e318] [cursor=pointer]
+                    - cell "1" [ref=e319] [cursor=pointer]
+                    - cell "8 Oct, 12:00 am" [ref=e320] [cursor=pointer]
+                    - cell "10 Oct, 12:00 am" [ref=e321] [cursor=pointer]
+                  - row "Manipur AEON Credit 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 12:01 am" [ref=e322] [cursor=pointer]:
+                    - cell "Manipur" [ref=e323] [cursor=pointer]
+                    - cell "AEON Credit" [ref=e324] [cursor=pointer]
+                    - cell "4W" [ref=e325] [cursor=pointer]
+                    - cell "Closed" [ref=e326] [cursor=pointer]
+                    - cell "-" [ref=e327] [cursor=pointer]
+                    - cell "4" [ref=e328] [cursor=pointer]
+                    - cell "9 Oct, 12:00 am" [ref=e329] [cursor=pointer]
+                    - cell "10 Oct, 12:01 am" [ref=e330] [cursor=pointer]
+                  - row "Tamil Nadu BANK OF BARODA 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 11:55 pm" [ref=e331] [cursor=pointer]:
+                    - cell "Tamil Nadu" [ref=e332] [cursor=pointer]
+                    - cell "BANK OF BARODA" [ref=e333] [cursor=pointer]
+                    - cell "4W" [ref=e334] [cursor=pointer]
+                    - cell "Closed" [ref=e335] [cursor=pointer]
+                    - cell "-" [ref=e336] [cursor=pointer]
+                    - cell "4" [ref=e337] [cursor=pointer]
+                    - cell "9 Oct, 12:00 am" [ref=e338] [cursor=pointer]
+                    - cell "10 Oct, 11:55 pm" [ref=e339] [cursor=pointer]
+      - generic [ref=e340]:
+        - heading "Events Ending in 1 Month" [level=2] [ref=e341]
+        - list [ref=e344]:
+          - listitem [ref=e345]:
+            - table [ref=e347]:
+              - rowgroup [ref=e348]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e349]:
+                  - columnheader "Location" [ref=e350]
+                  - columnheader "Seller" [ref=e351]
+                  - columnheader "Category" [ref=e352]
+                  - columnheader "Auction Type" [ref=e353]
+                  - columnheader "Event Type" [ref=e354]
+                  - columnheader "No. Of Listings" [ref=e355]
+                  - columnheader "Event Start Time" [ref=e356]
+                  - columnheader "Event End Time" [ref=e357]
+              - rowgroup [ref=e358]:
+                - row "Tamil Nadu BANK OF BARODA 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 11:55 pm" [ref=e359] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e360] [cursor=pointer]
+                  - cell "BANK OF BARODA" [ref=e361] [cursor=pointer]
+                  - cell "4W" [ref=e362] [cursor=pointer]
+                  - cell "Closed" [ref=e363] [cursor=pointer]
+                  - cell "-" [ref=e364] [cursor=pointer]
+                  - cell "4" [ref=e365] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e366] [cursor=pointer]
+                  - cell "10 Oct, 11:55 pm" [ref=e367] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Open - 28 9 Oct, 12:00 am 10 Oct, 10:45 am" [ref=e368] [cursor=pointer]:
+                  - cell "Punjab" [ref=e369] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e370] [cursor=pointer]
+                  - cell "FE" [ref=e371] [cursor=pointer]
+                  - cell "Open" [ref=e372] [cursor=pointer]
+                  - cell "-" [ref=e373] [cursor=pointer]
+                  - cell "28" [ref=e374] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e375] [cursor=pointer]
+                  - cell "10 Oct, 10:45 am" [ref=e376] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Closed - 92 9 Oct, 12:00 am 10 Oct, 10:45 am" [ref=e377] [cursor=pointer]:
+                  - cell "Punjab" [ref=e378] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e379] [cursor=pointer]
+                  - cell "FE" [ref=e380] [cursor=pointer]
+                  - cell "Closed" [ref=e381] [cursor=pointer]
+                  - cell "-" [ref=e382] [cursor=pointer]
+                  - cell "92" [ref=e383] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e384] [cursor=pointer]
+                  - cell "10 Oct, 10:45 am" [ref=e385] [cursor=pointer]
+                - row "Manipur AEON Credit 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 12:01 am" [ref=e386] [cursor=pointer]:
+                  - cell "Manipur" [ref=e387] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e388] [cursor=pointer]
+                  - cell "4W" [ref=e389] [cursor=pointer]
+                  - cell "Closed" [ref=e390] [cursor=pointer]
+                  - cell "-" [ref=e391] [cursor=pointer]
+                  - cell "4" [ref=e392] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e393] [cursor=pointer]
+                  - cell "10 Oct, 12:01 am" [ref=e394] [cursor=pointer]
+                - row "Kerala ALD Automotive 2W Closed - 1 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e395] [cursor=pointer]:
+                  - cell "Kerala" [ref=e396] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e397] [cursor=pointer]
+                  - cell "2W" [ref=e398] [cursor=pointer]
+                  - cell "Closed" [ref=e399] [cursor=pointer]
+                  - cell "-" [ref=e400] [cursor=pointer]
+                  - cell "1" [ref=e401] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e402] [cursor=pointer]
+                  - cell "10 Oct, 12:00 am" [ref=e403] [cursor=pointer]
+            - link "View All" [ref=e404] [cursor=pointer]:
+              - /url: /events
+              - button "View All" [ref=e405] [cursor=pointer]:
+                - generic [ref=e406] [cursor=pointer]: View All
+                - img [ref=e407] [cursor=pointer]
+      - generic [ref=e409]:
+        - heading "Events Ending in 3 Days" [level=2] [ref=e410]
+        - list [ref=e413]:
+          - listitem [ref=e414]:
+            - table [ref=e416]:
+              - rowgroup [ref=e417]:
+                - row "Location Seller Category Auction Type Event Type No. Of Listings Event Start Time Event End Time" [ref=e418]:
+                  - columnheader "Location" [ref=e419]
+                  - columnheader "Seller" [ref=e420]
+                  - columnheader "Category" [ref=e421]
+                  - columnheader "Auction Type" [ref=e422]
+                  - columnheader "Event Type" [ref=e423]
+                  - columnheader "No. Of Listings" [ref=e424]
+                  - columnheader "Event Start Time" [ref=e425]
+                  - columnheader "Event End Time" [ref=e426]
+              - rowgroup [ref=e427]:
+                - row "Tamil Nadu BANK OF BARODA 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 11:55 pm" [ref=e428] [cursor=pointer]:
+                  - cell "Tamil Nadu" [ref=e429] [cursor=pointer]
+                  - cell "BANK OF BARODA" [ref=e430] [cursor=pointer]
+                  - cell "4W" [ref=e431] [cursor=pointer]
+                  - cell "Closed" [ref=e432] [cursor=pointer]
+                  - cell "-" [ref=e433] [cursor=pointer]
+                  - cell "4" [ref=e434] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e435] [cursor=pointer]
+                  - cell "10 Oct, 11:55 pm" [ref=e436] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Open - 28 9 Oct, 12:00 am 10 Oct, 10:45 am" [ref=e437] [cursor=pointer]:
+                  - cell "Punjab" [ref=e438] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e439] [cursor=pointer]
+                  - cell "FE" [ref=e440] [cursor=pointer]
+                  - cell "Open" [ref=e441] [cursor=pointer]
+                  - cell "-" [ref=e442] [cursor=pointer]
+                  - cell "28" [ref=e443] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e444] [cursor=pointer]
+                  - cell "10 Oct, 10:45 am" [ref=e445] [cursor=pointer]
+                - row "Punjab Adani Capital Private Limited FE Closed - 92 9 Oct, 12:00 am 10 Oct, 10:45 am" [ref=e446] [cursor=pointer]:
+                  - cell "Punjab" [ref=e447] [cursor=pointer]
+                  - cell "Adani Capital Private Limited" [ref=e448] [cursor=pointer]
+                  - cell "FE" [ref=e449] [cursor=pointer]
+                  - cell "Closed" [ref=e450] [cursor=pointer]
+                  - cell "-" [ref=e451] [cursor=pointer]
+                  - cell "92" [ref=e452] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e453] [cursor=pointer]
+                  - cell "10 Oct, 10:45 am" [ref=e454] [cursor=pointer]
+                - row "Manipur AEON Credit 4W Closed - 4 9 Oct, 12:00 am 10 Oct, 12:01 am" [ref=e455] [cursor=pointer]:
+                  - cell "Manipur" [ref=e456] [cursor=pointer]
+                  - cell "AEON Credit" [ref=e457] [cursor=pointer]
+                  - cell "4W" [ref=e458] [cursor=pointer]
+                  - cell "Closed" [ref=e459] [cursor=pointer]
+                  - cell "-" [ref=e460] [cursor=pointer]
+                  - cell "4" [ref=e461] [cursor=pointer]
+                  - cell "9 Oct, 12:00 am" [ref=e462] [cursor=pointer]
+                  - cell "10 Oct, 12:01 am" [ref=e463] [cursor=pointer]
+                - row "Kerala ALD Automotive 2W Closed - 1 8 Oct, 12:00 am 10 Oct, 12:00 am" [ref=e464] [cursor=pointer]:
+                  - cell "Kerala" [ref=e465] [cursor=pointer]
+                  - cell "ALD Automotive" [ref=e466] [cursor=pointer]
+                  - cell "2W" [ref=e467] [cursor=pointer]
+                  - cell "Closed" [ref=e468] [cursor=pointer]
+                  - cell "-" [ref=e469] [cursor=pointer]
+                  - cell "1" [ref=e470] [cursor=pointer]
+                  - cell "8 Oct, 12:00 am" [ref=e471] [cursor=pointer]
+                  - cell "10 Oct, 12:00 am" [ref=e472] [cursor=pointer]
+            - link "View All" [ref=e473] [cursor=pointer]:
+              - /url: /events-listing
+              - button "View All" [ref=e474] [cursor=pointer]:
+                - generic [ref=e475] [cursor=pointer]: View All
+                - img [ref=e476] [cursor=pointer]
+      - generic [ref=e478]:
+        - heading "Top Clients" [level=2] [ref=e479]
+        - generic [ref=e480]:
+          - generic [ref=e481]:
+            - img "image_0" [ref=e482]
+            - img "image_1" [ref=e483]
+            - img "image_2" [ref=e484]
+            - img "image_3" [ref=e485]
+            - img "image_4" [ref=e486]
+          - button "View More" [ref=e487] [cursor=pointer]:
+            - text: View More
+            - img [ref=e488] [cursor=pointer]
+      - generic [ref=e490]:
+        - heading "About eDiig" [level=2] [ref=e491]
+        - generic [ref=e494]:
+          - paragraph [ref=e495]:
+            - strong [ref=e496]: www.ediig.com - India's leading automobile exchange platform, is a division of Mahindra First Choice Wheels Ltd.
+          - paragraph [ref=e497]: The marketplace of eDiig lays equal stress on quality, credibility & accuracy, eDiig has the country's best auction experts and specialists working for it.
+          - paragraph [ref=e498]:
+            - strong [ref=e499]: eDiig does the following types of Auction Services
+          - listitem [ref=e500]: Online sales events
+          - listitem [ref=e501]: Offline Sale Events
+          - listitem [ref=e502]: Bulk Deals / Negotiated Sales
+          - listitem [ref=e503]: Valuations
+          - listitem [ref=e504]: pecialty Sale Events / Premium Sale Events
+          - listitem [ref=e505]: Inventory Finance & Insurance
+      - generic [ref=e506]:
+        - heading "Top Seller Today" [level=2] [ref=e507]
+        - generic [ref=e508]:
+          - list [ref=e509]:
+            - listitem [ref=e510]:
+              - generic [ref=e511]:
+                - img "HDB Finance" [ref=e513]
+                - generic [ref=e514]:
+                  - generic [ref=e515]: HDB Finance
+                  - generic [ref=e516]: Listings
+            - listitem [ref=e517]:
+              - generic [ref=e518]:
+                - img "HDB Finance" [ref=e520]
+                - generic [ref=e521]:
+                  - generic [ref=e522]: HDB Finance
+                  - generic [ref=e523]: Listings
+            - listitem [ref=e524]:
+              - generic [ref=e525]:
+                - img "HDB Finance" [ref=e527]
+                - generic [ref=e528]:
+                  - generic [ref=e529]: HDB Finance
+                  - generic [ref=e530]: Listings
+            - listitem [ref=e531]:
+              - generic [ref=e532]:
+                - img "HDB Finance" [ref=e534]
+                - generic [ref=e535]:
+                  - generic [ref=e536]: HDB Finance
+                  - generic [ref=e537]: Listings
+          - button "Previous Button" [disabled] [ref=e538]:
+            - img [ref=e539]
+          - button "Next Button" [ref=e541]:
+            - img [ref=e542]
+  - dialog:
+    - generic [ref=e545]:
+      - img [ref=e548]
+      - button "Close sidebar" [ref=e552] [cursor=pointer]:
+        - generic [ref=e553] [cursor=pointer]: Close sidebar
+        - img [ref=e554] [cursor=pointer]
+  - generic [ref=e556]:
+    - paragraph [ref=e557]:
+      - generic [ref=e558]: Disclaimer
+      - text: ": The website is merely a platform to facilitate sale of vehicles between intended sellers and buyers. Sale is not concluded on the website. The property in the vehicle will get transferred directly from the seller to the buyer"
+    - paragraph [ref=e559]:
+      - text: Use of this Website constitutes acceptance of eDiig's
+      - link "Privacy Policy" [ref=e560] [cursor=pointer]:
+        - /url: /privacy-policy
+      - text: ", and"
+      - link "User Agreement" [ref=e561] [cursor=pointer]:
+        - /url: /user-agreement
+        - generic [ref=e562] [cursor=pointer]: User Agreement
+      - text: .
+  - generic [ref=e564]:
+    - text: Copyright © 2025
+    - link "eDiig" [ref=e565] [cursor=pointer]:
+      - /url: /privacy-policy
+    - text: "- E-Business Division - Mahindra First Choice Wheels Ltd. All Rights Reserved"
+  - alert [ref=e566]
+```

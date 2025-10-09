@@ -1,0 +1,12 @@
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Opened existing auction
+Placing bid on Reg No: GJ07B3700
+Start Price: ₹39,000, Reserve Price: ₹1,27,500
+Current Bid: 39000, Placing New Bid: 44000
+Congratulations! Your bid of ₹44000 is currently the highest.
+Bid placed successfully!
+Updated status of Reg No GJ07B3700: Not Participated to Winning

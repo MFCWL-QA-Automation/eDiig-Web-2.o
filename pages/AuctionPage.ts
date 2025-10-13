@@ -1,5 +1,6 @@
 import { Page, Locator, expect } from "@playwright/test";
 import { LoginPage } from "../pages/LoginPage";
+import { testConfig } from "../config/testConfig";
 
 /**
  * AuctionPage class implements actions on the Auction page
@@ -97,14 +98,13 @@ export class AuctionPage {
         // Navigate to auction creation page
         const auctionPage = new AuctionCreationPage(this.page);
 
-        await auctionPage.login("Kumar.B.Santha@mahindra.com", "Test@123");
+        await auctionPage.login(testConfig.credentials.cmsUsername, testConfig.credentials.cmsPassword);
         await auctionPage.createAuctionFlow("test-data/Vdata.xlsx");
 
         // Navigate back to auction list and open first auction
         const loginPage = new LoginPage(this.page);
        await loginPage.goto();
        await this.auction.click();
-       await this.page.pause() ;
        await this.page.reload();
        await this.page.waitForLoadState('networkidle');
         
@@ -150,7 +150,6 @@ export class AuctionPage {
         const loginPage = new LoginPage(this.page);
        await loginPage.goto();
        await this.auction.click();
-       await this.page.pause() ;
        await this.page.reload();
        await this.page.waitForLoadState('networkidle');
         
@@ -195,7 +194,6 @@ export class AuctionPage {
         const loginPage = new LoginPage(this.page);
        await loginPage.goto();
        await this.auction.click();
-       await this.page.pause() ;
        await this.page.reload();
        await this.page.waitForLoadState('networkidle');
         

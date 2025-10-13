@@ -1,2 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","34617","User should login and place a bid successfully","chromium","Wed Oct 08 11:38:50 IST 2025","failed","Wed Oct 08 11:39:24 IST 2025","","bid.spec.ts","",""
+"","7378","User should place a bid in Open Auction","chromium","Mon Oct 13 13:14:36 IST 2025","passed","Mon Oct 13 13:14:43 IST 2025","Single User Bid Tests","singleUserBid.spec.ts","",""
+"","8006","User should place a bid successfully","chromium","Mon Oct 13 13:14:27 IST 2025","passed","Mon Oct 13 13:14:35 IST 2025","Single User Bid Tests","singleUserBid.spec.ts","",""
+"","12707","User should place a bid in Closed Auction","chromium","Mon Oct 13 13:14:43 IST 2025","passed","Mon Oct 13 13:14:56 IST 2025","Single User Bid Tests","singleUserBid.spec.ts","",""

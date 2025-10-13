@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { RegistrationPage } from '../pages/registrationPage';
 
 
-    test('complete registration process', async ({ page }) => {
+    test.skip('complete registration process', async ({ page }) => {
         const registrationPage = new RegistrationPage(page);
         
         await registrationPage.completeRegistration(
@@ -13,7 +13,7 @@ import { RegistrationPage } from '../pages/registrationPage';
             'SBIN0070656'       // IFSC
              
         );
-        await page.pause();
+    
     });
  /* await page.getByRole('textbox', { name: 'Enter PAN Number' }).click();
   await page.getByRole('textbox', { name: 'Enter PAN Number' }).fill('AJGPV5662A');

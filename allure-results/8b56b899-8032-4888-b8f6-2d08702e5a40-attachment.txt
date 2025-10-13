@@ -1,0 +1,34 @@
+Setting up browser and users...
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Navigated to login page
+Username entered: autotest2
+Password entered: ********
+ Login button clicked
+Login successful
+Both users logged in and ready.
+Starting Multi-User Bid Test: GENERAL
+Opened existing auction
+Opened existing auction
+Placing bid on Reg No: AP39DN5031
+Start Price: ₹1,12,000, Reserve Price: ₹3,70,746
+Current Bid: 112000, Placing New Bid: 117000
+Congratulations! Your bid of ₹117000 is currently the highest.
+Bid placed successfully!
+ User 1 placed bid on: AP39DN5031
+Placing bid on Reg No: AP39DN5029
+Start Price: ₹2,07,000, Reserve Price: ₹6,87,600
+Current Bid: 207000, Placing New Bid: 212000
+Bid accepted, but you are not winning yet. Try increasing your bid to improve your chances
+Got outbid alert: Increasing bid and retrying...
+Current Bid: 212000, Placing New Bid: 217000
+Congratulations! Your bid of ₹217000 is currently the highest.
+Bid placed successfully!
+User 2 placed bid on: AP39DN5029
+ Cleaning up: Logging out and closing browser...
+Logout button clicked
+Logout button clicked
+Cleanup done.

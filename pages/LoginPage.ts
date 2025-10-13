@@ -10,6 +10,7 @@ export class LoginPage {
     private readonly password: Locator;
     private readonly loginButton: Locator;
     private readonly loginSuccessMsg: Locator;
+    private readonly logoutButton: Locator;
 
     /**
      * Initialize login page elements
@@ -21,6 +22,7 @@ export class LoginPage {
         this.password = page.getByRole("textbox", { name: "Enter Password" });
         this.loginButton = page.getByRole("button", { name: "Login" });
         this.loginSuccessMsg = page.getByText("Login Success");
+        this.logoutButton = page.getByRole("button", { name: "Logout" });
     }
 
     /**
@@ -88,8 +90,15 @@ export class LoginPage {
             return true;
         } catch {
             return false;
-        }
+        }    
+
     }
+     async logout(): Promise<void> {
+            await this.logoutButton.waitFor({ state: 'visible', timeout: 5000 });
+            await this.logoutButton.click();
+            console.log("Logout button clicked");
+            // Optionally verify logout success here
+        }
 
 
 }

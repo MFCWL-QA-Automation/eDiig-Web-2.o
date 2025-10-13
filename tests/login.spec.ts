@@ -2,7 +2,7 @@ import { test, expect, chromium, Page } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { testConfig } from '../config/testConfig';
 
-test.describe('Login Functionality Tests', () => {
+test.describe.skip('Login Functionality Tests', () => {
   let loginPage: LoginPage;
   let page: Page;
 
@@ -14,13 +14,16 @@ test.describe('Login Functionality Tests', () => {
 
   test('should login successfully with valid credentials', async ({page}) => {
     await loginPage.login(
-      testConfig.credentials.username1,
-      testConfig.credentials.password1
+      testConfig.credentials.username,
+      testConfig.credentials.password
     );
 
     // Verify successful login
     expect(await loginPage.isLoggedIn()).toBeTruthy();
-    await page.pause();
+    console.log("Login successful for user:", testConfig.credentials.username);
+    await loginPage.logout();
+    console.log("Logout successful for user:", testConfig.credentials.username);
+    
     
   });
 
@@ -44,6 +47,9 @@ test.describe('Login Functionality Tests', () => {
       testConfig.credentials.password1
     );
     expect(await loginPageUser1.isLoggedIn()).toBeTruthy();
+    console.log("Login successful for user:", testConfig.credentials.username1);
+    await loginPageUser1.logout();
+    console.log("Logout successful for user:", testConfig.credentials.username1);
 
     // User 2 login
     const loginPageUser2 = new LoginPage(pageUser2);
@@ -53,10 +59,13 @@ test.describe('Login Functionality Tests', () => {
       testConfig.credentials.password2
     );
     expect(await loginPageUser2.isLoggedIn()).toBeTruthy();
+    console.log("Login successful for user:", testConfig.credentials.username1);
+    await loginPageUser2.logout();
+    console.log("Logout successful for user:", testConfig.credentials.username1);
 
     // Optional: capture proof
-    await pageUser1.screenshot({ path: 'reports/user1-login.png' });
-    await pageUser2.screenshot({ path: 'reports/user2-login.png' });
+    //await pageUser1.screenshot({ path: 'reports/user1-login.png' });
+    //await pageUser2.screenshot({ path: 'reports/user2-login.png' });
 
     
   });

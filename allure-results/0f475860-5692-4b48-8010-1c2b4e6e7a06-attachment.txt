@@ -1,0 +1,35 @@
+Setting up browser and users...
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Navigated to login page
+Username entered: autotest2
+Password entered: ********
+ Login button clicked
+Login successful
+Both users logged in and ready.
+Starting Multi-User Bid Test: OPEN
+Opened existing Open auction
+Opened existing Open auction
+NO Not Participated Auction, Navigating to next page...
+Clicked Next to find Not Participated auctions
+Placing bid on Reg No: AP39DN5011
+Start Price: ₹80,000, Reserve Price: ₹2,64,914
+Current Bid: 80000, Placing New Bid: 85000
+Bid Placed Successfully
+Bid placed successfully!
+ User 1 placed bid on: AP39DN5011
+NO Not Participated Auction, Navigating to next page...
+Clicked Next to find Not Participated auctions
+Placing bid on Reg No: AP39DN5010
+Start Price: ₹1,16,000, Reserve Price: ₹3,84,603
+Current Bid: 121000, Placing New Bid: 126000
+Bid Placed Successfully
+Bid placed successfully!
+User 2 placed bid on: AP39DN5010
+ Cleaning up: Logging out and closing browser...
+Logout button clicked
+Logout button clicked
+Cleanup done.

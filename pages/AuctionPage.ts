@@ -20,7 +20,6 @@ export class AuctionPage {
   private readonly startPrice: Locator;
   private readonly reservePrive: Locator;
   private readonly auction:Locator;
-  private readonly secondEvent:Locator;
   private readonly closedEvent:Locator;
   private readonly openEvent:Locator;
 
@@ -29,12 +28,12 @@ export class AuctionPage {
 
     this.auction=page.locator("//a[contains(text(),'Auctions')]");
     // First auction event row
-    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[3]");
+    this.firstEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[1]");
     //this.secondEvent = page.locator("//section[@id='event-widget2']//table/tbody/tr[2]");
 
     // closed and open event locators
-    this.closedEvent=page.locator("//section[@id='event-widget2']//table/tbody/tr[td[2][contains(normalize-space(),'Adani')] and td[4][normalize-space()='Closed']][1]");
-    this.openEvent=page.locator("//section[@id='event-widget2']//table/tbody/tr[td[2][contains(normalize-space(),'Adani')] and td[4][normalize-space()='Open']][1]");
+    this.closedEvent=page.locator("//section[@id='event-widget2']//table/tbody/tr[td[2][contains(normalize-space(),'Automation')] and td[4][normalize-space()='Closed']][1]");
+    this.openEvent=page.locator("//section[@id='event-widget2']//table/tbody/tr[td[2][contains(normalize-space(),'Automation')] and td[4][normalize-space()='Open']][1]");
 
     // Locators for bidding on first "Not Participated" tiles
     this.tileLocator = page.locator("//li[.//div[@data-status='Not Participated']][1]");
@@ -217,18 +216,23 @@ export class AuctionPage {
    */
   async placeBidOnFirstNotParticipated(): Promise<string> {
     // Check if tile is visible
-   /* const isTileVisible = await this.tileLocator.isVisible().catch(() => false);
+
+    await this.page.waitForTimeout(1000); // wait a bit for tiles to load
+    const isTileVisible = await this.tileLocator.isVisible().catch(() => false);
+
     if (!isTileVisible) {
-      console.log("NO Not Participated Auction, Navigating back and selecting second main tile...");
-    await this.page.goBack({ waitUntil: 'networkidle' }); // Go back to auction page
-    const secondEvent = this.page.locator("//section[@id='event-widget2']//table/tbody/tr[2]");
-    await secondEvent.waitFor({ state: 'visible', timeout: 5000 });
-    await secondEvent.click();
+      console.log("NO Not Participated Auction, Navigating to next page...");
+
+      // Locate the 'Next' button by visible text (first visible one)
+      const nextButton = this.page.locator('button:has-text("Next")').first();
+
+      await nextButton.waitFor({ state: 'visible', timeout: 5000 });
+      await nextButton.scrollIntoViewIfNeeded();
+      await nextButton.click();
+
+      console.log("Clicked Next to find Not Participated auctions");
+      await this.page.waitForLoadState('networkidle');
     }
-    */
-     // Reinitialize tile locator after navigating
-    await this.tileLocator.waitFor({ state: 'visible', timeout: 5000 });
-    await this.tileLocator.scrollIntoViewIfNeeded();
     
     // Extract Reg No, Start Price, Reserve Price
     await this.regNo.waitFor({ state: 'visible', timeout: 5000 });
@@ -258,15 +262,19 @@ export class AuctionPage {
       console.log(`Current Bid: ${numericValue}, Placing New Bid: ${newBid}`);
 
       // Clear existing value and enter new bid
+      await this.bidInput.waitFor({ state: 'attached', timeout: 5000 });
+      await this.bidInput.waitFor({ state: 'visible', timeout: 5000 });
       await this.bidInput.dblclick();
       await this.bidInput.fill(newBid.toString());
 
       // Click respective "Bid Now" button inside the same tile
+      await this.bidNowBtn.waitFor({ state: 'attached', timeout: 5000 });
+      await this.bidNowBtn.waitFor({ state: 'visible', timeout: 5000 });
       await this.bidNowBtn.click();
 
-      await this.page.waitForTimeout(2000); // wait a bit for response
+      await this.page.waitForTimeout(1000); // wait a bit for response
 
-      if (await this.successMessage.isVisible({ timeout: 3000 }).catch(() => false)) {
+      if (await this.successMessage.isVisible({ timeout: 2000 }).catch(() => false)) {
         console.log(await this.successMessage.innerText());
         console.log("Bid placed successfully!");
         break;
@@ -320,6 +328,24 @@ export class AuctionPage {
   // Assert the status matches expected
   expect(currentStatus).toBe(expectedStatus);
   console.log(`Verified that ${regNo} status is "${expectedStatus}"`);
+}
+
+async placeBidOnSpecificRegNo(regNo: string): Promise<void> {
+  console.log(`Attempting to place bid on Reg No: ${regNo}`);
+
+  // Locate the specific tile for given Reg No
+  const tile = this.page.locator(`//li[.//div[normalize-space()='${regNo}']]`);
+  await tile.waitFor({ state: "visible", timeout: 10000 });
+
+  const bidNowButton = tile.locator(".//button[contains(@id, 'bid-now')]");
+  await bidNowButton.waitFor({ state: "visible", timeout: 10000 });
+
+  // Scroll & click bid button
+  await bidNowButton.scrollIntoViewIfNeeded();
+  await bidNowButton.click();
+  await this.page.waitForTimeout(1000);
+
+  console.log(`Successfully placed bid on Reg No: ${regNo}`);
 }
 
 

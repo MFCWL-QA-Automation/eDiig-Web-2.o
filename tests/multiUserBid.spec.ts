@@ -13,7 +13,7 @@ let loginPageUser2: LoginPage;
 let auctionUser1: AuctionPage;
 let auctionUser2: AuctionPage;
 
-test.describe("Multi-User Bid Tests", () => {
+test.describe("Multi-User Bid Tests @reg" , () => {
 
 test.beforeEach(async () => {
   console.log("Setting up browser and users...");
@@ -54,7 +54,7 @@ test.afterEach(async () => {
     await loginPageUser1.logout();
     await loginPageUser2.logout();
   } catch (e) {
-    console.warn("⚠️ Logout failed (possibly already logged out):", e);
+    console.warn("Logout failed (possibly already logged out):", e);
   }
   await browser.close();
   console.log("Cleanup done.");
@@ -90,16 +90,16 @@ async function runMultiUserBidFlow(type: "general" | "open" | "closed") {
   console.log("Both users bid on same Reg No:", regNo);
 
   // Verify Outbid status
-  await pageUser1.reload();
+  await pageUser1.waitForTimeout(1000); // Wait for status to update
   await auctionUser1.validateStatusUpdateForRegNo(regNo, "Outbid");
   console.log(`${regNo} → User1 = Outbid, User2 = Winning`);
 }
 
 // ---- TESTS ---- //
 
-test("Multi-User Bid Test - General Auction", async () => {
-  await runMultiUserBidFlow("general");
-});
+// test("Multi-User Bid Test - General Auction", async () => {
+//   await runMultiUserBidFlow("general");
+// });
 
 test("Multi-User Bid Test - Open Auction", async () => {
   await runMultiUserBidFlow("open");

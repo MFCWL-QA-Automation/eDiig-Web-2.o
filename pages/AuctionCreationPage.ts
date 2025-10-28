@@ -69,7 +69,9 @@ export class AuctionCreationPage {
 
   async login(email: string, password: string) {
     await this.page.goto("https://qa-cms.ediig.com/admin/auth/login");
+    await this.emailInput.waitFor({ state: 'visible', timeout: 5000 });
     await this.emailInput.fill(email);
+    await this.passwordInput.waitFor({ state: 'visible', timeout: 5000 });
     await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
@@ -117,23 +119,92 @@ export class AuctionCreationPage {
     await this.endDateInput.press("Enter");
 
     await this.endTimeInput.click();
-    await this.page.getByText("18:00").click();
+    await this.page.getByText("23:00").click();
   }
 
   async submitAuction() {
     await this.submitButton.click();
   }
+// Full Flow Method with alternate file option
+  async createAuctionFlow(primaryFile: string, alternateFile: string = "test-data/Vdata2.xlsx") {
+  await this.openAuctionUpload();
+  await this.selectSeller("Automation Test");
+  await this.selectAction("Bulk Create");
+  await this.uploadAuctionFile(primaryFile);
+  await this.selectDatesAndTime();
+  await this.submitAuction();
 
-  async createAuctionFlow(filePath: string) {
+  // Wait for popup to open
+  const popupPromise = this.page.waitForEvent('popup');
+  await this.page.getByRole('link', { name: 'Click Here to Check Status' }).click();
+  const popup = await popupPromise;
+
+  // Login in popup window
+  await popup.getByRole('textbox', { name: 'Email *' }).fill('Kumar.B.Santha@mahindra.com');
+  await popup.getByRole('textbox', { name: 'Password *' }).fill('Test@123');
+  await popup.getByRole('button', { name: 'Login' }).click();
+  await popup.waitForLoadState('networkidle');
+ const primaryStatus = await this.waitForStatusCompletion(popup);
+ // If primary upload failed, retry with alternate file
+ if (primaryStatus === "Failure") {
+    console.warn(`Primary upload failed for ${primaryFile}. Retrying with ${alternateFile}...`);
+    await popup.close();
+
+  // Retry flow with alternate file
+    await this.page.reload();
+    await this.page.waitForLoadState('networkidle');
     await this.openAuctionUpload();
-   // await this.selectAuctionType("Seller");
-    await this.selectSeller("Adani Capital Private Limited");
+    await this.selectSeller("Automation Test");
     await this.selectAction("Bulk Create");
-    await this.uploadAuctionFile(filePath);
+    await this.uploadAuctionFile(alternateFile);
     await this.selectDatesAndTime();
     await this.submitAuction();
 
-    // Optional validation
-   // await expect(this.page.locator("text=Auction Created Successfully")).toBeVisible({ timeout: 10000 });
+    // Wait for popup again
+    //await this.page.waitForTimeout(2000); // brief wait to ensure popup can be caught
+    const popupRetryPromise = this.page.waitForEvent('popup');
+    await this.page.getByRole('link', { name: 'Click Here to Check Status' }).click();
+    const popupRetry = await popupRetryPromise;
+
+    // Login again
+    await popupRetry.getByRole('textbox', { name: 'Email *' }).fill('Kumar.B.Santha@mahindra.com');
+    await popupRetry.getByRole('textbox', { name: 'Password *' }).fill('Test@123');
+    await popupRetry.getByRole('button', { name: 'Login' }).click();
+  await popup.waitForLoadState('networkidle');
+  const retryStatus = await this.waitForStatusCompletion(popupRetry);
+// If retry also fails, throw error
+   if (retryStatus === "Failure") {
+      console.error(`Auction creation failed again with ${alternateFile}.`);
+      throw new Error("Auction creation failed — both files resulted in Failure.");
+    }
+
+    console.log(`Auction creation successful with alternate file: ${alternateFile}`);
+  } else {
+    console.log(`Auction creation successful with primary file: ${primaryFile}`);
   }
+}
+async waitForStatusCompletion(page: Page): Promise<string> {
+  
+  const statusInput = page.getByRole('textbox', { name: 'status *' });
+  await statusInput.waitFor({ state: 'visible', timeout: 10000 });
+// Initial status check
+  let currentStatus = await statusInput.inputValue();
+  console.log(`Checking status: ${currentStatus}`);
+
+  // Poll for 10 iterations (~50s total)
+  for (let i = 0; i < 10; i++) {
+    if (["Success", "Failure"].includes(currentStatus)) {
+      console.log(`Final Status: ${currentStatus}`);
+      return currentStatus;
+    }
+    console.log(`Still ${currentStatus}... retrying in 5s`);
+    await page.waitForTimeout(5000);
+    await page.reload();
+    await page.waitForLoadState('networkidle');
+    await statusInput.waitFor({ state: 'visible', timeout: 10000 });
+    currentStatus = await statusInput.inputValue();
+  }
+
+  throw new Error(`Timed out waiting for Success/Failure. Last status: ${currentStatus}`);
+}
 }

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { RegistrationPage } from '../pages/registrationPage';
 
 
-    test.skip('complete registration process', async ({ page }) => {
+    test.fixme('complete registration process', async ({ page }) => {
         const registrationPage = new RegistrationPage(page);
         
         await registrationPage.completeRegistration(

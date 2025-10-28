@@ -1,0 +1,4 @@
+Checking status: Processing
+Still Processing... retrying in 5s
+Final Status: Success
+Auction creation successful with primary file: test-data/Vdata.xlsx

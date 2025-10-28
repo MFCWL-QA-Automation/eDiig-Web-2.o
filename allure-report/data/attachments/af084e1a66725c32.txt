@@ -1,0 +1,36 @@
+Setting up browser and users...
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Navigated to login page
+Username entered: autotest2
+Password entered: ********
+ Login button clicked
+Login successful
+Both users logged in and ready.
+Starting Multi-User Bid Test: GENERAL
+Opened existing auction
+Opened existing auction
+Placing bid on Reg No: AP39DN5003
+Start Price: ₹85,000, Reserve Price: ₹2,80,306
+Current Bid: 90000, Placing New Bid: 95000
+Bid Placed Successfully
+Bid placed successfully!
+ User 1 placed bid on: AP39DN5003
+Placing bid on Reg No: AP39DN5003
+Start Price: ₹85,000, Reserve Price: ₹2,80,306
+Current Bid: 95000, Placing New Bid: 100000
+Bid Placed Successfully
+Bid placed successfully!
+User 2 placed bid on: AP39DN5003
+Both users bid on same Reg No: AP39DN5003
+Checking status for Reg No: AP39DN5003
+Current status for AP39DN5003: Outbid
+Verified that AP39DN5003 status is "Outbid"
+AP39DN5003 → User1 = Outbid, User2 = Winning
+ Cleaning up: Logging out and closing browser...
+Logout button clicked
+Logout button clicked
+Cleanup done.

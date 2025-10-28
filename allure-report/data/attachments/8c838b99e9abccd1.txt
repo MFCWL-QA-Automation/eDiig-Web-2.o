@@ -1,0 +1,45 @@
+Setting up browser and users...
+Navigated to login page
+Username entered: autotest1
+Password entered: ********
+ Login button clicked
+Login successful
+Navigated to login page
+Username entered: autotest2
+Password entered: ********
+ Login button clicked
+Login successful
+Both users logged in and ready.
+Starting Multi-User Bid Test: CLOSED
+Opened existing Closed auction
+Opened existing Closed auction
+Placing bid on Reg No: AP39DN5043
+Start Price: ₹1,66,000, Reserve Price: ₹5,52,840
+Current Bid: 166000, Placing New Bid: 171000
+Bid accepted, but you are not winning yet. Try increasing your bid to improve your chances
+Got outbid alert: Increasing bid and retrying...
+Current Bid: 171000, Placing New Bid: 176000
+Congratulations! Your bid of ₹176000 is currently the highest.
+Bid placed successfully!
+ User 1 placed bid on: AP39DN5043
+Placing bid on Reg No: AP39DN5043
+Start Price: ₹1,66,000, Reserve Price: ₹5,52,840
+Current Bid: 166000, Placing New Bid: 171000
+Bid accepted, but you are not winning yet. Try increasing your bid to improve your chances
+Got outbid alert: Increasing bid and retrying...
+Current Bid: 171000, Placing New Bid: 176000
+Bid accepted, but you are not winning yet. Try increasing your bid to improve your chances
+Got outbid alert: Increasing bid and retrying...
+Current Bid: 176000, Placing New Bid: 181000
+Congratulations! Your bid of ₹181000 is currently the highest.
+Bid placed successfully!
+User 2 placed bid on: AP39DN5043
+Both users bid on same Reg No: AP39DN5043
+Checking status for Reg No: AP39DN5043
+Current status for AP39DN5043: Outbid
+Verified that AP39DN5043 status is "Outbid"
+AP39DN5043 → User1 = Outbid, User2 = Winning
+ Cleaning up: Logging out and closing browser...
+Logout button clicked
+Logout button clicked
+Cleanup done.

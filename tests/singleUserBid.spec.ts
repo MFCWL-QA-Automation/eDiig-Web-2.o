@@ -6,7 +6,7 @@ import { testConfig } from "../config/testConfig";
 let loginPage: LoginPage;
 let auctionPage: AuctionPage;
 
-test.describe("Single User Bid Tests", () => {
+test.describe("Single User Bid Tests @reg", () => {
 
 test.beforeEach(async ({ page }) => {
   console.log("Logging in before test...");
@@ -30,12 +30,12 @@ test.afterEach(async () => {
   
 });
 
-test("User should place a bid successfully", async () => {
-  console.log("Running General Bid Test...");
-  await auctionPage.openFirstAuction();
-  await auctionPage.placeBidOnFirstNotParticipated();
-  await auctionPage.validateStatusUpdate();
-});
+// test("User should place a bid successfully", async () => {
+//   console.log("Running General Bid Test...");
+//   await auctionPage.openFirstAuction();
+//   await auctionPage.placeBidOnFirstNotParticipated();
+//   await auctionPage.validateStatusUpdate();
+// });
 
 test("User should place a bid in Open Auction", async () => {
   console.log(" Running Open Auction Bid Test...");

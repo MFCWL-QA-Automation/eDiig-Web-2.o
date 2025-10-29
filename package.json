@@ -8,7 +8,8 @@
     "debug": "npx playwright test --headed --debug",
     "test:report": "npx playwright show-report reports/html-report",
     "allure:generate": "allure generate ./allure-results -o ./allure-report --clean",
-    "allure:open": "allure generate ./allure-results --clean -o ./allure-report && allure open ./allure-report"
+    "allure:open": "allure generate ./allure-results --clean -o ./allure-report && allure open ./allure-report",
+    "codegen": "npx playwright codegen https://qa.ediig.com/"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,9 @@
+Logging in before test...
+Navigated to login page
+Username entered: autotest
+Password entered: ********
+ Login button clicked
+Login successful
+Clicked Failure in bank popup.
+Payment confirming step visible in iframe.
+Payment Failure message visible in iframe.

@@ -1,7 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","6278","User should place a bid successfully","chromium","Mon Oct 13 21:39:20 IST 2025","passed","Mon Oct 13 21:39:26 IST 2025","Single User Bid Tests @reg","singleUserBid.spec.ts","",""
-"","13499","Multi-User Bid Test - General Auction","chromium","Mon Oct 13 21:38:38 IST 2025","passed","Mon Oct 13 21:38:51 IST 2025","Multi-User Bid Tests @reg","multiUserBid.spec.ts","",""
-"","5757","User should place a bid in Closed Auction","chromium","Mon Oct 13 21:39:33 IST 2025","passed","Mon Oct 13 21:39:38 IST 2025","Single User Bid Tests @reg","singleUserBid.spec.ts","",""
-"","12500","Multi-User Bid Test - Open Auction","chromium","Mon Oct 13 21:38:51 IST 2025","passed","Mon Oct 13 21:39:04 IST 2025","Multi-User Bid Tests @reg","multiUserBid.spec.ts","",""
-"","6427","User should place a bid in Open Auction","chromium","Mon Oct 13 21:39:26 IST 2025","passed","Mon Oct 13 21:39:33 IST 2025","Single User Bid Tests @reg","singleUserBid.spec.ts","",""
-"","15903","Multi-User Bid Test - Closed Auction","chromium","Mon Oct 13 21:39:04 IST 2025","passed","Mon Oct 13 21:39:20 IST 2025","Multi-User Bid Tests @reg","multiUserBid.spec.ts","",""
+"","17696","User can top-up wallet via Netbanking - Failure Flow","chromium","Wed Oct 29 15:11:50 IST 2025","passed","Wed Oct 29 15:12:08 IST 2025","@wallet Wallet Top-up Flow","walletTopup.spec.ts","",""

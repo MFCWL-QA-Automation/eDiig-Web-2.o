@@ -140,8 +140,8 @@ export class AuctionCreationPage {
   const popup = await popupPromise;
 
   // Login in popup window
-  await popup.getByRole('textbox', { name: 'Email *' }).fill('Kumar.B.Santha@mahindra.com');
-  await popup.getByRole('textbox', { name: 'Password *' }).fill('Test@123');
+  await popup.getByRole('textbox', { name: 'Email *' }).fill('t.subrammanniam@mahindra.com');
+  await popup.getByRole('textbox', { name: 'Password *' }).fill('SUBRAMMANNIAM@a1');
   await popup.getByRole('button', { name: 'Login' }).click();
   await popup.waitForLoadState('networkidle');
  const primaryStatus = await this.waitForStatusCompletion(popup);
@@ -167,8 +167,8 @@ export class AuctionCreationPage {
     const popupRetry = await popupRetryPromise;
 
     // Login again
-    await popupRetry.getByRole('textbox', { name: 'Email *' }).fill('Kumar.B.Santha@mahindra.com');
-    await popupRetry.getByRole('textbox', { name: 'Password *' }).fill('Test@123');
+    await popupRetry.getByRole('textbox', { name: 'Email *' }).fill('t.subrammanniam@mahindra.com');
+    await popupRetry.getByRole('textbox', { name: 'Password *' }).fill('SUBRAMMANNIAM@a1');
     await popupRetry.getByRole('button', { name: 'Login' }).click();
   await popup.waitForLoadState('networkidle');
   const retryStatus = await this.waitForStatusCompletion(popupRetry);
